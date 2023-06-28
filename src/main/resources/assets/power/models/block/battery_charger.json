@@ -1,0 +1,9 @@
+{
+  "parent": "power:custom/battery_charger",
+  "textures": {
+    "all": "power:block/battery_charger",
+    "particle": "power:block/battery_charger",
+    "9": "power:block/battery_charger"
+  },
+  "render_type": "cutout_mipped"
+}

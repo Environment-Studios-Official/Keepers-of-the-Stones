@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "power:rocket_item"
+    },
+    "title": {
+      "translate": "advancements.forward_to_the_stars.title"
+    },
+    "description": {
+      "translate": "advancements.forward_to_the_stars.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "forward_to_the_stars": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "power:entities/reward_coins"
+    ]
+  },
+  "parent": "power:mighty_master"
+}

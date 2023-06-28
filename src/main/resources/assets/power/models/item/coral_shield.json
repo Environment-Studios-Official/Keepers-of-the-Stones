@@ -1,0 +1,15 @@
+{
+  "parent": "power:custom/power_shield",
+  "textures": {
+    "layer0": "power:block/coral_shield",
+    "particle": "power:item/coral_shield"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "power:item/coral_shield_0"
+    }
+  ]
+}

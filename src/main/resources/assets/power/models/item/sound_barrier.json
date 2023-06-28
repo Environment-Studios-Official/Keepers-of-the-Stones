@@ -1,0 +1,15 @@
+{
+  "parent": "power:custom/power_shield",
+  "textures": {
+    "layer0": "power:block/sound_barrier",
+    "particle": "power:item/sound_barrier"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "power:item/sound_barrier_0"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "power:custom/black_hole_model",
+  "textures": {
+    "all": "power:block/vacuum_web_block",
+    "particle": "power:block/vacuum_web_block",
+    "0": "power:block/vacuum_web_block"
+  },
+  "render_type": "cutout"
+}

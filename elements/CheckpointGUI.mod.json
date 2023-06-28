@@ -1,0 +1,108 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_returning_to_the_last_point",
+          "text": {
+            "fixedValue": "Returning to the last point"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_checkpoint",
+          "text": "Checkpoint",
+          "onClick": {
+            "name": "ReturnCheckpoint"
+          },
+          "width": 126,
+          "height": 20,
+          "x": 150,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_set_checkpoint",
+          "text": "Set checkpoint",
+          "onClick": {
+            "name": "TimeCheckpoint"
+          },
+          "width": 126,
+          "height": 20,
+          "x": 150,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_return_to_the_past",
+          "text": "Return to the past",
+          "onClick": {
+            "name": "ReturnToPast"
+          },
+          "width": 126,
+          "height": 20,
+          "x": 150,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_return_to_the_present",
+          "text": "Return to the present",
+          "onClick": {
+            "name": "ReturnToPresent"
+          },
+          "width": 134,
+          "height": 20,
+          "x": 150,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_time_travel",
+          "text": {
+            "fixedValue": "Time travel"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 116
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

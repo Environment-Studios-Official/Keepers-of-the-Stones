@@ -1,0 +1,39 @@
+{
+  "_fv": 43,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "blue_knife",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Blue Knife",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 100.0,
+    "attackSpeed": 2.0,
+    "enchantability": 2,
+    "damageVsEntity": 11.0,
+    "usageCount": 5000,
+    "blocksAffected": [
+      {
+        "value": "CUSTOM:BluePortal"
+      },
+      {
+        "value": "CUSTOM:OrangePortal"
+      }
+    ],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntitySwing": {
+      "name": "OneHandedBladesAttack"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "power:custom/blocking_power_shield",
+  "textures": {
+    "layer0": "power:block/iron_shield",
+    "particle": "power:item/iron_shield"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_fv": 43,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Master of Smoke",
+    "icon": "smoke_master.png",
+    "color": {
+      "value": -6710887,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "SmokeMasterEffectStart"
+    },
+    "onActiveTick": {
+      "name": "SmokeMasterEffects"
+    },
+    "onExpired": {
+      "name": "SmokeMasterEffectEnd"
+    }
+  }
+}

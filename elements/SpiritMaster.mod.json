@@ -1,0 +1,26 @@
+{
+  "_fv": 43,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Master of Spirit",
+    "icon": "spirit_master.png",
+    "color": {
+      "value": -16763905,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "SpiritMasterEffectStart"
+    },
+    "onActiveTick": {
+      "name": "SpiritMasterEffects"
+    },
+    "onExpired": {
+      "name": "SpiritMasterEffectEnd"
+    }
+  }
+}

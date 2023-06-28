@@ -1,0 +1,117 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "book_of_elements_book.png",
+          "use1Xscale": true,
+          "x": -31,
+          "y": -7
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_class_additional",
+          "text": {
+            "fixedValue": "Class: Additional"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 51,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_element_lava",
+          "text": {
+            "fixedValue": "Element: Lava"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 51,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_force_melting",
+          "text": {
+            "fixedValue": "Force: Melting"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 51,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lava_stone.png",
+          "use1Xscale": false,
+          "x": 109,
+          "y": 11
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lava_master.png",
+          "use1Xscale": false,
+          "x": 307,
+          "y": 11
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lava_element.png",
+          "use1Xscale": true,
+          "x": 285,
+          "y": 35
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": ">",
+          "onClick": {
+            "name": "OpenLevelsAndSkillsPage"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 366,
+          "y": 206
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

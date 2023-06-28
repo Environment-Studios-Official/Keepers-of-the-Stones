@@ -1,0 +1,26 @@
+{
+  "_fv": 43,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Master of Darkness",
+    "icon": "darkness_master.png",
+    "color": {
+      "value": -16777165,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "DarknessMasterEffectStart"
+    },
+    "onActiveTick": {
+      "name": "DarknessMasterEffects"
+    },
+    "onExpired": {
+      "name": "DarknessMasterEffectEnd"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+package power.keepeersofthestones.procedures;
+
+import power.keepeersofthestones.network.PowerModVariables;
+import power.keepeersofthestones.init.PowerModMobEffects;
+import power.keepeersofthestones.init.PowerModItems;
+import power.keepeersofthestones.PowerMod;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
+
+public class FireReinforcedBatteryUseProcedure {
+	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
+		if (entity == null)
+			return;
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.FIRE_REINFORCED_BATTERY.get()) {
+			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).active) {
+				{
+					boolean _setval = true;
+					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.battery = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.FIRE_MASTER.get(), 12000, 0, false, false));
+				PowerMod.queueServerWork(2, () -> {
+					itemstack.shrink(1);
+				});
+			}
+		}
+	}
+}

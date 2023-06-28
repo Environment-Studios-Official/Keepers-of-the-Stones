@@ -1,0 +1,11 @@
+{
+  "_fv": 43,
+  "_type": "tab",
+  "definition": {
+    "name": "Energium",
+    "icon": {
+      "value": "CUSTOM:EnergiumIngot"
+    },
+    "showSearch": false
+  }
+}

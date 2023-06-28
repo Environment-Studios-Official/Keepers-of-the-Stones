@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "power:energium_ore",
+    "power:energium_block",
+    "power:amplifer_ore",
+    "power:deepslate_amplifer_ore",
+    "power:amplifer_block",
+    "power:moon_block"
+  ]
+}

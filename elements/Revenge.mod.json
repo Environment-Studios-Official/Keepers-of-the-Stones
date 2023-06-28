@@ -1,0 +1,68 @@
+{
+  "_fv": 43,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Revenge",
+    "type": "WEAPON",
+    "rarity": "UNCOMMON",
+    "minLevel": 1,
+    "maxLevel": 3,
+    "damageModifier": 0,
+    "compatibleEnchantments": [
+      {
+        "value": "SHARPNESS"
+      },
+      {
+        "value": "SMITE"
+      },
+      {
+        "value": "BANE_OF_ARTHROPODS"
+      },
+      {
+        "value": "SWEEPING"
+      },
+      {
+        "value": "FIRE_ASPECT"
+      },
+      {
+        "value": "KNOCKBACK"
+      },
+      {
+        "value": "LOOTING"
+      },
+      {
+        "value": "MENDING"
+      },
+      {
+        "value": "UNBREAKING"
+      },
+      {
+        "value": "VANISHING_CURSE"
+      }
+    ],
+    "excludeEnchantments": false,
+    "compatibleItems": [
+      {
+        "value": "CUSTOM:EnergiumSword"
+      },
+      {
+        "value": "CUSTOM:EnergiumPickaxe"
+      },
+      {
+        "value": "CUSTOM:EnergiumAxe"
+      },
+      {
+        "value": "CUSTOM:EnergiumShovel"
+      },
+      {
+        "value": "CUSTOM:EnergiumHoe"
+      }
+    ],
+    "excludeItems": false,
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}

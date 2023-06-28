@@ -1,0 +1,15 @@
+{
+  "parent": "power:custom/power_shield",
+  "textures": {
+    "layer0": "power:block/golden_shield",
+    "particle": "power:item/golden_shield"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "power:item/golden_shield_0"
+    }
+  ]
+}

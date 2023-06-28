@@ -1,0 +1,26 @@
+{
+  "_fv": 43,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Master of Form",
+    "icon": "form_master.png",
+    "color": {
+      "value": -3407770,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "FormMasterEffectStart"
+    },
+    "onActiveTick": {
+      "name": "FormMasterEffects"
+    },
+    "onExpired": {
+      "name": "FormMasterEffectEnd"
+    }
+  }
+}

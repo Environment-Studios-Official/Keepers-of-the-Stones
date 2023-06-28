@@ -1,0 +1,7 @@
+{
+  "parent": "power:custom/blocking_power_shield",
+  "textures": {
+    "layer0": "power:block/magma_shield",
+    "particle": "power:item/magma_shield"
+  }
+}

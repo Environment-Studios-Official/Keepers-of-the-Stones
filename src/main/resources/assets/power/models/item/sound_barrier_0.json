@@ -1,0 +1,7 @@
+{
+  "parent": "power:custom/blocking_power_shield",
+  "textures": {
+    "layer0": "power:block/sound_barrier",
+    "particle": "power:item/sound_barrier"
+  }
+}

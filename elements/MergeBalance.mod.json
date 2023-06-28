@@ -1,0 +1,26 @@
+{
+  "_fv": 43,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Merge Balance",
+    "icon": "merge_balance.png",
+    "color": {
+      "value": -10066330,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "MergeBalanceEffectStart"
+    },
+    "onActiveTick": {
+      "name": "DestructionMasterEffects"
+    },
+    "onExpired": {
+      "name": "MergeBalanceEffectEnd"
+    }
+  }
+}

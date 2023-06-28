@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "power:cretaceous_taiga",
+    "power:cretaceous_pine_forest"
+  ],
+  "spawners": {
+    "type": "power:plesiosaurus",
+    "weight": 10,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

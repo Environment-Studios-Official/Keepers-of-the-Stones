@@ -1,0 +1,27 @@
+{
+  "_fv": 43,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Forbidden Zone",
+    "achievementDescription": "Create and place a power blocker",
+    "achievementIcon": {
+      "value": "CUSTOM:EnergiumIngot"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [
+      "RewardCoins"
+    ],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:MightyMaster"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"block_placed\" x=\"62\" y=\"15\"><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">CUSTOM:EnergiumBlock</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

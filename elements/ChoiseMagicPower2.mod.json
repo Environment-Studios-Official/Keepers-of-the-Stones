@@ -1,0 +1,526 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 400,
+    "height": 200,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_moon",
+          "text": "Moon",
+          "onClick": {
+            "name": "MoonUse"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 51,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_choose_the_desired_power_of_the",
+          "text": {
+            "fixedValue": "Choose the desired power of the elements"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 26
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_destruct",
+          "text": " Destruct",
+          "onClick": {
+            "name": "DestructionUse"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 51,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_space",
+          "text": "Space",
+          "onClick": {
+            "name": "SpaceUse"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 51,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_blood",
+          "text": "Blood",
+          "onClick": {
+            "name": "BloodUse"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 51,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_time",
+          "text": "Time",
+          "onClick": {
+            "name": "TimeUse"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_techolog",
+          "text": "Techolog.",
+          "onClick": {
+            "name": "TechnologyUse"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 141,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_explosion",
+          "text": "Explosion",
+          "onClick": {
+            "name": "ExplosionUse"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 141,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_teleport",
+          "text": "Teleport.",
+          "onClick": {
+            "name": "TeleportationUse"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 141,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_creation",
+          "text": "Creation",
+          "onClick": {
+            "name": "CreationUse"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 51,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_mist",
+          "text": "Mist",
+          "onClick": {
+            "name": "MistUse"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 240,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_sand",
+          "text": "Sand",
+          "onClick": {
+            "name": "SandUse"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 240,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_speed",
+          "text": "Speed",
+          "onClick": {
+            "name": "SpeedUse"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 240,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_previous_page",
+          "text": "Previous page",
+          "onClick": {
+            "name": "CM1"
+          },
+          "width": 93,
+          "height": 20,
+          "x": 24,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "moon_master.png",
+          "use1Xscale": false,
+          "x": 33,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cosmos_master.png",
+          "use1Xscale": false,
+          "x": 33,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blood_master.png",
+          "use1Xscale": false,
+          "x": 33,
+          "y": 161
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "time_master.png",
+          "use1Xscale": false,
+          "x": 123,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "technology_master.png",
+          "use1Xscale": false,
+          "x": 123,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "teleportation_master.png",
+          "use1Xscale": false,
+          "x": 123,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "explosion_master.png",
+          "use1Xscale": false,
+          "x": 123,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_poison",
+          "text": "Poison",
+          "onClick": {
+            "name": "PoisonUse"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 240,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_magnet",
+          "text": "Magnet",
+          "onClick": {
+            "name": "MagnetUse"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 240,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_mushrooms",
+          "text": "Mushrooms",
+          "onClick": {
+            "name": "MushroomsUse"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 339,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_mercury",
+          "text": "Mercury",
+          "onClick": {
+            "name": "MercuryUse"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 339,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_music",
+          "text": "Music",
+          "onClick": {
+            "name": "MusicUse"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 339,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "creation_master.png",
+          "use1Xscale": false,
+          "x": 33,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "destruction_master.png",
+          "use1Xscale": false,
+          "x": 33,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_plague",
+          "text": "Plague",
+          "onClick": {
+            "name": "PlagueUse"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 339,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_gravity",
+          "text": "Gravity",
+          "onClick": {
+            "name": "GravityUse"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 141,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_next_page",
+          "text": "Next page",
+          "onClick": {
+            "name": "CM3"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 330,
+          "y": 188
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_23",
+          "text": {
+            "fixedValue": "2/3"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 24,
+          "y": 26
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "space_master.png",
+          "use1Xscale": false,
+          "x": 33,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mist_master.png",
+          "use1Xscale": false,
+          "x": 222,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sand_master.png",
+          "use1Xscale": false,
+          "x": 222,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "speed_master.png",
+          "use1Xscale": false,
+          "x": 222,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "poison_master.png",
+          "use1Xscale": false,
+          "x": 222,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magnet_master.png",
+          "use1Xscale": false,
+          "x": 222,
+          "y": 161
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mushrooms_master.png",
+          "use1Xscale": false,
+          "x": 321,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mercury_master.png",
+          "use1Xscale": false,
+          "x": 321,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_master.png",
+          "use1Xscale": false,
+          "x": 321,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "plague_master.png",
+          "use1Xscale": false,
+          "x": 321,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gravity_master.png",
+          "use1Xscale": false,
+          "x": 123,
+          "y": 161
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 43,
+  "_type": "tab",
+  "definition": {
+    "name": "Shards",
+    "icon": {
+      "value": "CUSTOM:WildShard"
+    },
+    "showSearch": false
+  }
+}

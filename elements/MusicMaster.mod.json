@@ -1,0 +1,26 @@
+{
+  "_fv": 43,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Master of Music",
+    "icon": "music_master.png",
+    "color": {
+      "value": -6750055,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "MusicMasterEffectStart"
+    },
+    "onActiveTick": {
+      "name": "MusicMasterEffects"
+    },
+    "onExpired": {
+      "name": "MusicMasterEffectEnd"
+    }
+  }
+}

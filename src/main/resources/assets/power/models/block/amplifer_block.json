@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "power:block/amplifer_block",
+    "up": "power:block/amplifer_block",
+    "north": "power:block/amplifer_block",
+    "east": "power:block/amplifer_block",
+    "south": "power:block/amplifer_block",
+    "west": "power:block/amplifer_block",
+    "particle": "power:block/amplifer_block"
+  },
+  "render_type": "solid"
+}

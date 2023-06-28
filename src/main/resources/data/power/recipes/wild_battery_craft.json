@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "power:wild_shard"
+    },
+    "1": {
+      "item": "power:empty_wild_batteries"
+    },
+    "2": {
+      "item": "power:wild_shard"
+    }
+  },
+  "result": {
+    "item": "power:empty_wild_batteries",
+    "count": 1
+  }
+}

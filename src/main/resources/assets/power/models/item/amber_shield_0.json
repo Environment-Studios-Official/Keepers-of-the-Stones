@@ -1,0 +1,7 @@
+{
+  "parent": "power:custom/blocking_power_shield",
+  "textures": {
+    "layer0": "power:block/amber_shield",
+    "particle": "power:item/amber_shield"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_fv": 43,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Power Lock",
+    "icon": "power_lock.png",
+    "color": {
+      "value": -13312,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "PowerLockStart"
+    },
+    "onActiveTick": {
+      "name": "DetransformKeyPriNazhatiiKlavishi"
+    },
+    "onExpired": {
+      "name": "PowerLockEnd"
+    }
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 256,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "book_of_elements_book.png",
+          "use1Xscale": true,
+          "x": -31,
+          "y": -7
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_level_2",
+          "text": {
+            "fixedValue": "Level 2"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "x": 50,
+          "y": 72
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_level_3",
+          "text": {
+            "fixedValue": "Level 3"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "x": 50,
+          "y": 102
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "level_checked.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GetLevel2"
+          },
+          "x": 142,
+          "y": 64
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "level_checked.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnLevel3"
+          },
+          "x": 144,
+          "y": 96
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "<",
+          "onClick": {
+            "name": "OpenBook"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 33,
+          "y": 206
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_level_1",
+          "text": {
+            "fixedValue": "Level 1"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "x": 50,
+          "y": 39
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "level_checked.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GetLevel1"
+          },
+          "x": 141,
+          "y": 33
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty1",
+          "text": ">",
+          "width": 30,
+          "height": 20,
+          "x": 366,
+          "y": 206
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_buy",
+          "text": "Buy",
+          "onClick": {
+            "name": "OpenBuyLevel2"
+          },
+          "displayCondition": {
+            "name": "ReturnLevel1"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 131,
+          "y": 59
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_buy1",
+          "text": "Buy",
+          "onClick": {
+            "name": "OpenBuyLevel3"
+          },
+          "displayCondition": {
+            "name": "ReturnLevel2"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 131,
+          "y": 91
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_reactive_flying",
+          "text": {
+            "fixedValue": "Reactive Flying"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "x": 239,
+          "y": 39
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fire_master.png",
+          "use1Xscale": false,
+          "x": 260,
+          "y": 49
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blue_flame_master.png",
+          "use1Xscale": false,
+          "x": 278,
+          "y": 49
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lightning_master.png",
+          "use1Xscale": false,
+          "x": 294,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_for",
+          "text": {
+            "fixedValue": "For:"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "x": 239,
+          "y": 55
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_buy2",
+          "text": "Buy",
+          "onClick": {
+            "name": "OpenBuyReactiveFlying"
+          },
+          "displayCondition": {
+            "name": "NoReturnReactiveFlying"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 342,
+          "y": 45
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "level_checked.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnReactiveFlying"
+          },
+          "x": 352,
+          "y": 50
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rain_master.png",
+          "use1Xscale": false,
+          "x": 308,
+          "y": 49
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

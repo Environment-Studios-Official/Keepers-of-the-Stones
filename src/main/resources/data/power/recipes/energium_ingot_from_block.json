@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "power:energium_block"
+    }
+  },
+  "result": {
+    "item": "power:energium_ingot",
+    "count": 9
+  }
+}

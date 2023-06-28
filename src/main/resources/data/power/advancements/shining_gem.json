@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "power:crystallized_shard"
+    },
+    "title": {
+      "translate": "advancements.shining_gem.title"
+    },
+    "description": {
+      "translate": "advancements.shining_gem.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "shining_gem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "power:crystallized_shard"
+            ],
+            "count": {
+              "min": 1,
+              "max": 8
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100,
+    "loot": [
+      "power:entities/reward_coins"
+    ]
+  },
+  "parent": "power:volcanic_inferno"
+}

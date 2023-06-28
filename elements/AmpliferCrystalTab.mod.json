@@ -1,0 +1,11 @@
+{
+  "_fv": 43,
+  "_type": "tab",
+  "definition": {
+    "name": "Amplifer Crystal",
+    "icon": {
+      "value": "CUSTOM:AmpliferCrystal"
+    },
+    "showSearch": false
+  }
+}

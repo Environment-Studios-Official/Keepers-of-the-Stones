@@ -1,0 +1,554 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 400,
+    "height": 200,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "fire_master.png",
+          "use1Xscale": false,
+          "x": 33,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_fire",
+          "text": "Fire",
+          "onClick": {
+            "name": "FireGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 51,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_choose_a_stone_to_get_it",
+          "text": {
+            "fixedValue": "Choose a stone to get it"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 26
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "air_master.png",
+          "use1Xscale": false,
+          "x": 33,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_air",
+          "text": "Air",
+          "onClick": {
+            "name": "AirGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 51,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "water_master.png",
+          "use1Xscale": false,
+          "x": 33,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_water",
+          "text": "Water",
+          "onClick": {
+            "name": "WaterGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 51,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_earth",
+          "text": "Earth",
+          "onClick": {
+            "name": "EarthGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 51,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "earth_master.png",
+          "use1Xscale": false,
+          "x": 33,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_energy",
+          "text": "Energy",
+          "onClick": {
+            "name": "EnergyGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 51,
+          "y": 161
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energy_master.png",
+          "use1Xscale": false,
+          "x": 33,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_ice",
+          "text": "Ice",
+          "onClick": {
+            "name": "IceGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 150,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ice_master.png",
+          "use1Xscale": false,
+          "x": 132,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_lightning",
+          "text": "Lightning",
+          "onClick": {
+            "name": "LightningGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 150,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lightning_master.png",
+          "use1Xscale": false,
+          "x": 132,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_sound",
+          "text": "Sound",
+          "onClick": {
+            "name": "SoundGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 150,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sound_master.png",
+          "use1Xscale": false,
+          "x": 132,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_crystal",
+          "text": "Crystal",
+          "onClick": {
+            "name": "CrystalGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 150,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "crystal_master.png",
+          "use1Xscale": false,
+          "x": 132,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_lava",
+          "text": "Lava",
+          "onClick": {
+            "name": "LavaGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 150,
+          "y": 161
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lava_master.png",
+          "use1Xscale": false,
+          "x": 132,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_rain",
+          "text": "Rain",
+          "onClick": {
+            "name": "RainGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 249,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rain_master.png",
+          "use1Xscale": false,
+          "x": 231,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_ocean",
+          "text": "Ocean",
+          "onClick": {
+            "name": "OceanGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 249,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ocean_master.png",
+          "use1Xscale": false,
+          "x": 231,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_greenery",
+          "text": "Greenery",
+          "onClick": {
+            "name": "GreeneryGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 249,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "greenery_master.png",
+          "use1Xscale": false,
+          "x": 231,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "tornado_master.png",
+          "use1Xscale": false,
+          "x": 231,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_tornado",
+          "text": "Tornado",
+          "onClick": {
+            "name": "TornadoGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 249,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_next_page",
+          "text": "Next page",
+          "onClick": {
+            "name": "NextPageGUIChoiceStone"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 330,
+          "y": 188
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_animals",
+          "text": "Animals",
+          "onClick": {
+            "name": "AnimalsGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 249,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_metal",
+          "text": "Metal",
+          "onClick": {
+            "name": "MetalGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 339,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "animals_master.png",
+          "use1Xscale": false,
+          "x": 231,
+          "y": 161
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "metal_master.png",
+          "use1Xscale": false,
+          "x": 321,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "light_master.png",
+          "use1Xscale": false,
+          "x": 321,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_light",
+          "text": "Light",
+          "onClick": {
+            "name": "LightGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 339,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_shadow",
+          "text": "Shadow",
+          "onClick": {
+            "name": "ShadowGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 339,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_vacuum",
+          "text": "Vacuum",
+          "onClick": {
+            "name": "VacuumGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 339,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_sun",
+          "text": "Sun",
+          "onClick": {
+            "name": "SunGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 339,
+          "y": 161
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "shadow_master.png",
+          "use1Xscale": false,
+          "x": 321,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "vacuum_master.png",
+          "use1Xscale": false,
+          "x": 321,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sun_master.png",
+          "use1Xscale": false,
+          "x": 321,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_13",
+          "text": {
+            "fixedValue": "1/3"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 24,
+          "y": 26
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_without_stone",
+          "text": "Without stone",
+          "onClick": {
+            "name": "WithoutStoneVar"
+          },
+          "width": 93,
+          "height": 20,
+          "x": 222,
+          "y": 188
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_random",
+          "text": "Random",
+          "onClick": {
+            "name": "RandomChoiceStone"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 150,
+          "y": 188
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

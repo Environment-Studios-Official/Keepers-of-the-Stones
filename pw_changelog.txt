@@ -1,0 +1,9 @@
+keepers-of-the-stones-3.2.0.1-beta:
+- 
+- [Bugfix] 
+
+In Dev:
+- Update all armor textures
+
+3.1.1-release:
+- [Bugfix] Fixed wooden shield position when using

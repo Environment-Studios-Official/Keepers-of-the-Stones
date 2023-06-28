@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "power:block/deepslate_amplifer_ore",
+    "up": "power:block/deepslate_amplifer_ore",
+    "north": "power:block/deepslate_amplifer_ore",
+    "east": "power:block/deepslate_amplifer_ore",
+    "south": "power:block/deepslate_amplifer_ore",
+    "west": "power:block/deepslate_amplifer_ore",
+    "particle": "power:block/deepslate_amplifer_ore"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,32 @@
+{
+  "_fv": 43,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "solar_axe",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Sun Axe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 4,
+    "efficiency": 8.0,
+    "attackSpeed": 2.0,
+    "enchantability": 2,
+    "damageVsEntity": 11.0,
+    "usageCount": 5000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntitySwing": {
+      "name": "DoubleAxeAttack"
+    }
+  }
+}

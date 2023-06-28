@@ -1,0 +1,26 @@
+{
+  "_fv": 43,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Master of Mind",
+    "icon": "mind_master.png",
+    "color": {
+      "value": -52429,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "MindMasterEffectStart"
+    },
+    "onActiveTick": {
+      "name": "MindMasterEffects"
+    },
+    "onExpired": {
+      "name": "MindMasterEffectEnd"
+    }
+  }
+}

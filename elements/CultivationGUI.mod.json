@@ -1,0 +1,247 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 354,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_select_a_plant_to_get",
+          "text": {
+            "fixedValue": "Select a plant to get"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 150,
+          "y": 43
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_water_lily",
+          "text": "Water lily",
+          "onClick": {
+            "name": "GetWaterLily"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 294,
+          "y": 170
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_oak_sapling",
+          "text": "Oak Sapling",
+          "onClick": {
+            "name": "GetOakSapling"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 42,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_birch_sapling",
+          "text": "Birch Sapling",
+          "onClick": {
+            "name": "GetBirchSapling"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 168,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_spruce_sapling",
+          "text": "Spruce Sapling",
+          "onClick": {
+            "name": "GetSpruceSapling"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 168,
+          "y": 170
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_acacia_sapling",
+          "text": "Acacia Sapling",
+          "onClick": {
+            "name": "GetAcaciaSapling"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 294,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_dark_sapling",
+          "text": "Dark sapling",
+          "onClick": {
+            "name": "GetDarkSapling"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 42,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_jungle_sapling",
+          "text": "Jungle sapling",
+          "onClick": {
+            "name": "GetJungleSapling"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 168,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_wheat",
+          "text": "Wheat",
+          "onClick": {
+            "name": "GetWheat"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 42,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_potato",
+          "text": "Potato",
+          "onClick": {
+            "name": "GetPotato"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 168,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_carrot",
+          "text": "Carrot",
+          "onClick": {
+            "name": "GetCarrot"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 294,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_beetroot",
+          "text": "Beetroot",
+          "onClick": {
+            "name": "GetBeetroot"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 42,
+          "y": 170
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_melon",
+          "text": "Melon",
+          "onClick": {
+            "name": "GetMelon"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 42,
+          "y": 143
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_pumpkin",
+          "text": "Pumpkin",
+          "onClick": {
+            "name": "GetPumpkin"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 168,
+          "y": 143
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_sugar_cane",
+          "text": "Sugar Cane",
+          "onClick": {
+            "name": "GetSugarCane"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 294,
+          "y": 143
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_bamboo",
+          "text": "Bamboo",
+          "onClick": {
+            "name": "GetBamboo"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 294,
+          "y": 89
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

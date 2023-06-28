@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:stone",
+    "minecraft:calcite",
+    "minecraft:andesite",
+    "minecraft:red_sand",
+    "minecraft:coarse_dirt",
+    "minecraft:sand",
+    "minecraft:dripstone_block",
+    "minecraft:grass_block",
+    "minecraft:dirt",
+    "minecraft:rooted_dirt",
+    "minecraft:sandstone",
+    "minecraft:snow_block",
+    "minecraft:ice"
+  ]
+}

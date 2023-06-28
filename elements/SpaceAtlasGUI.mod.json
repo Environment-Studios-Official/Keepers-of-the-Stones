@@ -1,0 +1,116 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 512,
+    "height": 512,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "space_atlas.png",
+          "use1Xscale": true,
+          "x": -31,
+          "y": -6
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_atlas_of_space_travel",
+          "text": {
+            "fixedValue": "Atlas of Space Travel"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 57,
+          "y": 17
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_moon",
+          "text": "Moon",
+          "onClick": {
+            "name": "MoonOnMe"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 42,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_earth",
+          "text": "Earth",
+          "onClick": {
+            "name": "EarthOnMe"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 42,
+          "y": 35
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_mars",
+          "text": "Mars",
+          "onClick": {
+            "name": "MarsOnMe"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 42,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_venus",
+          "text": "Venus",
+          "onClick": {
+            "name": "VenusOnMe"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 42,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_enceladus",
+          "text": "Enceladus",
+          "onClick": {
+            "name": "EnceladusOnMe"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 42,
+          "y": 140
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

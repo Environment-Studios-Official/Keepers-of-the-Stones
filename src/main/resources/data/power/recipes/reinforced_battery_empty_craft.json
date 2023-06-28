@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "power:empty_battery"
+    },
+    {
+      "item": "power:amplifer_crystal"
+    }
+  ],
+  "result": {
+    "item": "power:empty_reinforced_battery",
+    "count": 1
+  }
+}

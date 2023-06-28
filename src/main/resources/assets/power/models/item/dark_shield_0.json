@@ -1,0 +1,7 @@
+{
+  "parent": "power:custom/power_shield",
+  "textures": {
+    "layer0": "power:block/dark_shield",
+    "particle": "power:item/dark_shield"
+  }
+}

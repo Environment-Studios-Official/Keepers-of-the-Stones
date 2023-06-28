@@ -1,0 +1,26 @@
+{
+  "_fv": 43,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Master of the Golden Dust",
+    "icon": "golden_dust_master.png",
+    "color": {
+      "value": -3368704,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "GoldenDustEffectStart"
+    },
+    "onActiveTick": {
+      "name": "GoldenDustEffects"
+    },
+    "onExpired": {
+      "name": "GoldenDustEffectEnd"
+    }
+  }
+}

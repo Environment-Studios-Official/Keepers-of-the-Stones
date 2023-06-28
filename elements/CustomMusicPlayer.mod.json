@@ -1,0 +1,206 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 375,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_music_player",
+          "text": {
+            "fixedValue": "Music Player"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_stop",
+          "text": "Stop",
+          "onClick": {
+            "name": "StopSound"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 303,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_1",
+          "text": "1",
+          "onClick": {
+            "name": "PlayMusic1"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 87,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_2",
+          "text": "2",
+          "onClick": {
+            "name": "PlayMusic2"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 123,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_3",
+          "text": "3",
+          "onClick": {
+            "name": "PlayMusic3"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 159,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_4",
+          "text": "4",
+          "onClick": {
+            "name": "PlayMusic4"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 195,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_5",
+          "text": "5",
+          "onClick": {
+            "name": "PlayMusic5"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 231,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_6",
+          "text": "6",
+          "onClick": {
+            "name": "PlayMusic6"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 87,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_7",
+          "text": "7",
+          "onClick": {
+            "name": "PlayMusic7"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 123,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_8",
+          "text": "8",
+          "onClick": {
+            "name": "PlayMusic8"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 159,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_9",
+          "text": "9",
+          "onClick": {
+            "name": "PlayMusic9"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 195,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_10",
+          "text": "10",
+          "onClick": {
+            "name": "PlayMusic10"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 231,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_this_music_works_only_with_a_res",
+          "text": {
+            "fixedValue": "This music works only with a resource pack that adds music!"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "x": 51,
+          "y": 179
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}
