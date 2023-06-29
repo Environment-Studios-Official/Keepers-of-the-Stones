@@ -20,7 +20,8 @@ import java.util.List;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class PowerModShieldProperties {
 	private static final List<RegistryObject<Item>> shields = List.of(PowerModItems.SHIELD_OF_EARTH, PowerModItems.ICE_SHIELD, PowerModItems.SOUND_BARRIER, PowerModItems.ENERGY_SHIELD, PowerModItems.CRYSTAL_SHIELD, PowerModItems.MAGMA_SHIELD,
-			PowerModItems.CORAL_SHIELD, PowerModItems.WOODEN_SHIELD, PowerModItems.IRON_SHIELD, PowerModItems.TECHNOBARRIER, PowerModItems.AMBER_SHIELD, PowerModItems.SAND_SHIELD, PowerModItems.GOLDEN_SHIELD, PowerModItems.DARK_SHIELD);
+			PowerModItems.CORAL_SHIELD, PowerModItems.WOODEN_SHIELD, PowerModItems.IRON_SHIELD, PowerModItems.TECHNOBARRIER, PowerModItems.AMBER_SHIELD, PowerModItems.SAND_SHIELD, PowerModItems.GOLDEN_SHIELD, PowerModItems.DARK_SHIELD,
+			PowerModItems.SCULK_SHIELD);
 
 	@SubscribeEvent
 	public static void initShields(final FMLClientSetupEvent event) {

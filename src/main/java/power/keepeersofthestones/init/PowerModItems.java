@@ -149,6 +149,7 @@ import power.keepeersofthestones.item.ShadowInvisibleItem;
 import power.keepeersofthestones.item.ShadowBatteryItem;
 import power.keepeersofthestones.item.ShadowBallItem;
 import power.keepeersofthestones.item.ScytheItem;
+import power.keepeersofthestones.item.SculkShieldItem;
 import power.keepeersofthestones.item.SandStoneItem;
 import power.keepeersofthestones.item.SandShieldItem;
 import power.keepeersofthestones.item.SandReinforcedBatteryItem;
@@ -1021,6 +1022,7 @@ public class PowerModItems {
 	public static final RegistryObject<Item> DARK_SHIELD = REGISTRY.register("dark_shield", () -> new DarkShieldItem());
 	public static final RegistryObject<Item> BIOKINESIS = REGISTRY.register("biokinesis", () -> new BiokinesisItem());
 	public static final RegistryObject<Item> AMPLIFER_RING = REGISTRY.register("amplifer_ring", () -> new AmpliferRingItem());
+	public static final RegistryObject<Item> SCULK_SHIELD = REGISTRY.register("sculk_shield", () -> new SculkShieldItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

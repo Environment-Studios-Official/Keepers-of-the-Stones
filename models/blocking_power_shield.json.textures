@@ -83,6 +83,12 @@
         "layer0": "dark_shield"
       },
       "name": "dark"
+    },
+    "sculk": {
+      "map": {
+        "layer0": "sculk_shield"
+      },
+      "name": "sculk"
     }
   }
 }

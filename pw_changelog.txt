@@ -7,4 +7,4 @@ In Dev:
 
 3.1.2-release:
 - 
-- [Bugfix] Fixed the recharge effect after the death of the mercury master
+- [Bugfix] 
