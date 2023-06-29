@@ -14,19 +14,14 @@ public class VacuumTPProcedure {
 		if (entity == null)
 			return;
 		PowerMod.queueServerWork(3, () -> {
-			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).vacuum) {
-				{
-					Entity _ent = entity;
-					_ent.teleportTo(x, (y * (-65)), z);
-					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport(x, (y * (-65)), z, _ent.getYRot(), _ent.getXRot());
-				}
-			} else if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).space) {
-				{
-					Entity _ent = entity;
-					_ent.teleportTo(x, (y * (-65)), z);
-					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport(x, (y * (-65)), z, _ent.getYRot(), _ent.getXRot());
+			if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).vacuum == false) {
+				if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).space == false) {
+					{
+						Entity _ent = entity;
+						_ent.teleportTo(x, (y * (-65)), z);
+						if (_ent instanceof ServerPlayer _serverPlayer)
+							_serverPlayer.connection.teleport(x, (y * (-65)), z, _ent.getYRot(), _ent.getXRot());
+					}
 				}
 			}
 		});
