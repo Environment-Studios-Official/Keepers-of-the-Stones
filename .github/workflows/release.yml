@@ -42,7 +42,7 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build
-        run: ./gradlew clean build
+        run: ./gradlew build
 
       - name: Publish mod to GitHub, CurseForge and Modrinth
         id: publish
