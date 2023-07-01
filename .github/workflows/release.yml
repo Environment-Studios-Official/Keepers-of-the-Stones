@@ -10,8 +10,8 @@ on:
 env:                                              
   MINECRAFT_VERSION: 1.19.4                       
   JAVA_VERSION: 17      
-  VERSION: 3.1.10
-  RELEASE_NAME: Keepers of the Stones 3.1.10
+  VERSION: 3.2.0
+  RELEASE_NAME: Keepers of the Stones 3.2.0
 
 jobs:
   if_merged:

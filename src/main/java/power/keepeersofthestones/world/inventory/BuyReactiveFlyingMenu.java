@@ -77,6 +77,8 @@ public class BuyReactiveFlyingMenu extends AbstractContainerMenu implements Supp
 			}
 		}
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 191, 35) {
+			private final int slot = 1;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return PowerModItems.ELEMENTAL_COIN.get() == stack.getItem();
