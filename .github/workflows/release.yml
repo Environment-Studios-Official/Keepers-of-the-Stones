@@ -4,9 +4,9 @@
 name: Release
 
 on:
-  pull_request:
-    types:
-      - closed
+  push:
+    branches:
+      - "main"
 env:                                              
   MINECRAFT_VERSION: 1.19.4                       
   JAVA_VERSION: 17      
