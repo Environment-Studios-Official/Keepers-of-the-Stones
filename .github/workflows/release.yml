@@ -6,7 +6,7 @@ name: Release
 on:
   push:
     branches:
-      - "main"
+      - "master"
 env:                                              
   MINECRAFT_VERSION: 1.19.4                       
   JAVA_VERSION: 17      
