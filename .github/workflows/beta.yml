@@ -1,17 +1,17 @@
 # Automatically builds and publishes the mod when a new release is created on GitHub.
 # It uploads the mod to GitHub, CurseForge and Modrinth.
 
-name: Release
+name: Beta
 
 on:
   push:
     branches:
-      - "master"
+      - "beta"
 env:                                              
   MINECRAFT_VERSION: 1.19.4                       
   JAVA_VERSION: 17      
-  VERSION: 3.2.0
-  RELEASE_NAME: Keepers of the Stones 3.2.0
+  VERSION: 3.2.0.1
+  RELEASE_NAME: Keepers of the Stones 3.2.0.1 Beta
 
 jobs:
   build:
@@ -49,7 +49,7 @@ jobs:
           
           name: "${{env.RELEASE_NAME}}"                             
           version: "${{env.VERSION}}"
-          version-type: release
+          version-type: beta
           changelog-file: CHANGELOG.md                                      
 
           loaders: forge
