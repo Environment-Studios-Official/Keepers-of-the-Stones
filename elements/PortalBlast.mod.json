@@ -1,12 +1,14 @@
 {
-  "_fv": 43,
+  "_fv": 44,
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
     "texture": "portal_blast",
     "customModelName": "Normal",
     "name": "Portal Blaster",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": ""
+    },
     "creativeTab": {
       "value": "No creative tab entry"
     },

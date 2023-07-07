@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 44,
   "_type": "tool",
   "definition": {
     "renderType": 0,
@@ -8,7 +8,9 @@
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Scythe",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": ""
+    },
     "creativeTab": {
       "value": "No creative tab entry"
     },

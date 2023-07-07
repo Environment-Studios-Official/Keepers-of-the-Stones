@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 44,
   "_type": "block",
   "definition": {
     "texture": "blue_portal",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Blue Portal",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": ""
+    },
     "hardness": 90.0,
     "resistance": 10.0,
     "hasGravity": false,

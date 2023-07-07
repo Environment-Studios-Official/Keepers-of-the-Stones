@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 44,
   "_type": "fluid",
   "definition": {
     "name": "Mercury Liquid",
@@ -30,7 +30,9 @@
       "value": ""
     },
     "rarity": "COMMON",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": ""
+    },
     "resistance": 1000000.0,
     "luminance": 0,
     "lightOpacity": 15,

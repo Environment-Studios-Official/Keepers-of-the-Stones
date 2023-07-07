@@ -15,8 +15,10 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 import java.util.List;
@@ -25,6 +27,11 @@ import java.util.Collections;
 public class BlackHoleBlockBlock extends Block {
 	public BlackHoleBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.SCULK).sound(SoundType.SCULK_SENSOR).strength(8f, 50f).noCollission().friction(0.1f).speedFactor(0f).jumpFactor(0f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemstack, BlockGetter blockGetter, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, blockGetter, list, flag);
 	}
 
 	@Override

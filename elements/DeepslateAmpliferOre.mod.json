@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 44,
   "_type": "block",
   "definition": {
     "texture": "deepslate_amplifer_ore",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Deepslate Amplifer Ore",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": ""
+    },
     "hardness": 1.8,
     "resistance": 10.0,
     "hasGravity": false,

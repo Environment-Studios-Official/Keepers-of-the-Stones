@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 44,
   "_type": "block",
   "definition": {
     "texture": "detonator_tnt_top",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Detonator TNT",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": ""
+    },
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,

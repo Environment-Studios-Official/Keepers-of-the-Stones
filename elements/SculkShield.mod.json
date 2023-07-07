@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 44,
   "_type": "tool",
   "definition": {
     "renderType": 1,
@@ -8,7 +8,9 @@
     "customModelName": "power_shield:sculk",
     "blockingModelName": "blocking_power_shield:sculk",
     "name": "Sculk Shield",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": ""
+    },
     "creativeTab": {
       "value": "No creative tab entry"
     },

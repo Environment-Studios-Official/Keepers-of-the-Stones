@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 44,
   "_type": "block",
   "definition": {
     "texture": "blackholeblock",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Black Hole Block",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": ""
+    },
     "hardness": 8.0,
     "resistance": 50.0,
     "hasGravity": false,

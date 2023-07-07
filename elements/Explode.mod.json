@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 44,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -18,10 +18,18 @@
     "bodyName": "Explode Chestplate",
     "leggingsName": "Explode Leggings",
     "bootsName": "Explode Boots",
-    "helmetSpecialInfo": [],
-    "bodySpecialInfo": [],
-    "leggingsSpecialInfo": [],
-    "bootsSpecialInfo": [],
+    "helmetSpecialInformation": {
+      "fixedValue": ""
+    },
+    "bodySpecialInformation": {
+      "fixedValue": ""
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": ""
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": ""
+    },
     "helmetModelName": "Default",
     "helmetModelPart": "Helmet",
     "helmetModelTexture": "From armor",

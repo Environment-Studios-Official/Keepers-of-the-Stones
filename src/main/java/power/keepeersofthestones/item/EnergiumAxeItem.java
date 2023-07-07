@@ -7,12 +7,16 @@ import power.keepeersofthestones.init.PowerModItems;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.network.chat.Component;
+
+import java.util.List;
 
 public class EnergiumAxeItem extends AxeItem {
 	public EnergiumAxeItem() {
@@ -48,6 +52,11 @@ public class EnergiumAxeItem extends AxeItem {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
 		EnchantProcedure.execute(entity, itemstack);
 		return retval;
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
 	}
 
 	@Override
