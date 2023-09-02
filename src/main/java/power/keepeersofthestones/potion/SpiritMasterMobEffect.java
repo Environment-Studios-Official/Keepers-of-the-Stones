@@ -22,7 +22,7 @@ public class SpiritMasterMobEffect extends MobEffect {
 
 	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
-		SpiritMasterEffectStartProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		SpiritMasterEffectStartProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override
@@ -33,7 +33,7 @@ public class SpiritMasterMobEffect extends MobEffect {
 	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		SpiritMasterEffectEndProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		SpiritMasterEffectEndProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override

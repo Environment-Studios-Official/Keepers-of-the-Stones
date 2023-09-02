@@ -22,7 +22,7 @@ public class CrystalMasterMobEffect extends MobEffect {
 
 	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
-		CrystalMasterEffectStartProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		CrystalMasterEffectStartProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override
@@ -33,7 +33,7 @@ public class CrystalMasterMobEffect extends MobEffect {
 	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		CrystalMasterEffectEndProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		CrystalMasterEffectEndProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override

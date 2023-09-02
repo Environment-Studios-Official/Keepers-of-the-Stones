@@ -82,7 +82,7 @@ public class TigerClawEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	public static TigerClawEntity shoot(LivingEntity entity, LivingEntity target) {
-		TigerClawEntity entityarrow = new TigerClawEntity(PowerModEntities.TIGER_CLAW.get(), entity, entity.level);
+		TigerClawEntity entityarrow = new TigerClawEntity(PowerModEntities.TIGER_CLAW.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
@@ -91,8 +91,8 @@ public class TigerClawEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setBaseDamage(9);
 		entityarrow.setKnockback(0);
 		entityarrow.setCritArrow(false);
-		entity.level.addFreshEntity(entityarrow);
-		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
+		entity.level().addFreshEntity(entityarrow);
+		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

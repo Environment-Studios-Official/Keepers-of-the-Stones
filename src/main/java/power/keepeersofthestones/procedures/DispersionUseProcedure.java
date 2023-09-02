@@ -30,7 +30,7 @@ public class DispersionUseProcedure {
 						_player.getCooldowns().addCooldown(itemstack.getItem(), 400);
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, x, y, z, 5, 3, 3, 3, 1);
-					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 200, 254, false, false));
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = new ItemStack(PowerModItems.SMOKE_HELMET.get());
@@ -64,37 +64,37 @@ public class DispersionUseProcedure {
 							}
 							{
 								Entity _ent = entity;
-								if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+								if (!_ent.level().isClientSide() && _ent.getServer() != null) {
 									_ent.getServer().getCommands()
-											.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-													_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent),
+											.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+													_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent),
 													"item replace entity @s armor.head with power:smoke_helmet{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 								}
 							}
 							{
 								Entity _ent = entity;
-								if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+								if (!_ent.level().isClientSide() && _ent.getServer() != null) {
 									_ent.getServer().getCommands()
-											.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-													_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent),
+											.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+													_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent),
 													"item replace entity @s armor.chest with power:smoke_chestplate{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 								}
 							}
 							{
 								Entity _ent = entity;
-								if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+								if (!_ent.level().isClientSide() && _ent.getServer() != null) {
 									_ent.getServer().getCommands()
-											.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-													_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent),
+											.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+													_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent),
 													"item replace entity @s armor.legs with power:smoke_leggings{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 								}
 							}
 							{
 								Entity _ent = entity;
-								if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+								if (!_ent.level().isClientSide() && _ent.getServer() != null) {
 									_ent.getServer().getCommands()
-											.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-													_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent),
+											.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+													_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent),
 													"item replace entity @s armor.feet with power:smoke_boots{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 								}
 							}
@@ -107,7 +107,7 @@ public class DispersionUseProcedure {
 						_player.getCooldowns().addCooldown(itemstack.getItem(), 400);
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, x, y, z, 5, 3, 3, 3, 1);
-					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 200, 254, false, false));
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = new ItemStack(PowerModItems.GOLDEN_DUST_HELMET.get());
@@ -135,39 +135,40 @@ public class DispersionUseProcedure {
 						if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).shadow) {
 							{
 								Entity _ent = entity;
-								if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+								if (!_ent.level().isClientSide() && _ent.getServer() != null) {
 									_ent.getServer().getCommands()
-											.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-													_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent),
+											.performPrefixedCommand(
+													new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(),
+															_ent.getDisplayName(), _ent.level().getServer(), _ent),
 													"item replace entity @s armor.head with power:golden_dust_helmet{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 								}
 							}
 							{
 								Entity _ent = entity;
-								if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+								if (!_ent.level().isClientSide() && _ent.getServer() != null) {
 									_ent.getServer().getCommands()
 											.performPrefixedCommand(
-													new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
-															_ent.getDisplayName(), _ent.level.getServer(), _ent),
+													new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(),
+															_ent.getDisplayName(), _ent.level().getServer(), _ent),
 													"item replace entity @s armor.chest with power:golden_dust_chestplate{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 								}
 							}
 							{
 								Entity _ent = entity;
-								if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+								if (!_ent.level().isClientSide() && _ent.getServer() != null) {
 									_ent.getServer().getCommands()
 											.performPrefixedCommand(
-													new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
-															_ent.getDisplayName(), _ent.level.getServer(), _ent),
+													new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(),
+															_ent.getDisplayName(), _ent.level().getServer(), _ent),
 													"item replace entity @s armor.legs with power:golden_dust_leggings{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 								}
 							}
 							{
 								Entity _ent = entity;
-								if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+								if (!_ent.level().isClientSide() && _ent.getServer() != null) {
 									_ent.getServer().getCommands()
-											.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-													_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent),
+											.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+													_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent),
 													"item replace entity @s armor.feet with power:golden_dust_boots{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 								}
 							}
@@ -181,7 +182,7 @@ public class DispersionUseProcedure {
 					_player.getCooldowns().addCooldown(itemstack.getItem(), 400);
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, x, y, z, 5, 3, 3, 3, 1);
-				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 200, 254, false, false));
 				if (entity instanceof Player _player) {
 					ItemStack _stktoremove = new ItemStack(PowerModItems.AMBER_HELMET.get());
@@ -209,33 +210,38 @@ public class DispersionUseProcedure {
 					if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).shadow) {
 						{
 							Entity _ent = entity;
-							if (!_ent.level.isClientSide() && _ent.getServer() != null) {
-								_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-										_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent),
-										"item replace entity @s armor.head with power:amber_helmet{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+							if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+								_ent.getServer().getCommands()
+										.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+												_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent),
+												"item replace entity @s armor.head with power:amber_helmet{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 							}
 						}
 						{
 							Entity _ent = entity;
-							if (!_ent.level.isClientSide() && _ent.getServer() != null) {
-								_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-										_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent),
-										"item replace entity @s armor.chest with power:amber_chestplate{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+							if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+								_ent.getServer().getCommands()
+										.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+												_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent),
+												"item replace entity @s armor.chest with power:amber_chestplate{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 							}
 						}
 						{
 							Entity _ent = entity;
-							if (!_ent.level.isClientSide() && _ent.getServer() != null) {
-								_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-										_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent),
-										"item replace entity @s armor.legs with power:amber_leggings{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+							if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+								_ent.getServer().getCommands()
+										.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+												_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent),
+												"item replace entity @s armor.legs with power:amber_leggings{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 							}
 						}
 						{
 							Entity _ent = entity;
-							if (!_ent.level.isClientSide() && _ent.getServer() != null) {
-								_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-										_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "item replace entity @s armor.feet with power:amber_boots{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+							if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+								_ent.getServer().getCommands()
+										.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+												_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent),
+												"item replace entity @s armor.feet with power:amber_boots{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 							}
 						}
 					}

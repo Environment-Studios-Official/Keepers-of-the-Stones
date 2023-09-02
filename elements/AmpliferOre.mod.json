@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 48,
   "_type": "block",
   "definition": {
     "texture": "amplifer_ore",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Amplifer Ore",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": ""
+    },
     "hardness": 1.5,
     "resistance": 10.0,
     "hasGravity": false,

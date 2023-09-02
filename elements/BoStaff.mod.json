@@ -1,18 +1,20 @@
 {
-  "_fv": 43,
+  "_fv": 48,
   "_type": "tool",
   "definition": {
+    "toolType": "Sword",
     "renderType": 0,
     "blockingRenderType": 0,
     "texture": "bo_staff",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Bo Staff",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": ""
+    },
     "creativeTab": {
       "value": "No creative tab entry"
     },
-    "toolType": "Sword",
     "harvestLevel": 8,
     "efficiency": 24.0,
     "attackSpeed": 2.0,

@@ -22,7 +22,7 @@ public class GoldenDustMasterMobEffect extends MobEffect {
 
 	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
-		GoldenDustEffectStartProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		GoldenDustEffectStartProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override
@@ -33,7 +33,7 @@ public class GoldenDustMasterMobEffect extends MobEffect {
 	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		GoldenDustEffectEndProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		GoldenDustEffectEndProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override

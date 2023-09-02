@@ -31,7 +31,7 @@ public class EBMoonMenu extends AbstractContainerMenu implements Supplier<Map<In
 	public EBMoonMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
 		super(PowerModMenus.EB_MOON.get(), id);
 		this.entity = inv.player;
-		this.world = inv.player.level;
+		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(0);
 		BlockPos pos = null;
 		if (extraData != null) {

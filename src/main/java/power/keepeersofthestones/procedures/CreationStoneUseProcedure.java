@@ -21,13 +21,13 @@ public class CreationStoneUseProcedure {
 				if (!(entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(PowerModMobEffects.RECHARGE_CREATION_STONE.get()))) {
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0) == 0 && entity instanceof Player) {
 						if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).power_level == 2) {
-							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(PowerModMobEffects.CREATION_MASTER.get(), 18000, 0, false, false));
 						} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).power_level >= 3) {
-							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(PowerModMobEffects.CREATION_MASTER.get(), 24000, 0, false, false));
 						} else {
-							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(PowerModMobEffects.CREATION_MASTER.get(), 12000, 0, false, false));
 						}
 						PowerMod.queueServerWork(2, () -> {
@@ -47,7 +47,7 @@ public class CreationStoneUseProcedure {
 								ItemStack _stktoremove = new ItemStack(PowerModItems.DESTRUCTION_STONE.get());
 								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 							}
-							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(PowerModMobEffects.MERGE_BALANCE.get(), 18000, 0, false, false));
 						} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).power_level >= 3) {
 							if (entity instanceof LivingEntity _entity)
@@ -58,7 +58,7 @@ public class CreationStoneUseProcedure {
 								ItemStack _stktoremove = new ItemStack(PowerModItems.DESTRUCTION_STONE.get());
 								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 							}
-							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(PowerModMobEffects.MERGE_BALANCE.get(), 24000, 0, false, false));
 						} else {
 							if (entity instanceof LivingEntity _entity)
@@ -69,7 +69,7 @@ public class CreationStoneUseProcedure {
 								ItemStack _stktoremove = new ItemStack(PowerModItems.DESTRUCTION_STONE.get());
 								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 							}
-							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(PowerModMobEffects.MERGE_BALANCE.get(), 12000, 0, false, false));
 						}
 						PowerMod.queueServerWork(2, () -> {

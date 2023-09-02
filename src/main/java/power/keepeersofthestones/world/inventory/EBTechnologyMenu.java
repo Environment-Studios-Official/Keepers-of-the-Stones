@@ -31,7 +31,7 @@ public class EBTechnologyMenu extends AbstractContainerMenu implements Supplier<
 	public EBTechnologyMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
 		super(PowerModMenus.EB_TECHNOLOGY.get(), id);
 		this.entity = inv.player;
-		this.world = inv.player.level;
+		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(0);
 		BlockPos pos = null;
 		if (extraData != null) {

@@ -13,7 +13,7 @@ public class TimeCheckpointProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof ServerPlayer _serverPlayer)
-			_serverPlayer.setRespawnPosition(_serverPlayer.level.dimension(), BlockPos.containing(x, y + 1, z), _serverPlayer.getYRot(), true, false);
+			_serverPlayer.setRespawnPosition(_serverPlayer.level().dimension(), BlockPos.containing(x, y + 1, z), _serverPlayer.getYRot(), true, false);
 		{
 			double _setval = y + 1;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -37,7 +37,7 @@ public class TimeCheckpointProcedure {
 		}
 		if (entity instanceof Player _player)
 			_player.closeContainer();
-		if (entity instanceof Player _player && !_player.level.isClientSide())
+		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal("The return point has been successfully set."), false);
 	}
 }

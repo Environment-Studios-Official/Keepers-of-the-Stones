@@ -20,5 +20,6 @@
         }
       ]
     }
-  ]
+  ],
+  "random_sequence": "power:entities/elemental_book_give"
 }

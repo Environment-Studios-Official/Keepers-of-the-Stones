@@ -24,9 +24,9 @@ public class WildWaterBatteryUseProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
-				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.WATER_MASTER.get(), 6000, 0, false, false));
-				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.WILD_CALL.get(), 6000, 0, false, false));
 				PowerMod.queueServerWork(2, () -> {
 					itemstack.shrink(1);

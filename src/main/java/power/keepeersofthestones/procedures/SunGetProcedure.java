@@ -46,7 +46,7 @@ public class SunGetProcedure {
 					}
 				}
 			} else {
-				if (entity instanceof Player _player && !_player.level.isClientSide())
+				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("\u00A74This stone is occupied by another player, but you can choose another one."), false);
 			}
 		}

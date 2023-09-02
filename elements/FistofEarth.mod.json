@@ -1,18 +1,20 @@
 {
-  "_fv": 43,
+  "_fv": 48,
   "_type": "tool",
   "definition": {
+    "toolType": "Spade",
     "renderType": 0,
     "blockingRenderType": 0,
     "texture": "fist_earth",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Fist of Earth",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": ""
+    },
     "creativeTab": {
       "value": "No creative tab entry"
     },
-    "toolType": "Spade",
     "harvestLevel": 1,
     "efficiency": 4.0,
     "attackSpeed": 2.0,

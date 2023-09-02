@@ -74,7 +74,7 @@ public class MagicFireballEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void tick() {
 		super.tick();
-		MagicFireballParticlesProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		MagicFireballParticlesProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 		if (this.inGround)
 			this.discard();
 	}
@@ -92,7 +92,7 @@ public class MagicFireballEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	public static MagicFireballEntity shoot(LivingEntity entity, LivingEntity target) {
-		MagicFireballEntity entityarrow = new MagicFireballEntity(PowerModEntities.MAGIC_FIREBALL.get(), entity, entity.level);
+		MagicFireballEntity entityarrow = new MagicFireballEntity(PowerModEntities.MAGIC_FIREBALL.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
@@ -101,8 +101,8 @@ public class MagicFireballEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setBaseDamage(8);
 		entityarrow.setKnockback(2);
 		entityarrow.setCritArrow(false);
-		entity.level.addFreshEntity(entityarrow);
-		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.firecharge.use")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
+		entity.level().addFreshEntity(entityarrow);
+		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.firecharge.use")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

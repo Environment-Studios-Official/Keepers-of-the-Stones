@@ -26,13 +26,13 @@ public class FlyingMobEffect extends MobEffect {
 
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		FireFlyingTickProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		FireFlyingTickProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		FireFlyingEndProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		FireFlyingEndProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override

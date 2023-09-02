@@ -11,10 +11,10 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.GuiGraphics;
 
 import java.util.HashMap;
 
-import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class EBSunScreen extends AbstractContainerScreen<EBSunMenu> {
@@ -36,29 +36,25 @@ public class EBSunScreen extends AbstractContainerScreen<EBSunMenu> {
 	}
 
 	@Override
-	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(ms);
-		super.render(ms, mouseX, mouseY, partialTicks);
-		this.renderTooltip(ms, mouseX, mouseY);
+	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+		this.renderBackground(guiGraphics);
+		super.render(guiGraphics, mouseX, mouseY, partialTicks);
+		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(PoseStack ms, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/book_of_elements_book.png"));
-		this.blit(ms, this.leftPos + -244, this.topPos + -127, 0, 0, 512, 256, 512, 256);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/book_of_elements_book.png"), this.leftPos + -244, this.topPos + -127, 0, 0, 512, 256, 512, 256);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/sun_stone.png"));
-		this.blit(ms, this.leftPos + -104, this.topPos + -109, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/sun_stone.png"), this.leftPos + -104, this.topPos + -109, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/sun_master.png"));
-		this.blit(ms, this.leftPos + 93, this.topPos + -109, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/sun_master.png"), this.leftPos + 93, this.topPos + -109, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/sun_element.png"));
-		this.blit(ms, this.leftPos + 71, this.topPos + -85, 0, 0, 53, 127, 53, 127);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/sun_element.png"), this.leftPos + 71, this.topPos + -85, 0, 0, 53, 127, 53, 127);
 
 		RenderSystem.disableBlend();
 	}
@@ -78,10 +74,10 @@ public class EBSunScreen extends AbstractContainerScreen<EBSunMenu> {
 	}
 
 	@Override
-	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.power.eb_sun.label_class_great_unique"), -162, -85, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.power.eb_sun.label_element_sun"), -162, -67, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.power.eb_sun.label_force_healing"), -162, -49, -12829636);
+	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.power.eb_sun.label_class_great_unique"), -162, -85, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.power.eb_sun.label_element_sun"), -162, -67, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.power.eb_sun.label_force_healing"), -162, -49, -12829636, false);
 	}
 
 	@Override

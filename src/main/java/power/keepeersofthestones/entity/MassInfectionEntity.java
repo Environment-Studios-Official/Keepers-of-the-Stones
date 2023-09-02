@@ -68,13 +68,13 @@ public class MassInfectionEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		MassInfectionOneEntityProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity());
+		MassInfectionOneEntityProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity());
 	}
 
 	@Override
 	public void tick() {
 		super.tick();
-		MAssInfectionTickProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this.getOwner());
+		MAssInfectionTickProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this.getOwner());
 		if (this.inGround)
 			this.discard();
 	}
@@ -92,7 +92,7 @@ public class MassInfectionEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	public static MassInfectionEntity shoot(LivingEntity entity, LivingEntity target) {
-		MassInfectionEntity entityarrow = new MassInfectionEntity(PowerModEntities.MASS_INFECTION.get(), entity, entity.level);
+		MassInfectionEntity entityarrow = new MassInfectionEntity(PowerModEntities.MASS_INFECTION.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
@@ -101,8 +101,8 @@ public class MassInfectionEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setBaseDamage(0);
 		entityarrow.setKnockback(0);
 		entityarrow.setCritArrow(false);
-		entity.level.addFreshEntity(entityarrow);
-		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
+		entity.level().addFreshEntity(entityarrow);
+		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

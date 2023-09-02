@@ -29,7 +29,7 @@ public class LevelSetProcedure {
 		} catch (CommandSyntaxException e) {
 			e.printStackTrace();
 		}
-		if (entity instanceof Player _player && !_player.level.isClientSide())
+		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal("The player has successfully set the level!"), false);
 	}
 }

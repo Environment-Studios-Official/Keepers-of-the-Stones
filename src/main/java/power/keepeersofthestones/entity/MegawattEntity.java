@@ -67,7 +67,7 @@ public class MegawattEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		MegawattInEntityProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		MegawattInEntityProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override
@@ -90,7 +90,7 @@ public class MegawattEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	public static MegawattEntity shoot(LivingEntity entity, LivingEntity target) {
-		MegawattEntity entityarrow = new MegawattEntity(PowerModEntities.MEGAWATT.get(), entity, entity.level);
+		MegawattEntity entityarrow = new MegawattEntity(PowerModEntities.MEGAWATT.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
@@ -99,8 +99,8 @@ public class MegawattEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setBaseDamage(4);
 		entityarrow.setKnockback(0);
 		entityarrow.setCritArrow(false);
-		entity.level.addFreshEntity(entityarrow);
-		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
+		entity.level().addFreshEntity(entityarrow);
+		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

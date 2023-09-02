@@ -1,12 +1,14 @@
 {
-  "_fv": 43,
+  "_fv": 48,
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
     "texture": "piece_earth",
     "customModelName": "Normal",
     "name": "Piece of the Earth",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": ""
+    },
     "creativeTab": {
       "value": "No creative tab entry"
     },

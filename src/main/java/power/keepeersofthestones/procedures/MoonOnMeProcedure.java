@@ -22,9 +22,9 @@ public class MoonOnMeProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof ServerPlayer _player && !_player.level.isClientSide()) {
+		if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
 			ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("power:moon"));
-			if (_player.level.dimension() == destinationType)
+			if (_player.level().dimension() == destinationType)
 				return;
 			ServerLevel nextLevel = _player.server.getLevel(destinationType);
 			if (nextLevel != null) {
@@ -38,12 +38,12 @@ public class MoonOnMeProcedure {
 		}
 		{
 			Entity _ent = entity;
-			if (!_ent.level.isClientSide() && _ent.getServer() != null) {
-				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-						_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "tp ~ 256 ~");
+			if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+						_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "tp ~ 256 ~");
 			}
 		}
-		if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 600, 0, false, false));
 	}
 }

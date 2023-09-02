@@ -38,9 +38,9 @@ public class FlyOnVenusProcedure {
 		}
 		PowerMod.queueServerWork(200, () -> {
 			PowerMod.queueServerWork(20, () -> {
-				if (entity instanceof ServerPlayer _player && !_player.level.isClientSide()) {
+				if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
 					ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("power:venus"));
-					if (_player.level.dimension() == destinationType)
+					if (_player.level().dimension() == destinationType)
 						return;
 					ServerLevel nextLevel = _player.server.getLevel(destinationType);
 					if (nextLevel != null) {
@@ -52,7 +52,7 @@ public class FlyOnVenusProcedure {
 						_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
 					}
 				}
-				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 400, 1));
 			});
 		});

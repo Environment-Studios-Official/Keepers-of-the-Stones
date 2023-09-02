@@ -1,18 +1,20 @@
 {
-  "_fv": 43,
+  "_fv": 48,
   "_type": "tool",
   "definition": {
+    "toolType": "Axe",
     "renderType": 0,
     "blockingRenderType": 0,
     "texture": "musical_axe",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Musical Axe",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": ""
+    },
     "creativeTab": {
       "value": "No creative tab entry"
     },
-    "toolType": "Axe",
     "harvestLevel": 1,
     "efficiency": 12.0,
     "attackSpeed": 2.0,

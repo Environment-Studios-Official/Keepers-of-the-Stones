@@ -37,7 +37,7 @@ public class BuyLevel2Menu extends AbstractContainerMenu implements Supplier<Map
 	public BuyLevel2Menu(int id, Inventory inv, FriendlyByteBuf extraData) {
 		super(PowerModMenus.BUY_LEVEL_2.get(), id);
 		this.entity = inv.player;
-		this.world = inv.player.level;
+		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(2);
 		BlockPos pos = null;
 		if (extraData != null) {
@@ -67,7 +67,7 @@ public class BuyLevel2Menu extends AbstractContainerMenu implements Supplier<Map
 						this.bound = true;
 					});
 			} else { // might be bound to block
-				BlockEntity ent = inv.player != null ? inv.player.level.getBlockEntity(pos) : null;
+				BlockEntity ent = inv.player != null ? inv.player.level().getBlockEntity(pos) : null;
 				if (ent != null) {
 					ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						this.internal = capability;
@@ -77,6 +77,8 @@ public class BuyLevel2Menu extends AbstractContainerMenu implements Supplier<Map
 			}
 		}
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 191, 35) {
+			private final int slot = 1;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return PowerModItems.ELEMENTAL_COIN.get() == stack.getItem();

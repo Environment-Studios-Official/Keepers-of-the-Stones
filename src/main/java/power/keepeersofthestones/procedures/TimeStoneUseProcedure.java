@@ -21,13 +21,13 @@ public class TimeStoneUseProcedure {
 				if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).active) {
 					if (!(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(PowerModMobEffects.RECHARGE_TIME_STONE.get()))) {
 						if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).power_level == 2) {
-							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(PowerModMobEffects.TIME_MASTER_EFFECT.get(), 18000, 0, false, false));
 						} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).power_level >= 3) {
-							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(PowerModMobEffects.TIME_MASTER_EFFECT.get(), 24000, 0, false, false));
 						} else {
-							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(PowerModMobEffects.TIME_MASTER_EFFECT.get(), 12000, 0, false, false));
 						}
 						PowerMod.queueServerWork(2, () -> {

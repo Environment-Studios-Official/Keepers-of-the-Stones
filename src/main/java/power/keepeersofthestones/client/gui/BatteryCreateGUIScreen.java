@@ -9,10 +9,10 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.GuiGraphics;
 
 import java.util.HashMap;
 
-import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class BatteryCreateGUIScreen extends AbstractContainerScreen<BatteryCreateGUIMenu> {
@@ -35,28 +35,24 @@ public class BatteryCreateGUIScreen extends AbstractContainerScreen<BatteryCreat
 	private static final ResourceLocation texture = new ResourceLocation("power:textures/screens/battery_create_gui.png");
 
 	@Override
-	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(ms);
-		super.render(ms, mouseX, mouseY, partialTicks);
-		this.renderTooltip(ms, mouseX, mouseY);
+	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+		this.renderBackground(guiGraphics);
+		super.render(guiGraphics, mouseX, mouseY, partialTicks);
+		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(PoseStack ms, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		RenderSystem.setShaderTexture(0, texture);
-		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/slot_for_stone.png"));
-		this.blit(ms, this.leftPos + 24, this.topPos + 35, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/slot_for_stone.png"), this.leftPos + 24, this.topPos + 35, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/slot_for_battery.png"));
-		this.blit(ms, this.leftPos + 52, this.topPos + 35, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/slot_for_battery.png"), this.leftPos + 52, this.topPos + 35, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/arrow_gui.png"));
-		this.blit(ms, this.leftPos + 75, this.topPos + 36, 0, 0, 22, 15, 22, 15);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/arrow_gui.png"), this.leftPos + 75, this.topPos + 36, 0, 0, 22, 15, 22, 15);
 
 		RenderSystem.disableBlend();
 	}
@@ -76,11 +72,11 @@ public class BatteryCreateGUIScreen extends AbstractContainerScreen<BatteryCreat
 	}
 
 	@Override
-	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.power.battery_create_gui.label_charging_the_battery"), 42, 7, -12829636);
-		this.font.draw(poseStack,
+	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.power.battery_create_gui.label_charging_the_battery"), 42, 7, -12829636, false);
+		guiGraphics.drawString(this.font,
 
-				BatteryCreateGUIZnachieniieProcedure.execute(world, x, y, z), 83, 51, -12829636);
+				BatteryCreateGUIZnachieniieProcedure.execute(world, x, y, z), 83, 51, -12829636, false);
 	}
 
 	@Override

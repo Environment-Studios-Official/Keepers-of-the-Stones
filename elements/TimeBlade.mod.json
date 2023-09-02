@@ -1,18 +1,20 @@
 {
-  "_fv": 43,
+  "_fv": 48,
   "_type": "tool",
   "definition": {
+    "toolType": "Sword",
     "renderType": 0,
     "blockingRenderType": 0,
     "texture": "time_blade",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Time Blade",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": ""
+    },
     "creativeTab": {
       "value": "No creative tab entry"
     },
-    "toolType": "Sword",
     "harvestLevel": 3,
     "efficiency": 10.0,
     "attackSpeed": 2.0,

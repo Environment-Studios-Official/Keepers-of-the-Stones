@@ -5,6 +5,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
@@ -16,56 +18,56 @@ public class DestroyRocksProcedure {
 		ItemStack emeralds = ItemStack.EMPTY;
 		ItemStack tool = ItemStack.EMPTY;
 		if (entity.getXRot() > 40 || entity.getXRot() < -40) {
-			if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x + 1, y, z))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x + 1, y, z))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x + 1, y, z);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x - 1, y, z))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x - 1, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x - 1, y, z);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x + 1, y, z + 1))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x + 1, y, z + 1))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x + 1, y, z + 1))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x + 1, y, z + 1))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x + 1, y, z + 1);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x + 1, y, z - 1))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x + 1, y, z - 1))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x + 1, y, z - 1))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x + 1, y, z - 1))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x + 1, y, z - 1);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x - 1, y, z - 1))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x - 1, y, z - 1))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x - 1, y, z - 1))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x - 1, y, z - 1))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x - 1, y, z - 1);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x - 1, y, z + 1))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x - 1, y, z + 1))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x - 1, y, z + 1))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x - 1, y, z + 1))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x - 1, y, z + 1);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x, y, z + 1))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x, y, z + 1))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x, y, z + 1);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x, y, z - 1))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x, y, z - 1))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x, y, z - 1))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x, y, z - 1))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x, y, z - 1);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
@@ -73,56 +75,56 @@ public class DestroyRocksProcedure {
 				}
 			}
 		} else if ((entity.getDirection()) == Direction.NORTH || (entity.getDirection()) == Direction.SOUTH) {
-			if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x + 1, y, z))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x + 1, y, z))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x + 1, y, z);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x - 1, y, z))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x - 1, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x - 1, y, z);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x + 1, y + 1, z))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x + 1, y + 1, z))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x + 1, y + 1, z))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x + 1, y + 1, z))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x + 1, y + 1, z);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x + 1, y - 1, z))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x + 1, y - 1, z))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x + 1, y - 1, z))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x + 1, y - 1, z))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x + 1, y - 1, z);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x - 1, y - 1, z))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x - 1, y - 1, z))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x - 1, y - 1, z))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x - 1, y - 1, z))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x - 1, y - 1, z);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x - 1, y + 1, z))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x - 1, y + 1, z))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x - 1, y + 1, z))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x - 1, y + 1, z))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x - 1, y + 1, z);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x, y + 1, z);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x, y - 1, z);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
@@ -130,56 +132,56 @@ public class DestroyRocksProcedure {
 				}
 			}
 		} else if ((entity.getDirection()) == Direction.WEST || (entity.getDirection()) == Direction.EAST) {
-			if ((world.getBlockState(BlockPos.containing(x, y, z + 1))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x, y, z + 1))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x, y, z + 1);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x, y, z - 1))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x, y, z - 1))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x, y, z - 1))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x, y, z - 1))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x, y, z - 1);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x, y + 1, z + 1))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x, y + 1, z + 1))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x, y + 1, z + 1))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x, y + 1, z + 1))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x, y + 1, z + 1);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x, y - 1, z + 1))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x, y - 1, z + 1))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x, y - 1, z + 1))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x, y - 1, z + 1))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x, y - 1, z + 1);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x, y - 1, z - 1))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x, y - 1, z - 1))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x, y - 1, z - 1))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x, y - 1, z - 1))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x, y - 1, z - 1);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x, y + 1, z - 1))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x, y + 1, z - 1))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x, y + 1, z - 1))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x, y + 1, z - 1))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x, y + 1, z - 1);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x, y + 1, z);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
 				}
 			}
-			if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getMaterial() == net.minecraft.world.level.material.Material.STONE && !((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.BEDROCK)) {
+			if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && !((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.BEDROCK)) {
 				{
 					BlockPos _pos = BlockPos.containing(x, y - 1, z);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);

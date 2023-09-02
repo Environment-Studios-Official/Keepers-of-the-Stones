@@ -36,7 +36,7 @@ public class BatteryCreateGUIMenu extends AbstractContainerMenu implements Suppl
 	public BatteryCreateGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
 		super(PowerModMenus.BATTERY_CREATE_GUI.get(), id);
 		this.entity = inv.player;
-		this.world = inv.player.level;
+		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(4);
 		BlockPos pos = null;
 		if (extraData != null) {
@@ -66,7 +66,7 @@ public class BatteryCreateGUIMenu extends AbstractContainerMenu implements Suppl
 						this.bound = true;
 					});
 			} else { // might be bound to block
-				BlockEntity ent = inv.player != null ? inv.player.level.getBlockEntity(pos) : null;
+				BlockEntity ent = inv.player != null ? inv.player.level().getBlockEntity(pos) : null;
 				if (ent != null) {
 					ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						this.internal = capability;
@@ -76,16 +76,22 @@ public class BatteryCreateGUIMenu extends AbstractContainerMenu implements Suppl
 			}
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 25, 35) {
+			private final int slot = 0;
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 52, 35) {
+			private final int slot = 1;
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 106, 35) {
+			private final int slot = 2;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 133, 35) {
+			private final int slot = 3;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;

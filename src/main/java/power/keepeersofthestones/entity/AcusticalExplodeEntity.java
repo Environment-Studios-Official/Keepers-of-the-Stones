@@ -64,7 +64,7 @@ public class AcusticalExplodeEntity extends AbstractArrow implements ItemSupplie
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		NullExplodeProcedure.execute(this.level, blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
+		NullExplodeProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
 	}
 
 	@Override
@@ -86,7 +86,7 @@ public class AcusticalExplodeEntity extends AbstractArrow implements ItemSupplie
 	}
 
 	public static AcusticalExplodeEntity shoot(LivingEntity entity, LivingEntity target) {
-		AcusticalExplodeEntity entityarrow = new AcusticalExplodeEntity(PowerModEntities.ACUSTICAL_EXPLODE.get(), entity, entity.level);
+		AcusticalExplodeEntity entityarrow = new AcusticalExplodeEntity(PowerModEntities.ACUSTICAL_EXPLODE.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
@@ -95,7 +95,7 @@ public class AcusticalExplodeEntity extends AbstractArrow implements ItemSupplie
 		entityarrow.setBaseDamage(14);
 		entityarrow.setKnockback(0);
 		entityarrow.setCritArrow(false);
-		entity.level.addFreshEntity(entityarrow);
+		entity.level().addFreshEntity(entityarrow);
 		return entityarrow;
 	}
 }

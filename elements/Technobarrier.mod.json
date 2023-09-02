@@ -1,18 +1,20 @@
 {
-  "_fv": 43,
+  "_fv": 48,
   "_type": "tool",
   "definition": {
+    "toolType": "Shield",
     "renderType": 1,
     "blockingRenderType": 1,
     "texture": "technobarrier",
     "customModelName": "power_shield:techno",
     "blockingModelName": "blocking_power_shield:techno",
     "name": "Technobarrier",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": ""
+    },
     "creativeTab": {
       "value": "No creative tab entry"
     },
-    "toolType": "Shield",
     "harvestLevel": 1,
     "efficiency": 4.0,
     "attackSpeed": 1.0,

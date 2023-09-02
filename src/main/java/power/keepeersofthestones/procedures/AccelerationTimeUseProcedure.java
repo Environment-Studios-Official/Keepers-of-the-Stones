@@ -26,7 +26,7 @@ public class AccelerationTimeUseProcedure {
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 800);
-			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.ACCELERATION_TIME_EFFECT.get(), 400, 0, false, false));
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {

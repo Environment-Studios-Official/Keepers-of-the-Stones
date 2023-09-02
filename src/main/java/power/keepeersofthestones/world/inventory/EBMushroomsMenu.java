@@ -31,7 +31,7 @@ public class EBMushroomsMenu extends AbstractContainerMenu implements Supplier<M
 	public EBMushroomsMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
 		super(PowerModMenus.EB_MUSHROOMS.get(), id);
 		this.entity = inv.player;
-		this.world = inv.player.level;
+		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(0);
 		BlockPos pos = null;
 		if (extraData != null) {

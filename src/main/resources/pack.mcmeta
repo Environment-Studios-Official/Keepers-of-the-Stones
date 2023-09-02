@@ -1,8 +1,6 @@
 {
   "pack": {
-    "description": "power mod resources",
-    "pack_format": 13,
-    "forge:resource_pack_format": 13,
-    "forge:data_pack_format": 12
+    "pack_format": 15,
+    "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements."
   }
 }

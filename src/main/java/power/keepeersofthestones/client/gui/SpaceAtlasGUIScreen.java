@@ -11,10 +11,10 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.GuiGraphics;
 
 import java.util.HashMap;
 
-import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class SpaceAtlasGUIScreen extends AbstractContainerScreen<SpaceAtlasGUIMenu> {
@@ -40,20 +40,19 @@ public class SpaceAtlasGUIScreen extends AbstractContainerScreen<SpaceAtlasGUIMe
 	}
 
 	@Override
-	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(ms);
-		super.render(ms, mouseX, mouseY, partialTicks);
-		this.renderTooltip(ms, mouseX, mouseY);
+	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+		this.renderBackground(guiGraphics);
+		super.render(guiGraphics, mouseX, mouseY, partialTicks);
+		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(PoseStack ms, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/space_atlas.png"));
-		this.blit(ms, this.leftPos + 11, this.topPos + 130, 0, 0, 512, 256, 512, 256);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/space_atlas.png"), this.leftPos + 11, this.topPos + 130, 0, 0, 512, 256, 512, 256);
 
 		RenderSystem.disableBlend();
 	}
@@ -73,8 +72,8 @@ public class SpaceAtlasGUIScreen extends AbstractContainerScreen<SpaceAtlasGUIMe
 	}
 
 	@Override
-	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.power.space_atlas_gui.label_atlas_of_space_travel"), 99, 153, -16777216);
+	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.power.space_atlas_gui.label_atlas_of_space_travel"), 99, 153, -16777216, false);
 	}
 
 	@Override

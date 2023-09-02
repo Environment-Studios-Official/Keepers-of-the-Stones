@@ -4,12 +4,17 @@ package power.keepeersofthestones.item;
 import power.keepeersofthestones.procedures.SwordsAttackProcedure;
 import power.keepeersofthestones.procedures.BurnProcedureProcedure;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.network.chat.Component;
+
+import java.util.List;
 
 public class FireSwordItem extends SwordItem {
 	public FireSwordItem() {
@@ -48,9 +53,14 @@ public class FireSwordItem extends SwordItem {
 	}
 
 	@Override
+	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
+	}
+
+	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		SwordsAttackProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		SwordsAttackProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 		return retval;
 	}
 }

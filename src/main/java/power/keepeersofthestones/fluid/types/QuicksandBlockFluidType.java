@@ -12,7 +12,7 @@ import java.util.function.Consumer;
 
 public class QuicksandBlockFluidType extends FluidType {
 	public QuicksandBlockFluidType() {
-		super(FluidType.Properties.create().fallDistanceModifier(0F).canExtinguish(true).supportsBoating(true).canHydrate(true).motionScale(-0.14D).density(100000).viscosity(100000).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+		super(FluidType.Properties.create().fallDistanceModifier(0F).canExtinguish(true).supportsBoating(true).canHydrate(true).motionScale(-0.07D).density(100000).viscosity(100000).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
 				.sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY).sound(SoundActions.FLUID_VAPORIZE, SoundEvents.FIRE_EXTINGUISH));
 	}
 

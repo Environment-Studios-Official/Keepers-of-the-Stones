@@ -1,18 +1,20 @@
 {
-  "_fv": 43,
+  "_fv": 48,
   "_type": "tool",
   "definition": {
+    "toolType": "Shield",
     "renderType": 1,
     "blockingRenderType": 1,
     "texture": "iron_shield",
     "customModelName": "power_shield:iron",
     "blockingModelName": "blocking_power_shield:iron",
     "name": "Iron Shield",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": ""
+    },
     "creativeTab": {
       "value": "No creative tab entry"
     },
-    "toolType": "Shield",
     "harvestLevel": 1,
     "efficiency": 4.0,
     "attackSpeed": 1.0,

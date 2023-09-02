@@ -15,11 +15,11 @@ public class FireFlyingEndProcedure {
 		if (entity == null)
 			return;
 		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).rain) {
-			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 200, 1, false, false));
 		} else {
 			if (world.getLevelData().isRaining()) {
-				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 20, 0, false, false));
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.RAIN, x, y, z, 10, 0, (-1), 0, 1);

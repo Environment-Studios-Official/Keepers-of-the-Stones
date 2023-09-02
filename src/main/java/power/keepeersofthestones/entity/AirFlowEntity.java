@@ -90,7 +90,7 @@ public class AirFlowEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	public static AirFlowEntity shoot(LivingEntity entity, LivingEntity target) {
-		AirFlowEntity entityarrow = new AirFlowEntity(PowerModEntities.AIR_FLOW.get(), entity, entity.level);
+		AirFlowEntity entityarrow = new AirFlowEntity(PowerModEntities.AIR_FLOW.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
@@ -99,8 +99,8 @@ public class AirFlowEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setBaseDamage(4);
 		entityarrow.setKnockback(15);
 		entityarrow.setCritArrow(true);
-		entity.level.addFreshEntity(entityarrow);
-		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
+		entity.level().addFreshEntity(entityarrow);
+		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

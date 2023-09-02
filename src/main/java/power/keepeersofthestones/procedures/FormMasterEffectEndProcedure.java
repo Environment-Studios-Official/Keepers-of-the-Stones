@@ -79,13 +79,13 @@ public class FormMasterEffectEndProcedure {
 			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).golden_dust) {
 				if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).battery) {
 					if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).power_level == 2) {
-						if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_FORM_STONE.get(), 3600, 0, false, false));
 					} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).power_level >= 3) {
-						if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_FORM_STONE.get(), 2400, 0, false, false));
 					} else {
-						if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_FORM_STONE.get(), 6000, 0, false, false));
 					}
 				}
@@ -118,9 +118,9 @@ public class FormMasterEffectEndProcedure {
 		}
 		{
 			Entity _ent = entity;
-			if (!_ent.level.isClientSide() && _ent.getServer() != null) {
-				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-						_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "scale set pehkui:base 1 @s");
+			if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+						_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "scale set pehkui:base 1 @s");
 			}
 		}
 		{

@@ -12,7 +12,7 @@ import java.util.function.Consumer;
 
 public class MercuryLiquidFluidType extends FluidType {
 	public MercuryLiquidFluidType() {
-		super(FluidType.Properties.create().fallDistanceModifier(0F).canExtinguish(true).supportsBoating(true).canHydrate(true).motionScale(-0.07D).density(100000).viscosity(100000).temperature(0)
+		super(FluidType.Properties.create().fallDistanceModifier(0F).canExtinguish(true).supportsBoating(true).canHydrate(true).motionScale(-0.035D).density(100000).viscosity(100000).temperature(0)
 				.sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL).sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY).sound(SoundActions.FLUID_VAPORIZE, SoundEvents.FIRE_EXTINGUISH));
 	}
 

@@ -10,7 +10,7 @@ public class EnergiumBlockUseProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(PowerModMobEffects.POWER_LOCK.get(), 20, 0));
 	}
 }

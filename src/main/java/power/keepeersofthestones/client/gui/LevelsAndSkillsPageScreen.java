@@ -18,10 +18,10 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.GuiGraphics;
 
 import java.util.HashMap;
 
-import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class LevelsAndSkillsPageScreen extends AbstractContainerScreen<LevelsAndSkillsPageMenu> {
@@ -47,50 +47,41 @@ public class LevelsAndSkillsPageScreen extends AbstractContainerScreen<LevelsAnd
 	}
 
 	@Override
-	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(ms);
-		super.render(ms, mouseX, mouseY, partialTicks);
-		this.renderTooltip(ms, mouseX, mouseY);
+	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+		this.renderBackground(guiGraphics);
+		super.render(guiGraphics, mouseX, mouseY, partialTicks);
+		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(PoseStack ms, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/book_of_elements_book.png"));
-		this.blit(ms, this.leftPos + -244, this.topPos + -127, 0, 0, 512, 256, 512, 256);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/book_of_elements_book.png"), this.leftPos + -244, this.topPos + -127, 0, 0, 512, 256, 512, 256);
 
 		if (GetLevel2Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/level_checked.png"));
-			this.blit(ms, this.leftPos + -71, this.topPos + -56, 0, 0, 19, 18, 19, 18);
+			guiGraphics.blit(new ResourceLocation("power:textures/screens/level_checked.png"), this.leftPos + -71, this.topPos + -56, 0, 0, 19, 18, 19, 18);
 		}
 		if (ReturnLevel3Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/level_checked.png"));
-			this.blit(ms, this.leftPos + -69, this.topPos + -24, 0, 0, 19, 18, 19, 18);
+			guiGraphics.blit(new ResourceLocation("power:textures/screens/level_checked.png"), this.leftPos + -69, this.topPos + -24, 0, 0, 19, 18, 19, 18);
 		}
 		if (GetLevel1Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/level_checked.png"));
-			this.blit(ms, this.leftPos + -72, this.topPos + -87, 0, 0, 19, 18, 19, 18);
+			guiGraphics.blit(new ResourceLocation("power:textures/screens/level_checked.png"), this.leftPos + -72, this.topPos + -87, 0, 0, 19, 18, 19, 18);
 		}
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/fire_master.png"));
-		this.blit(ms, this.leftPos + 46, this.topPos + -71, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/fire_master.png"), this.leftPos + 46, this.topPos + -71, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/blue_flame_master.png"));
-		this.blit(ms, this.leftPos + 64, this.topPos + -71, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/blue_flame_master.png"), this.leftPos + 64, this.topPos + -71, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/lightning_master.png"));
-		this.blit(ms, this.leftPos + 80, this.topPos + -71, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/lightning_master.png"), this.leftPos + 80, this.topPos + -71, 0, 0, 16, 16, 16, 16);
 
 		if (ReturnReactiveFlyingProcedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/level_checked.png"));
-			this.blit(ms, this.leftPos + 138, this.topPos + -70, 0, 0, 19, 18, 19, 18);
+			guiGraphics.blit(new ResourceLocation("power:textures/screens/level_checked.png"), this.leftPos + 138, this.topPos + -70, 0, 0, 19, 18, 19, 18);
 		}
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/rain_master.png"));
-		this.blit(ms, this.leftPos + 94, this.topPos + -71, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/rain_master.png"), this.leftPos + 94, this.topPos + -71, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
@@ -110,12 +101,12 @@ public class LevelsAndSkillsPageScreen extends AbstractContainerScreen<LevelsAnd
 	}
 
 	@Override
-	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.power.levels_and_skills_page.label_level_2"), -163, -48, -13421773);
-		this.font.draw(poseStack, Component.translatable("gui.power.levels_and_skills_page.label_level_3"), -163, -18, -13421773);
-		this.font.draw(poseStack, Component.translatable("gui.power.levels_and_skills_page.label_level_1"), -163, -81, -13421773);
-		this.font.draw(poseStack, Component.translatable("gui.power.levels_and_skills_page.label_reactive_flying"), 25, -81, -13421773);
-		this.font.draw(poseStack, Component.translatable("gui.power.levels_and_skills_page.label_for"), 25, -65, -13421773);
+	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.power.levels_and_skills_page.label_level_2"), -163, -48, -13421773, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.power.levels_and_skills_page.label_level_3"), -163, -18, -13421773, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.power.levels_and_skills_page.label_level_1"), -163, -81, -13421773, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.power.levels_and_skills_page.label_reactive_flying"), 25, -81, -13421773, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.power.levels_and_skills_page.label_for"), 25, -65, -13421773, false);
 	}
 
 	@Override
@@ -145,9 +136,9 @@ public class LevelsAndSkillsPageScreen extends AbstractContainerScreen<LevelsAnd
 			}
 		}).bounds(this.leftPos + -82, this.topPos + -61, 40, 20).build(builder -> new Button(builder) {
 			@Override
-			public void render(PoseStack ms, int gx, int gy, float ticks) {
+			public void render(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
 				if (ReturnLevel1Procedure.execute(entity))
-					super.render(ms, gx, gy, ticks);
+					super.render(guiGraphics, gx, gy, ticks);
 			}
 		});
 		guistate.put("button:button_buy", button_buy);
@@ -159,9 +150,9 @@ public class LevelsAndSkillsPageScreen extends AbstractContainerScreen<LevelsAnd
 			}
 		}).bounds(this.leftPos + -82, this.topPos + -29, 40, 20).build(builder -> new Button(builder) {
 			@Override
-			public void render(PoseStack ms, int gx, int gy, float ticks) {
+			public void render(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
 				if (ReturnLevel2Procedure.execute(entity))
-					super.render(ms, gx, gy, ticks);
+					super.render(guiGraphics, gx, gy, ticks);
 			}
 		});
 		guistate.put("button:button_buy1", button_buy1);
@@ -173,9 +164,9 @@ public class LevelsAndSkillsPageScreen extends AbstractContainerScreen<LevelsAnd
 			}
 		}).bounds(this.leftPos + 128, this.topPos + -75, 40, 20).build(builder -> new Button(builder) {
 			@Override
-			public void render(PoseStack ms, int gx, int gy, float ticks) {
+			public void render(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
 				if (NoReturnReactiveFlyingProcedure.execute(entity))
-					super.render(ms, gx, gy, ticks);
+					super.render(guiGraphics, gx, gy, ticks);
 			}
 		});
 		guistate.put("button:button_buy2", button_buy2);

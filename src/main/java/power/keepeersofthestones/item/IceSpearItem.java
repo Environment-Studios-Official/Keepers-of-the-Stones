@@ -7,6 +7,7 @@ import power.keepeersofthestones.entity.IceSpearEntity;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -20,6 +21,9 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.network.chat.Component;
+
+import java.util.List;
 
 import com.google.common.collect.Multimap;
 import com.google.common.collect.ImmutableMultimap;
@@ -38,8 +42,13 @@ public class IceSpearItem extends Item {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		SpearAttackProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		SpearAttackProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 		return retval;
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
 	}
 
 	@Override

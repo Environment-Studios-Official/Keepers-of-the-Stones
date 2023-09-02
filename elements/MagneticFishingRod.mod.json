@@ -1,18 +1,20 @@
 {
-  "_fv": 43,
+  "_fv": 48,
   "_type": "tool",
   "definition": {
+    "toolType": "Fishing rod",
     "renderType": 0,
     "blockingRenderType": 0,
     "texture": "magnetic_fishing_rod",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Magnetic Fishing Rod",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": ""
+    },
     "creativeTab": {
       "value": "No creative tab entry"
     },
-    "toolType": "Fishing rod",
     "harvestLevel": 1,
     "efficiency": 4.0,
     "attackSpeed": 1.0,

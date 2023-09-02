@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 48,
   "_type": "block",
   "definition": {
     "texture": "orange_portal",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Orange Portal",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": ""
+    },
     "hardness": 90.0,
     "resistance": 10.0,
     "hasGravity": false,

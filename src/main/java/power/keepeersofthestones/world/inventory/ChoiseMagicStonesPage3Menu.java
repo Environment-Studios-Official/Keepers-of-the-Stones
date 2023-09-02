@@ -31,7 +31,7 @@ public class ChoiseMagicStonesPage3Menu extends AbstractContainerMenu implements
 	public ChoiseMagicStonesPage3Menu(int id, Inventory inv, FriendlyByteBuf extraData) {
 		super(PowerModMenus.CHOISE_MAGIC_STONES_PAGE_3.get(), id);
 		this.entity = inv.player;
-		this.world = inv.player.level;
+		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(0);
 		BlockPos pos = null;
 		if (extraData != null) {

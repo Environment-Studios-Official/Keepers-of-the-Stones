@@ -20,7 +20,7 @@ public class MushroomSaturationUseProcedure {
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 400);
-			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.SATURATION, 100, 254, false, false));
 		}
 	}

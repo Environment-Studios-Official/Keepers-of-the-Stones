@@ -31,7 +31,7 @@ public class ChoiseMagicStoneGUIMenu extends AbstractContainerMenu implements Su
 	public ChoiseMagicStoneGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
 		super(PowerModMenus.CHOISE_MAGIC_STONE_GUI.get(), id);
 		this.entity = inv.player;
-		this.world = inv.player.level;
+		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(0);
 		BlockPos pos = null;
 		if (extraData != null) {

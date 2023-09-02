@@ -1,18 +1,20 @@
 {
-  "_fv": 43,
+  "_fv": 48,
   "_type": "tool",
   "definition": {
+    "toolType": "Axe",
     "renderType": 0,
     "blockingRenderType": 0,
     "texture": "energium_axe",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Energium Axe",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": ""
+    },
     "creativeTab": {
       "value": "CUSTOM:Energium"
     },
-    "toolType": "Axe",
     "harvestLevel": 2,
     "efficiency": 12.0,
     "attackSpeed": 1.2000000000000002,

@@ -32,7 +32,7 @@ import io.netty.buffer.Unpooled;
 public class JoinPlayerInTheWorldProcedure {
 	@SubscribeEvent
 	public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-		execute(event, event.getEntity().level, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
+		execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -68,10 +68,10 @@ public class JoinPlayerInTheWorldProcedure {
 		}
 		{
 			Entity _ent = entity;
-			if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+			if (!_ent.level().isClientSide() && _ent.getServer() != null) {
 				_ent.getServer().getCommands().performPrefixedCommand(
-						new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
-								_ent.level.getServer(), _ent),
+						new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+								_ent.level().getServer(), _ent),
 						"tellraw @s [\"\",{\"text\":\"Full information about mod can be found in our wiki at the link: \"},{\"text\":\"https://github.com/Hexagon-Studio/Keepers-of-the-Stones/wiki\",\"underlined\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Hexagon-Studio/Keepers-of-the-Stones/wiki\"}}]");
 			}
 		}

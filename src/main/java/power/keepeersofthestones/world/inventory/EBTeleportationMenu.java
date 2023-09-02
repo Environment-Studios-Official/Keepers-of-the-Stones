@@ -31,7 +31,7 @@ public class EBTeleportationMenu extends AbstractContainerMenu implements Suppli
 	public EBTeleportationMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
 		super(PowerModMenus.EB_TELEPORTATION.get(), id);
 		this.entity = inv.player;
-		this.world = inv.player.level;
+		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(0);
 		BlockPos pos = null;
 		if (extraData != null) {

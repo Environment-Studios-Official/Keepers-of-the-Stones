@@ -1,18 +1,20 @@
 {
-  "_fv": 43,
+  "_fv": 48,
   "_type": "tool",
   "definition": {
+    "toolType": "Pickaxe",
     "renderType": 0,
     "blockingRenderType": 0,
     "texture": "gnome_pickaxe",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Gnome Pickaxe",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": ""
+    },
     "creativeTab": {
       "value": "No creative tab entry"
     },
-    "toolType": "Pickaxe",
     "harvestLevel": 4,
     "efficiency": 24.0,
     "attackSpeed": 2.0,

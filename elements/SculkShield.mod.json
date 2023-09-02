@@ -1,0 +1,31 @@
+{
+  "_fv": 48,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Shield",
+    "renderType": 1,
+    "blockingRenderType": 1,
+    "texture": "sculk_shield",
+    "customModelName": "power_shield:sculk",
+    "blockingModelName": "blocking_power_shield:sculk",
+    "name": "Sculk Shield",
+    "specialInformation": {
+      "fixedValue": ""
+    },
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 5000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

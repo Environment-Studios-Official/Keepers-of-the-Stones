@@ -13,7 +13,7 @@ public class EnergiumItemsProcedure {
 		if (entity == null)
 			return;
 		if (!(itemstack.getEnchantmentLevel(PowerModEnchantments.ISOLATION.get()) == 1)) {
-			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.POWER_LOCK.get(), 20, 0));
 		}
 	}

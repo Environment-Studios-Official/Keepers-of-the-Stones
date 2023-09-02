@@ -14,7 +14,7 @@ public class ChoosestoneUseProcedure {
 		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).keeper == true) {
 			ResetmychoiceProcedureProcedure.execute(world, x, y, z, entity);
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).keeper == false) {
-			if (entity instanceof Player _player && !_player.level.isClientSide())
+			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("\u00A74You don't have keeper rights to use other available stones!"), false);
 		}
 	}
