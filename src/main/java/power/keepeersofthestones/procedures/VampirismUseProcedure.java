@@ -20,11 +20,11 @@ public class VampirismUseProcedure {
 			if (sourceentity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 400);
 			if (!(sourceentity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).recharge_spell_blood) {
-				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 100, 2, false, false));
-				if (sourceentity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.SATURATION, 300, 2, false, false));
-				if (sourceentity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 40, 2, false, false));
 			}
 			{

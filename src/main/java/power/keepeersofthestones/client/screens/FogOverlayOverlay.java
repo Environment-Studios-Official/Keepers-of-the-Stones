@@ -34,7 +34,7 @@ public class FogOverlayOverlay {
 		double z = 0;
 		Player entity = Minecraft.getInstance().player;
 		if (entity != null) {
-			world = entity.level;
+			world = entity.level();
 			x = entity.getX();
 			y = entity.getY();
 			z = entity.getZ();
@@ -46,8 +46,7 @@ public class FogOverlayOverlay {
 		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (FogOverlayOtobrazhatOvierlieiVIghrieProcedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/fog_ovelay.png"));
-			Minecraft.getInstance().gui.blit(event.getPoseStack(), 0, 0, 0, 0, w, h, w, h);
+			event.getGuiGraphics().blit(new ResourceLocation("power:textures/screens/fog_ovelay.png"), 0, 0, 0, 0, w, h, w, h);
 		}
 		RenderSystem.depthMask(true);
 		RenderSystem.defaultBlendFunc();

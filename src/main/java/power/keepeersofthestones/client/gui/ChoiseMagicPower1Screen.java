@@ -11,10 +11,10 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.GuiGraphics;
 
 import java.util.HashMap;
 
-import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class ChoiseMagicPower1Screen extends AbstractContainerScreen<ChoiseMagicPower1Menu> {
@@ -58,79 +58,58 @@ public class ChoiseMagicPower1Screen extends AbstractContainerScreen<ChoiseMagic
 	private static final ResourceLocation texture = new ResourceLocation("power:textures/screens/choise_magic_power_1.png");
 
 	@Override
-	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(ms);
-		super.render(ms, mouseX, mouseY, partialTicks);
-		this.renderTooltip(ms, mouseX, mouseY);
+	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+		this.renderBackground(guiGraphics);
+		super.render(guiGraphics, mouseX, mouseY, partialTicks);
+		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(PoseStack ms, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		RenderSystem.setShaderTexture(0, texture);
-		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/fire_master.png"));
-		this.blit(ms, this.leftPos + 19, this.topPos + 33, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/fire_master.png"), this.leftPos + 19, this.topPos + 33, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/air_master.png"));
-		this.blit(ms, this.leftPos + 19, this.topPos + 60, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/air_master.png"), this.leftPos + 19, this.topPos + 60, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/water_master.png"));
-		this.blit(ms, this.leftPos + 19, this.topPos + 87, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/water_master.png"), this.leftPos + 19, this.topPos + 87, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/earth_master.png"));
-		this.blit(ms, this.leftPos + 19, this.topPos + 114, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/earth_master.png"), this.leftPos + 19, this.topPos + 114, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/energy_master.png"));
-		this.blit(ms, this.leftPos + 19, this.topPos + 141, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/energy_master.png"), this.leftPos + 19, this.topPos + 141, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/ice_master.png"));
-		this.blit(ms, this.leftPos + 118, this.topPos + 33, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/ice_master.png"), this.leftPos + 118, this.topPos + 33, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/lightning_master.png"));
-		this.blit(ms, this.leftPos + 118, this.topPos + 60, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/lightning_master.png"), this.leftPos + 118, this.topPos + 60, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/sound_master.png"));
-		this.blit(ms, this.leftPos + 118, this.topPos + 87, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/sound_master.png"), this.leftPos + 118, this.topPos + 87, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/crystal_master.png"));
-		this.blit(ms, this.leftPos + 118, this.topPos + 114, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/crystal_master.png"), this.leftPos + 118, this.topPos + 114, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/lava_master.png"));
-		this.blit(ms, this.leftPos + 118, this.topPos + 141, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/lava_master.png"), this.leftPos + 118, this.topPos + 141, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/rain_master.png"));
-		this.blit(ms, this.leftPos + 217, this.topPos + 33, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/rain_master.png"), this.leftPos + 217, this.topPos + 33, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/ocean_master.png"));
-		this.blit(ms, this.leftPos + 217, this.topPos + 87, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/ocean_master.png"), this.leftPos + 217, this.topPos + 87, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/greenery_master.png"));
-		this.blit(ms, this.leftPos + 217, this.topPos + 114, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/greenery_master.png"), this.leftPos + 217, this.topPos + 114, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/tornado_master.png"));
-		this.blit(ms, this.leftPos + 217, this.topPos + 60, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/tornado_master.png"), this.leftPos + 217, this.topPos + 60, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/animals_master.png"));
-		this.blit(ms, this.leftPos + 217, this.topPos + 141, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/animals_master.png"), this.leftPos + 217, this.topPos + 141, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/metal_master.png"));
-		this.blit(ms, this.leftPos + 307, this.topPos + 33, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/metal_master.png"), this.leftPos + 307, this.topPos + 33, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/light_master.png"));
-		this.blit(ms, this.leftPos + 307, this.topPos + 60, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/light_master.png"), this.leftPos + 307, this.topPos + 60, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/shadow_master.png"));
-		this.blit(ms, this.leftPos + 307, this.topPos + 87, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/shadow_master.png"), this.leftPos + 307, this.topPos + 87, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/vacuum_master.png"));
-		this.blit(ms, this.leftPos + 307, this.topPos + 114, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/vacuum_master.png"), this.leftPos + 307, this.topPos + 114, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/sun_master.png"));
-		this.blit(ms, this.leftPos + 307, this.topPos + 141, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/sun_master.png"), this.leftPos + 307, this.topPos + 141, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
@@ -150,9 +129,9 @@ public class ChoiseMagicPower1Screen extends AbstractContainerScreen<ChoiseMagic
 	}
 
 	@Override
-	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.power.choise_magic_power_1.label_choose_the_desired_power_of_the"), 127, 6, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.power.choise_magic_power_1.label_13"), 10, 6, -12829636);
+	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.power.choise_magic_power_1.label_choose_the_desired_power_of_the"), 127, 6, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.power.choise_magic_power_1.label_13"), 10, 6, -12829636, false);
 	}
 
 	@Override

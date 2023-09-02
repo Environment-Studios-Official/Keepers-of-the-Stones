@@ -48,7 +48,7 @@ public class RainKnifeItem extends SwordItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		RainKnifeAttackProcedure.execute(entity.level, entity);
+		RainKnifeAttackProcedure.execute(entity.level(), entity);
 		return retval;
 	}
 
@@ -60,7 +60,7 @@ public class RainKnifeItem extends SwordItem {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		OneHandedBladesAttackProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		OneHandedBladesAttackProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 		return retval;
 	}
 }

@@ -13,7 +13,7 @@ public class WaterDropUseProcedure {
 		if (entity == null)
 			return;
 		if (entity.isInWater()) {
-			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 20, 5, false, false));
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.BUBBLE, x, y, z, 10, (-1), (-1), (-1), 1);

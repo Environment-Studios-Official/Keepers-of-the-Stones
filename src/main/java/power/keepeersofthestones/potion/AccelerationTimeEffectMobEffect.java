@@ -22,18 +22,18 @@ public class AccelerationTimeEffectMobEffect extends MobEffect {
 
 	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
-		AccelerationTimeStartProcedure.execute(entity.level);
+		AccelerationTimeStartProcedure.execute(entity.level());
 	}
 
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		AccelerationTimeTickEffectProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ());
+		AccelerationTimeTickEffectProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ());
 	}
 
 	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		AccelerationTimeEndProcedure.execute(entity.level);
+		AccelerationTimeEndProcedure.execute(entity.level());
 	}
 
 	@Override

@@ -52,7 +52,7 @@ public class ScytheItem extends SwordItem {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		SchytheAttackProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		SchytheAttackProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 		return retval;
 	}
 }

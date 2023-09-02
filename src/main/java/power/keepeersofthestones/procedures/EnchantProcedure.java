@@ -13,13 +13,13 @@ public class EnchantProcedure {
 		if (entity == null)
 			return;
 		if (itemstack.getEnchantmentLevel(PowerModEnchantments.REVENGE.get()) == 1) {
-			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.POWER_LOCK.get(), 40, 0));
 		} else if (itemstack.getEnchantmentLevel(PowerModEnchantments.REVENGE.get()) == 2) {
-			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.POWER_LOCK.get(), 100, 0));
 		} else if (itemstack.getEnchantmentLevel(PowerModEnchantments.REVENGE.get()) == 3) {
-			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.POWER_LOCK.get(), 200, 0));
 		}
 	}

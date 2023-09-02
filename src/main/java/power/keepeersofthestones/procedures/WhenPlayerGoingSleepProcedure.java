@@ -15,7 +15,7 @@ import javax.annotation.Nullable;
 public class WhenPlayerGoingSleepProcedure {
 	@SubscribeEvent
 	public static void onPlayerInBed(PlayerSleepInBedEvent event) {
-		execute(event, event.getEntity().level, event.getEntity());
+		execute(event, event.getEntity().level(), event.getEntity());
 	}
 
 	public static void execute(LevelAccessor world, Entity entity) {

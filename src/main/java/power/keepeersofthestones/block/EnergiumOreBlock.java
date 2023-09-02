@@ -3,8 +3,8 @@ package power.keepeersofthestones.block;
 
 import power.keepeersofthestones.procedures.EnergiumBlockUseProcedure;
 
-import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -22,7 +22,7 @@ import java.util.List;
 
 public class EnergiumOreBlock extends Block {
 	public EnergiumOreBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops());
 	}
 
 	@Override

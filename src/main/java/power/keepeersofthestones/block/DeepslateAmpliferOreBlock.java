@@ -1,7 +1,7 @@
 
 package power.keepeersofthestones.block;
 
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -18,7 +18,7 @@ import java.util.List;
 
 public class DeepslateAmpliferOreBlock extends Block {
 	public DeepslateAmpliferOreBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE).strength(1.8f, 10f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.DEEPSLATE).strength(1.8f, 10f).requiresCorrectToolForDrops());
 	}
 
 	@Override

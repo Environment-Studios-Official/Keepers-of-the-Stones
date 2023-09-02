@@ -90,7 +90,7 @@ public class VacuumSpiralEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	public static VacuumSpiralEntity shoot(LivingEntity entity, LivingEntity target) {
-		VacuumSpiralEntity entityarrow = new VacuumSpiralEntity(PowerModEntities.VACUUM_SPIRAL.get(), entity, entity.level);
+		VacuumSpiralEntity entityarrow = new VacuumSpiralEntity(PowerModEntities.VACUUM_SPIRAL.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
@@ -99,8 +99,8 @@ public class VacuumSpiralEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setBaseDamage(6);
 		entityarrow.setKnockback(0);
 		entityarrow.setCritArrow(false);
-		entity.level.addFreshEntity(entityarrow);
-		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
+		entity.level().addFreshEntity(entityarrow);
+		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

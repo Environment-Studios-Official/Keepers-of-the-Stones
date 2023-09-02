@@ -67,7 +67,7 @@ public class ClusterSharpEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		CrystalSharpOnBlockProcedure.execute(this.level, blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
+		CrystalSharpOnBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
 	}
 
 	@Override
@@ -90,7 +90,7 @@ public class ClusterSharpEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	public static ClusterSharpEntity shoot(LivingEntity entity, LivingEntity target) {
-		ClusterSharpEntity entityarrow = new ClusterSharpEntity(PowerModEntities.CLUSTER_SHARP.get(), entity, entity.level);
+		ClusterSharpEntity entityarrow = new ClusterSharpEntity(PowerModEntities.CLUSTER_SHARP.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
@@ -99,8 +99,9 @@ public class ClusterSharpEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setBaseDamage(11);
 		entityarrow.setKnockback(1);
 		entityarrow.setCritArrow(false);
-		entity.level.addFreshEntity(entityarrow);
-		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.amethyst_block.break")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
+		entity.level().addFreshEntity(entityarrow);
+		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.amethyst_block.break")), SoundSource.PLAYERS, 1,
+				1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

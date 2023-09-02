@@ -23,7 +23,7 @@ public class ThirdPointTPProcedure {
 		}
 		if (entity instanceof Player _player)
 			_player.closeContainer();
-		if (entity instanceof Player _player && !_player.level.isClientSide())
+		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal("You have successfully returned to the point of return."), false);
 	}
 }

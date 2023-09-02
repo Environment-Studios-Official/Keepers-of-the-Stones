@@ -60,7 +60,7 @@ public class ForcereplicationItem extends SwordItem {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		StaffAttackProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		StaffAttackProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 		return retval;
 	}
 }

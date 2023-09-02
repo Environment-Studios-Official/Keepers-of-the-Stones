@@ -62,7 +62,7 @@ public class FistofEarthItem extends ShovelItem {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		FistAttackProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		FistAttackProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 		return retval;
 	}
 }

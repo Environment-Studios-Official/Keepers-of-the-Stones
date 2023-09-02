@@ -33,7 +33,7 @@ public class FirstPointSetProcedure {
 		}
 		if (entity instanceof Player _player)
 			_player.closeContainer();
-		if (entity instanceof Player _player && !_player.level.isClientSide())
+		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal("The return point has been successfully set."), false);
 	}
 }

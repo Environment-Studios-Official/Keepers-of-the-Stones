@@ -52,7 +52,7 @@ public class MorgensternItem extends SwordItem {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		MaceAttackProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		MaceAttackProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 		return retval;
 	}
 }

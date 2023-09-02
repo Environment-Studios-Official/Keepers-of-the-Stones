@@ -4,9 +4,11 @@ package power.keepeersofthestones.block;
 import power.keepeersofthestones.procedures.DamagedQuicksandProcedure;
 import power.keepeersofthestones.init.PowerModFluids;
 
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
@@ -15,7 +17,7 @@ import net.minecraft.core.BlockPos;
 
 public class QuicksandBlockBlock extends LiquidBlock {
 	public QuicksandBlockBlock() {
-		super(() -> PowerModFluids.QUICKSAND_BLOCK.get(), BlockBehaviour.Properties.of(Material.WATER).strength(10000f).noCollission().noLootTable());
+		super(() -> PowerModFluids.QUICKSAND_BLOCK.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WATER).strength(10000f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
 	}
 
 	@Override

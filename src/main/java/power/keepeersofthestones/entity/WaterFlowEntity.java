@@ -67,7 +67,7 @@ public class WaterFlowEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		WaterCreateOnBlockProcedure.execute(this.level, blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
+		WaterCreateOnBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
 	}
 
 	@Override
@@ -90,7 +90,7 @@ public class WaterFlowEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	public static WaterFlowEntity shoot(LivingEntity entity, LivingEntity target) {
-		WaterFlowEntity entityarrow = new WaterFlowEntity(PowerModEntities.WATER_FLOW.get(), entity, entity.level);
+		WaterFlowEntity entityarrow = new WaterFlowEntity(PowerModEntities.WATER_FLOW.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
@@ -99,8 +99,8 @@ public class WaterFlowEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setBaseDamage(8);
 		entityarrow.setKnockback(3);
 		entityarrow.setCritArrow(false);
-		entity.level.addFreshEntity(entityarrow);
-		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.fill")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
+		entity.level().addFreshEntity(entityarrow);
+		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.fill")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

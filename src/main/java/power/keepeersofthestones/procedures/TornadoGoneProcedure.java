@@ -10,7 +10,7 @@ public class TornadoGoneProcedure {
 		if (entity == null)
 			return;
 		PowerMod.queueServerWork(400, () -> {
-			if (!entity.level.isClientSide())
+			if (!entity.level().isClientSide())
 				entity.discard();
 		});
 	}

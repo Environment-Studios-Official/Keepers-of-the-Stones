@@ -52,7 +52,7 @@ public class WisdomSwordItem extends SwordItem {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		SwordsAttackProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		SwordsAttackProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 		return retval;
 	}
 }

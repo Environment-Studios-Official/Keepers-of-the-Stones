@@ -15,7 +15,7 @@ public class MercuryLiquidWaitingCrushProcedure {
 			return;
 		PowerMod.queueServerWork(200, () -> {
 			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).mercury) {
-				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 100, 1, false, false));
 			}
 		});

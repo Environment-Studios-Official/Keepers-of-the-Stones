@@ -67,7 +67,7 @@ public class PieceOfEarthEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		EarthBlockCreateProcedure.execute(this.level, blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
+		EarthBlockCreateProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
 	}
 
 	@Override
@@ -90,7 +90,7 @@ public class PieceOfEarthEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	public static PieceOfEarthEntity shoot(LivingEntity entity, LivingEntity target) {
-		PieceOfEarthEntity entityarrow = new PieceOfEarthEntity(PowerModEntities.PIECE_OF_EARTH.get(), entity, entity.level);
+		PieceOfEarthEntity entityarrow = new PieceOfEarthEntity(PowerModEntities.PIECE_OF_EARTH.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
@@ -99,8 +99,8 @@ public class PieceOfEarthEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setBaseDamage(14);
 		entityarrow.setKnockback(4);
 		entityarrow.setCritArrow(false);
-		entity.level.addFreshEntity(entityarrow);
-		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.gravel.break")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
+		entity.level().addFreshEntity(entityarrow);
+		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.gravel.break")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

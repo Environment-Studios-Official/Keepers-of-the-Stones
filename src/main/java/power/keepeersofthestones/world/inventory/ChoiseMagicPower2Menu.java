@@ -31,7 +31,7 @@ public class ChoiseMagicPower2Menu extends AbstractContainerMenu implements Supp
 	public ChoiseMagicPower2Menu(int id, Inventory inv, FriendlyByteBuf extraData) {
 		super(PowerModMenus.CHOISE_MAGIC_POWER_2.get(), id);
 		this.entity = inv.player;
-		this.world = inv.player.level;
+		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(0);
 		BlockPos pos = null;
 		if (extraData != null) {

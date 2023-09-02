@@ -50,7 +50,7 @@ public class EnergiumShovelItem extends ShovelItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		BigSizeUseProcedure.execute(entity.level, entity, itemstack);
+		BigSizeUseProcedure.execute(entity.level(), entity, itemstack);
 		return retval;
 	}
 

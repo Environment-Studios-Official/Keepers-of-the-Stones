@@ -38,7 +38,7 @@ public class TimeStopItem extends Item {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		TimeStopUseProcedure.execute(entity.level, entity, sourceentity, itemstack);
+		TimeStopUseProcedure.execute(entity.level(), entity, sourceentity, itemstack);
 		return retval;
 	}
 }

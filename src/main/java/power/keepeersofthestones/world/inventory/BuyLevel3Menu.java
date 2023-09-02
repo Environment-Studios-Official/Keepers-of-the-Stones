@@ -37,7 +37,7 @@ public class BuyLevel3Menu extends AbstractContainerMenu implements Supplier<Map
 	public BuyLevel3Menu(int id, Inventory inv, FriendlyByteBuf extraData) {
 		super(PowerModMenus.BUY_LEVEL_3.get(), id);
 		this.entity = inv.player;
-		this.world = inv.player.level;
+		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(2);
 		BlockPos pos = null;
 		if (extraData != null) {
@@ -67,7 +67,7 @@ public class BuyLevel3Menu extends AbstractContainerMenu implements Supplier<Map
 						this.bound = true;
 					});
 			} else { // might be bound to block
-				BlockEntity ent = inv.player != null ? inv.player.level.getBlockEntity(pos) : null;
+				BlockEntity ent = inv.player != null ? inv.player.level().getBlockEntity(pos) : null;
 				if (ent != null) {
 					ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						this.internal = capability;

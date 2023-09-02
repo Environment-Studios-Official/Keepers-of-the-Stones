@@ -31,7 +31,7 @@ public class EBDestructionMenu extends AbstractContainerMenu implements Supplier
 	public EBDestructionMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
 		super(PowerModMenus.EB_DESTRUCTION.get(), id);
 		this.entity = inv.player;
-		this.world = inv.player.level;
+		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(0);
 		BlockPos pos = null;
 		if (extraData != null) {

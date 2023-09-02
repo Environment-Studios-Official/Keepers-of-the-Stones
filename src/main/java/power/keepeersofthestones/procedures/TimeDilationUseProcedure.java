@@ -10,7 +10,7 @@ public class TimeDilationUseProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(PowerModMobEffects.TIME_DILATION_EFFECT.get(), 200, 0, false, false));
 	}
 }

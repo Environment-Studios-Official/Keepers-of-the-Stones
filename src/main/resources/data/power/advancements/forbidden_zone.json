@@ -18,7 +18,12 @@
     "forbidden_zone": {
       "trigger": "minecraft:placed_block",
       "conditions": {
-        "block": "power:energium_block"
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "power:energium_block"
+          }
+        ]
       }
     }
   },

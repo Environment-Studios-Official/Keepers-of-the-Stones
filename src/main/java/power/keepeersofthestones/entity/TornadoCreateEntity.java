@@ -72,7 +72,7 @@ public class TornadoCreateEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		TornadoCreateOnBlockProcedure.execute(this.level, blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
+		TornadoCreateOnBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
 	}
 
 	@Override
@@ -94,7 +94,7 @@ public class TornadoCreateEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	public static TornadoCreateEntity shoot(LivingEntity entity, LivingEntity target) {
-		TornadoCreateEntity entityarrow = new TornadoCreateEntity(PowerModEntities.TORNADO_CREATE.get(), entity, entity.level);
+		TornadoCreateEntity entityarrow = new TornadoCreateEntity(PowerModEntities.TORNADO_CREATE.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
@@ -103,7 +103,7 @@ public class TornadoCreateEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setBaseDamage(1);
 		entityarrow.setKnockback(10);
 		entityarrow.setCritArrow(false);
-		entity.level.addFreshEntity(entityarrow);
+		entity.level().addFreshEntity(entityarrow);
 		return entityarrow;
 	}
 }

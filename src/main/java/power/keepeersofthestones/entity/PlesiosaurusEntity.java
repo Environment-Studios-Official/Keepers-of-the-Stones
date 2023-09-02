@@ -50,7 +50,7 @@ public class PlesiosaurusEntity extends Monster {
 
 	public PlesiosaurusEntity(EntityType<PlesiosaurusEntity> type, Level world) {
 		super(type, world);
-		maxUpStep = 0.6f;
+		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
 		this.setPathfindingMalus(BlockPathTypes.WATER, 0);

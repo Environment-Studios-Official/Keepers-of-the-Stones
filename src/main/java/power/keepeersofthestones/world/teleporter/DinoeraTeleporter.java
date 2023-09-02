@@ -177,7 +177,7 @@ public class DinoeraTeleporter implements ITeleporter {
 		for (int i = -1; i < 3; ++i) {
 			for (int j = -1; j < 4; ++j) {
 				p_77663_.setWithOffset(p_77662_, p_77664_.getStepX() * i + direction.getStepX() * p_77665_, j, p_77664_.getStepZ() * i + direction.getStepZ() * p_77665_);
-				if (j < 0 && !this.level.getBlockState(p_77663_).getMaterial().isSolid()) {
+				if (j < 0 && !this.level.getBlockState(p_77663_).isSolid()) {
 					return false;
 				}
 				if (j >= 0 && !this.canPortalReplaceBlock(p_77663_)) {
@@ -192,11 +192,10 @@ public class DinoeraTeleporter implements ITeleporter {
 	public Entity placeEntity(Entity entity, ServerLevel currentWorld, ServerLevel server, float yaw, Function<Boolean, Entity> repositionEntity) {
 		PortalInfo portalinfo = getPortalInfo(entity, server);
 		if (entity instanceof ServerPlayer player) {
-			player.setLevel(server);
+			player.setServerLevel(server);
 			server.addDuringPortalTeleport(player);
-			entity.setYRot(portalinfo.yRot % 360.0F);
-			entity.setXRot(portalinfo.xRot % 360.0F);
-			entity.moveTo(portalinfo.pos.x, portalinfo.pos.y, portalinfo.pos.z);
+			player.connection.teleport(portalinfo.pos.x, portalinfo.pos.y, portalinfo.pos.z, portalinfo.yRot, portalinfo.xRot);
+			player.connection.resetPosition();
 			CriteriaTriggers.CHANGED_DIMENSION.trigger(player, currentWorld.dimension(), server.dimension());
 			return entity;
 		} else {
@@ -213,19 +212,15 @@ public class DinoeraTeleporter implements ITeleporter {
 
 	private PortalInfo getPortalInfo(Entity entity, ServerLevel server) {
 		WorldBorder worldborder = server.getWorldBorder();
-		double d0 = Math.max(-2.9999872E7D, worldborder.getMinX() + 16.);
-		double d1 = Math.max(-2.9999872E7D, worldborder.getMinZ() + 16.);
-		double d2 = Math.min(2.9999872E7D, worldborder.getMaxX() - 16.);
-		double d3 = Math.min(2.9999872E7D, worldborder.getMaxZ() - 16.);
-		double d4 = DimensionType.getTeleportationScale(entity.level.dimensionType(), server.dimensionType());
-		BlockPos blockpos1 = BlockPos.containing(Mth.clamp(entity.getX() * d4, d0, d2), entity.getY(), Mth.clamp(entity.getZ() * d4, d1, d3));
+		double d0 = DimensionType.getTeleportationScale(entity.level().dimensionType(), server.dimensionType());
+		BlockPos blockpos1 = worldborder.clampToBounds(entity.getX() * d0, entity.getY(), entity.getZ() * d0);
 		return this.getExitPortal(entity, blockpos1, worldborder).map(repositioner -> {
-			BlockState blockstate = entity.level.getBlockState(this.entityEnterPos);
+			BlockState blockstate = entity.level().getBlockState(this.entityEnterPos);
 			Direction.Axis direction$axis;
 			Vec3 vector3d;
 			if (blockstate.hasProperty(BlockStateProperties.HORIZONTAL_AXIS)) {
 				direction$axis = blockstate.getValue(BlockStateProperties.HORIZONTAL_AXIS);
-				BlockUtil.FoundRectangle teleportationrepositioner$result = BlockUtil.getLargestRectangleAround(this.entityEnterPos, direction$axis, 21, Direction.Axis.Y, 21, pos -> entity.level.getBlockState(pos) == blockstate);
+				BlockUtil.FoundRectangle teleportationrepositioner$result = BlockUtil.getLargestRectangleAround(this.entityEnterPos, direction$axis, 21, Direction.Axis.Y, 21, pos -> entity.level().getBlockState(pos) == blockstate);
 				vector3d = DinoeraPortalShape.getRelativePosition(teleportationrepositioner$result, direction$axis, entity.position(), entity.getDimensions(entity.getPose()));
 			} else {
 				direction$axis = Direction.Axis.X;
@@ -241,7 +236,7 @@ public class DinoeraTeleporter implements ITeleporter {
 			if (optional.isPresent()) {
 				return optional;
 			} else {
-				Direction.Axis direction$axis = entity.level.getBlockState(this.entityEnterPos).getOptionalValue(NetherPortalBlock.AXIS).orElse(Direction.Axis.X);
+				Direction.Axis direction$axis = entity.level().getBlockState(this.entityEnterPos).getOptionalValue(NetherPortalBlock.AXIS).orElse(Direction.Axis.X);
 				return this.createPortal(pos, direction$axis);
 			}
 		} else {

@@ -65,7 +65,7 @@ public class UpdateToReactiveFlyingProcedure {
 				}
 			}
 		} else {
-			if (entity instanceof Player _player && !_player.level.isClientSide())
+			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("\u00A74Not enough coins to buy"), false);
 		}
 	}

@@ -53,7 +53,7 @@ public class SunRegenerationItem extends Item {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		SunRegenOnOtherProcedure.execute(entity.level, entity, sourceentity, itemstack);
+		SunRegenOnOtherProcedure.execute(entity.level(), entity, sourceentity, itemstack);
 		return retval;
 	}
 }

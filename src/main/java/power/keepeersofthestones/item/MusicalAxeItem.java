@@ -52,7 +52,7 @@ public class MusicalAxeItem extends AxeItem {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		DoubleAxeAttackProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		DoubleAxeAttackProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 		return retval;
 	}
 }

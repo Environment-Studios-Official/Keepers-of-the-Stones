@@ -48,7 +48,7 @@ public class LightningStrikeItem extends SwordItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		LightningStrikeUseProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ());
+		LightningStrikeUseProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ());
 		return retval;
 	}
 
@@ -60,7 +60,7 @@ public class LightningStrikeItem extends SwordItem {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		FistAttackProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		FistAttackProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 		return retval;
 	}
 }

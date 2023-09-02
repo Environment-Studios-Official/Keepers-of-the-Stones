@@ -11,7 +11,7 @@ public class RainKnifeAttackProcedure {
 		if (entity == null)
 			return;
 		if (world.getLevelData().isRaining()) {
-			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 100, 2, false, true));
 		}
 	}

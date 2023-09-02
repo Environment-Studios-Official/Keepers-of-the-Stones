@@ -3,8 +3,7 @@ package power.keepeersofthestones.block;
 
 import power.keepeersofthestones.procedures.DetonatorTNTExplodeProcedure;
 
-import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
@@ -30,7 +29,7 @@ public class DetonatorTNTBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public DetonatorTNTBlock() {
-		super(BlockBehaviour.Properties.of(Material.EXPLOSIVE).sound(SoundType.SAND).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.SAND).strength(1f, 10f));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -63,7 +62,7 @@ public class DetonatorTNTBlock extends Block {
 	}
 
 	@Override
-	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;

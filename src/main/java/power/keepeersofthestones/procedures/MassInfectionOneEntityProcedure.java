@@ -12,7 +12,7 @@ public class MassInfectionOneEntityProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 120, 2));
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles(ParticleTypes.WITCH, x, y, z, 10, 1, 1, 1, 1);

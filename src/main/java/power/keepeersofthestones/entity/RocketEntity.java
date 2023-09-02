@@ -59,7 +59,7 @@ public class RocketEntity extends Monster {
 
 	public RocketEntity(EntityType<RocketEntity> type, Level world) {
 		super(type, world);
-		maxUpStep = 0.6f;
+		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(true);
 		setPersistenceRequired();
@@ -165,7 +165,7 @@ public class RocketEntity extends Monster {
 	@Override
 	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
 		ItemStack itemstack = sourceentity.getItemInHand(hand);
-		InteractionResult retval = InteractionResult.sidedSuccess(this.level.isClientSide());
+		InteractionResult retval = InteractionResult.sidedSuccess(this.level().isClientSide());
 		if (sourceentity instanceof ServerPlayer serverPlayer) {
 			NetworkHooks.openScreen(serverPlayer, new MenuProvider() {
 				@Override

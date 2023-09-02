@@ -24,7 +24,7 @@ public class FireReinforcedBatteryUseProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
-				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.FIRE_MASTER.get(), 12000, 0, false, false));
 				PowerMod.queueServerWork(2, () -> {
 					itemstack.shrink(1);

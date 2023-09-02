@@ -22,7 +22,7 @@ public class EnergyMasterMobEffect extends MobEffect {
 
 	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
-		StartEffectEnergyMasterProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		StartEffectEnergyMasterProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override
@@ -33,7 +33,7 @@ public class EnergyMasterMobEffect extends MobEffect {
 	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		EndEffectEnergyMasterProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		EndEffectEnergyMasterProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override

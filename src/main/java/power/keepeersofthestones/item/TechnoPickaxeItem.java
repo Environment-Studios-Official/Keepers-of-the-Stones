@@ -52,7 +52,7 @@ public class TechnoPickaxeItem extends PickaxeItem {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		OtherWeaponAttackProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		OtherWeaponAttackProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 		return retval;
 	}
 }

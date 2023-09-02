@@ -69,7 +69,7 @@ public class BlueKnifeItem extends Item {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		OneHandedBladesAttackProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		OneHandedBladesAttackProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 		return retval;
 	}
 }

@@ -20,5 +20,6 @@
         }
       ]
     }
-  ]
+  ],
+  "random_sequence": "power:entities/reward_coins"
 }

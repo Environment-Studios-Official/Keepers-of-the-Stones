@@ -67,7 +67,7 @@ public class PortalBlastEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		PortalSetProcedure.execute(this.level, blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
+		PortalSetProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
 	}
 
 	@Override
@@ -90,7 +90,7 @@ public class PortalBlastEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	public static PortalBlastEntity shoot(LivingEntity entity, LivingEntity target) {
-		PortalBlastEntity entityarrow = new PortalBlastEntity(PowerModEntities.PORTAL_BLAST.get(), entity, entity.level);
+		PortalBlastEntity entityarrow = new PortalBlastEntity(PowerModEntities.PORTAL_BLAST.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
@@ -99,8 +99,8 @@ public class PortalBlastEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setBaseDamage(12);
 		entityarrow.setKnockback(5);
 		entityarrow.setCritArrow(false);
-		entity.level.addFreshEntity(entityarrow);
-		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.end_portal.spawn")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
+		entity.level().addFreshEntity(entityarrow);
+		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.end_portal.spawn")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

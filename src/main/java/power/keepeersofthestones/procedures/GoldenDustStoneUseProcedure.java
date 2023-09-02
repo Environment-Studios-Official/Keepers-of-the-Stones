@@ -20,7 +20,7 @@ public class GoldenDustStoneUseProcedure {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0) == 0 && entity instanceof Player) {
 				if (!(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(PowerModMobEffects.RECHARGE_GOLDEN_DUST_STONE.get()))) {
 					if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).active) {
-						if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(PowerModMobEffects.GOLDEN_DUST_MASTER.get(), 100000, 0, false, false));
 						PowerMod.queueServerWork(2, () -> {
 							itemstack.shrink(1);

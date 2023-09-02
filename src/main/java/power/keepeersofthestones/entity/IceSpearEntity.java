@@ -67,7 +67,7 @@ public class IceSpearEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		IceBallInEntityProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity());
+		IceBallInEntityProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity());
 	}
 
 	@Override
@@ -90,7 +90,7 @@ public class IceSpearEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	public static IceSpearEntity shoot(LivingEntity entity, LivingEntity target) {
-		IceSpearEntity entityarrow = new IceSpearEntity(PowerModEntities.ICE_SPEAR.get(), entity, entity.level);
+		IceSpearEntity entityarrow = new IceSpearEntity(PowerModEntities.ICE_SPEAR.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
@@ -99,8 +99,8 @@ public class IceSpearEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setBaseDamage(5);
 		entityarrow.setKnockback(5);
 		entityarrow.setCritArrow(false);
-		entity.level.addFreshEntity(entityarrow);
-		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.throw")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
+		entity.level().addFreshEntity(entityarrow);
+		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.throw")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

@@ -38,7 +38,7 @@ public class GravityBoostItem extends Item {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		GravityBoostUseProcedure.execute(entity.level, entity, sourceentity, itemstack);
+		GravityBoostUseProcedure.execute(entity.level(), entity, sourceentity, itemstack);
 		return retval;
 	}
 }
