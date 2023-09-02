@@ -1,7 +1,8 @@
 {
-  "_fv": 44,
+  "_fv": 48,
   "_type": "tool",
   "definition": {
+    "toolType": "Pickaxe",
     "renderType": 0,
     "blockingRenderType": 0,
     "texture": "energium_pickaxe",
@@ -14,7 +15,6 @@
     "creativeTab": {
       "value": "CUSTOM:Energium"
     },
-    "toolType": "Pickaxe",
     "harvestLevel": 2,
     "efficiency": 12.0,
     "attackSpeed": 1.0,

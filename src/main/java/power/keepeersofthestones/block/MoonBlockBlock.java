@@ -33,8 +33,8 @@ public class MoonBlockBlock extends Block {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter blockGetter, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, blockGetter, list, flag);
+	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
 	}
 
 	@Override
@@ -67,18 +67,18 @@ public class MoonBlockBlock extends Block {
 	@Override
 	public void attack(BlockState blockstate, Level world, BlockPos pos, Player entity) {
 		super.attack(blockstate, world, pos, entity);
-		EntityOnMoonstonesProcedure.execute(entity);
+		EntityOnMoonstonesProcedure.execute(world, entity);
 	}
 
 	@Override
 	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
 		super.entityInside(blockstate, world, pos, entity);
-		EntityOnMoonstonesProcedure.execute(entity);
+		EntityOnMoonstonesProcedure.execute(world, entity);
 	}
 
 	@Override
 	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
 		super.stepOn(world, pos, blockstate, entity);
-		EntityOnMoonstonesProcedure.execute(entity);
+		EntityOnMoonstonesProcedure.execute(world, entity);
 	}
 }

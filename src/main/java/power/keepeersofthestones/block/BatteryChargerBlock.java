@@ -48,8 +48,8 @@ public class BatteryChargerBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter blockGetter, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, blockGetter, list, flag);
+	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
 	}
 
 	@Override

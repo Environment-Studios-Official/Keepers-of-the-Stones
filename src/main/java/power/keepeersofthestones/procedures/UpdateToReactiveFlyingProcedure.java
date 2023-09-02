@@ -29,7 +29,7 @@ public class UpdateToReactiveFlyingProcedure {
 			return;
 		if (new Object() {
 			public int getAmount(int sltid) {
-				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 					ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
 					if (stack != null)
 						return stack.getCount();
@@ -37,7 +37,7 @@ public class UpdateToReactiveFlyingProcedure {
 				return 0;
 			}
 		}.getAmount(1) >= 8) {
-			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				((Slot) _slots.get(1)).remove(8);
 				_player.containerMenu.broadcastChanges();
 			}

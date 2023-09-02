@@ -1,7 +1,8 @@
 {
-  "_fv": 44,
+  "_fv": 48,
   "_type": "tool",
   "definition": {
+    "toolType": "Special",
     "renderType": 0,
     "blockingRenderType": 0,
     "texture": "moon_axe",
@@ -14,7 +15,6 @@
     "creativeTab": {
       "value": "No creative tab entry"
     },
-    "toolType": "Special",
     "harvestLevel": 1,
     "efficiency": 100.0,
     "attackSpeed": 2.0,

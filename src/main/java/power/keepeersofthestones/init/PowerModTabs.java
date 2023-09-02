@@ -24,9 +24,6 @@ public class PowerModTabs {
 			tabData.accept(PowerModItems.PLESIOSAURUS_SPAWN_EGG.get());
 			tabData.accept(PowerModItems.PTERODACTYL_SPAWN_EGG.get());
 		}
-
-		if (tabData.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-		}
 	}
 
 	@SubscribeEvent
