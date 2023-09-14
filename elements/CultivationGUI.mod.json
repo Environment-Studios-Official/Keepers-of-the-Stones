@@ -30,6 +30,7 @@
         "data": {
           "name": "button_water_lily",
           "text": "Water lily",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetWaterLily"
           },
@@ -44,6 +45,7 @@
         "data": {
           "name": "button_oak_sapling",
           "text": "Oak Sapling",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetOakSapling"
           },
@@ -58,6 +60,7 @@
         "data": {
           "name": "button_birch_sapling",
           "text": "Birch Sapling",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetBirchSapling"
           },
@@ -72,6 +75,7 @@
         "data": {
           "name": "button_spruce_sapling",
           "text": "Spruce Sapling",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetSpruceSapling"
           },
@@ -86,6 +90,7 @@
         "data": {
           "name": "button_acacia_sapling",
           "text": "Acacia Sapling",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetAcaciaSapling"
           },
@@ -100,6 +105,7 @@
         "data": {
           "name": "button_dark_sapling",
           "text": "Dark sapling",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetDarkSapling"
           },
@@ -114,6 +120,7 @@
         "data": {
           "name": "button_jungle_sapling",
           "text": "Jungle sapling",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetJungleSapling"
           },
@@ -128,6 +135,7 @@
         "data": {
           "name": "button_wheat",
           "text": "Wheat",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetWheat"
           },
@@ -142,6 +150,7 @@
         "data": {
           "name": "button_potato",
           "text": "Potato",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetPotato"
           },
@@ -156,6 +165,7 @@
         "data": {
           "name": "button_carrot",
           "text": "Carrot",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetCarrot"
           },
@@ -170,6 +180,7 @@
         "data": {
           "name": "button_beetroot",
           "text": "Beetroot",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetBeetroot"
           },
@@ -184,6 +195,7 @@
         "data": {
           "name": "button_melon",
           "text": "Melon",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetMelon"
           },
@@ -198,6 +210,7 @@
         "data": {
           "name": "button_pumpkin",
           "text": "Pumpkin",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetPumpkin"
           },
@@ -212,6 +225,7 @@
         "data": {
           "name": "button_sugar_cane",
           "text": "Sugar Cane",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetSugarCane"
           },
@@ -226,6 +240,7 @@
         "data": {
           "name": "button_bamboo",
           "text": "Bamboo",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetBamboo"
           },

@@ -30,6 +30,7 @@
         "data": {
           "name": "button_checkpoint",
           "text": "Checkpoint",
+          "isUndecorated": false,
           "onClick": {
             "name": "ReturnCheckpoint"
           },
@@ -44,6 +45,7 @@
         "data": {
           "name": "button_set_checkpoint",
           "text": "Set checkpoint",
+          "isUndecorated": false,
           "onClick": {
             "name": "TimeCheckpoint"
           },
@@ -58,6 +60,7 @@
         "data": {
           "name": "button_return_to_the_past",
           "text": "Return to the past",
+          "isUndecorated": false,
           "onClick": {
             "name": "ReturnToPast"
           },
@@ -72,6 +75,7 @@
         "data": {
           "name": "button_return_to_the_present",
           "text": "Return to the present",
+          "isUndecorated": false,
           "onClick": {
             "name": "ReturnToPresent"
           },

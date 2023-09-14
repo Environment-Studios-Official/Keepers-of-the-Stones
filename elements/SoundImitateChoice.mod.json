@@ -30,6 +30,7 @@
         "data": {
           "name": "button_creeper",
           "text": "Creeper",
+          "isUndecorated": false,
           "onClick": {
             "name": "EmitateCreeper"
           },
@@ -44,6 +45,7 @@
         "data": {
           "name": "button_zombie",
           "text": "Zombie",
+          "isUndecorated": false,
           "onClick": {
             "name": "EmitateZombie"
           },
@@ -58,6 +60,7 @@
         "data": {
           "name": "button_skeleton",
           "text": "Skeleton",
+          "isUndecorated": false,
           "onClick": {
             "name": "EmitateSkeleton"
           },

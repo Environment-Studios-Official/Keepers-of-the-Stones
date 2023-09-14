@@ -15,6 +15,7 @@
         "data": {
           "name": "button_moon",
           "text": " Moon",
+          "isUndecorated": false,
           "onClick": {
             "name": "MoonGet"
           },
@@ -44,6 +45,7 @@
         "data": {
           "name": "button_amber",
           "text": "Amber",
+          "isUndecorated": false,
           "onClick": {
             "name": "AmberGet"
           },
@@ -58,6 +60,7 @@
         "data": {
           "name": "button_destruct",
           "text": " Destruct",
+          "isUndecorated": false,
           "onClick": {
             "name": "DestructionGet"
           },
@@ -72,6 +75,7 @@
         "data": {
           "name": "button_space",
           "text": "Space",
+          "isUndecorated": false,
           "onClick": {
             "name": "SpaceGet"
           },
@@ -86,6 +90,7 @@
         "data": {
           "name": "button_blood",
           "text": "Blood",
+          "isUndecorated": false,
           "onClick": {
             "name": "BloodGet"
           },
@@ -100,6 +105,7 @@
         "data": {
           "name": "button_time",
           "text": "Time",
+          "isUndecorated": false,
           "onClick": {
             "name": "TimeGet"
           },
@@ -114,6 +120,7 @@
         "data": {
           "name": "button_techolog",
           "text": "Techolog.",
+          "isUndecorated": false,
           "onClick": {
             "name": "TechnologyGet"
           },
@@ -128,6 +135,7 @@
         "data": {
           "name": "button_explosion",
           "text": "Explosion",
+          "isUndecorated": false,
           "onClick": {
             "name": "ExplosionGet"
           },
@@ -142,6 +150,7 @@
         "data": {
           "name": "button_teleport",
           "text": "Teleport.",
+          "isUndecorated": false,
           "onClick": {
             "name": "TeleportationGet"
           },
@@ -156,6 +165,7 @@
         "data": {
           "name": "button_creation",
           "text": "Creation",
+          "isUndecorated": false,
           "onClick": {
             "name": "CreationGet"
           },
@@ -170,6 +180,7 @@
         "data": {
           "name": "button_mist",
           "text": "Mist",
+          "isUndecorated": false,
           "onClick": {
             "name": "MistGet"
           },
@@ -184,6 +195,7 @@
         "data": {
           "name": "button_sand",
           "text": "Sand",
+          "isUndecorated": false,
           "onClick": {
             "name": "SandGet"
           },
@@ -198,6 +210,7 @@
         "data": {
           "name": "button_speed",
           "text": "Speed",
+          "isUndecorated": false,
           "onClick": {
             "name": "SpeedGet"
           },
@@ -212,6 +225,7 @@
         "data": {
           "name": "button_previous_page",
           "text": "Previous page",
+          "isUndecorated": false,
           "onClick": {
             "name": "PreviousPageGUIChoiceStones"
           },
@@ -289,6 +303,7 @@
         "data": {
           "name": "button_poison",
           "text": "Poison",
+          "isUndecorated": false,
           "onClick": {
             "name": "PoisonGet"
           },
@@ -303,6 +318,7 @@
         "data": {
           "name": "button_magnet",
           "text": "Magnet",
+          "isUndecorated": false,
           "onClick": {
             "name": "MagnetGet"
           },
@@ -317,6 +333,7 @@
         "data": {
           "name": "button_mushrooms",
           "text": "Mushrooms",
+          "isUndecorated": false,
           "onClick": {
             "name": "MushroomsGet"
           },
@@ -331,6 +348,7 @@
         "data": {
           "name": "button_mercury",
           "text": "Mercury",
+          "isUndecorated": false,
           "onClick": {
             "name": "MercuryGet"
           },
@@ -345,6 +363,7 @@
         "data": {
           "name": "button_music",
           "text": "Music",
+          "isUndecorated": false,
           "onClick": {
             "name": "MusicGet"
           },
@@ -377,6 +396,7 @@
         "data": {
           "name": "button_plague",
           "text": "Plague",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlagueGet"
           },
@@ -391,6 +411,7 @@
         "data": {
           "name": "button_gravity",
           "text": "Gravity",
+          "isUndecorated": false,
           "onClick": {
             "name": "GravityGet"
           },
@@ -405,6 +426,7 @@
         "data": {
           "name": "button_next_page",
           "text": "Next page",
+          "isUndecorated": false,
           "onClick": {
             "name": "NextToPage3"
           },

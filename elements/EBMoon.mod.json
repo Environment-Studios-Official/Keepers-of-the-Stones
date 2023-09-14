@@ -96,6 +96,7 @@
         "data": {
           "name": "button_empty",
           "text": ">",
+          "isUndecorated": false,
           "onClick": {
             "name": "OpenLevelsAndSkillsPage"
           },

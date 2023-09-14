@@ -61,6 +61,7 @@
         "data": {
           "name": "button_buy",
           "text": "Buy",
+          "isUndecorated": false,
           "onClick": {
             "name": "UpdateToReactiveFlying"
           },

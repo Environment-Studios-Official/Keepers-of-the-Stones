@@ -30,6 +30,7 @@
         "data": {
           "name": "button_stop",
           "text": "Stop",
+          "isUndecorated": false,
           "onClick": {
             "name": "StopSound"
           },
@@ -44,6 +45,7 @@
         "data": {
           "name": "button_cat",
           "text": "Cat",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusicCat"
           },
@@ -58,6 +60,7 @@
         "data": {
           "name": "button_blocks",
           "text": "Blocks",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusicBlocks"
           },
@@ -72,6 +75,7 @@
         "data": {
           "name": "button_far",
           "text": "Far",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusicFar"
           },
@@ -86,6 +90,7 @@
         "data": {
           "name": "button_mall",
           "text": "Mall",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusicMall"
           },
@@ -100,6 +105,7 @@
         "data": {
           "name": "button_mellohi",
           "text": "Mellohi",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusicMellohi"
           },
@@ -114,6 +120,7 @@
         "data": {
           "name": "button_chirp",
           "text": "Chirp",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusicChirp"
           },
@@ -128,6 +135,7 @@
         "data": {
           "name": "button_stal",
           "text": "Stal",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusicStal"
           },
@@ -142,6 +150,7 @@
         "data": {
           "name": "button_strad",
           "text": "Strad",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusicStrad"
           },
@@ -156,6 +165,7 @@
         "data": {
           "name": "button_ward",
           "text": "Ward",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusicWard"
           },
@@ -170,6 +180,7 @@
         "data": {
           "name": "button_wait",
           "text": "Wait",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusicWait"
           },
@@ -184,6 +195,7 @@
         "data": {
           "name": "button_pigstep",
           "text": "Pigstep",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusicPigstep"
           },
@@ -198,6 +210,7 @@
         "data": {
           "name": "button_otherside",
           "text": "Otherside",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusicOtherside"
           },
