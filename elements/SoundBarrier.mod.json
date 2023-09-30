@@ -10,7 +10,7 @@
     "blockingModelName": "blocking_power_shield:sound",
     "name": "Sound Barrier",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "creativeTab": {
       "value": "No creative tab entry"

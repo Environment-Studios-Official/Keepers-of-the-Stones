@@ -31,7 +31,7 @@
     },
     "rarity": "COMMON",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "resistance": 10000.0,
     "luminance": 0,

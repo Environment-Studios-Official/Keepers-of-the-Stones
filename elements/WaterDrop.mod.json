@@ -27,7 +27,7 @@
     "enableMeleeDamage": true,
     "damageVsEntity": 8.0,
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

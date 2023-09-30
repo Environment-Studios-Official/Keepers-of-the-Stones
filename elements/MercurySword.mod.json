@@ -10,7 +10,7 @@
     "blockingModelName": "Normal blocking",
     "name": "Mercury Sword",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "creativeTab": {
       "value": "No creative tab entry"

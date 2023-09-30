@@ -10,7 +10,7 @@
     "blockingModelName": "power_shield:dark",
     "name": "Dark Shield",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "creativeTab": {
       "value": "No creative tab entry"

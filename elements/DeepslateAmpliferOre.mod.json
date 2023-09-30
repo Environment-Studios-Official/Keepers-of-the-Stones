@@ -35,7 +35,7 @@
     ],
     "name": "Deepslate Amplifer Ore",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "hardness": 1.8,
     "resistance": 10.0,

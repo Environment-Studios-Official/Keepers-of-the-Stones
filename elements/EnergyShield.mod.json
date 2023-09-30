@@ -10,7 +10,7 @@
     "blockingModelName": "blocking_power_shield:energy",
     "name": "Energy Shield",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "creativeTab": {
       "value": "No creative tab entry"

@@ -90,7 +90,7 @@
         "data": {
           "name": "label_proc_battery_create_gui_znachien",
           "text": {
-            "fixedValue": "",
+            "fixedValue": [],
             "name": "BatteryCreateGUIZnachieniie"
           },
           "color": {

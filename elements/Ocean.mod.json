@@ -19,16 +19,16 @@
     "leggingsName": "Ocean Leggings",
     "bootsName": "Ocean Boots",
     "helmetSpecialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "bodySpecialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "leggingsSpecialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "bootsSpecialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "helmetModelName": "Default",
     "helmetModelPart": "Helmet",

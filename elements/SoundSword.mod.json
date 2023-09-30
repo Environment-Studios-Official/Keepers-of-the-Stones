@@ -10,7 +10,7 @@
     "blockingModelName": "Normal blocking",
     "name": "Sound Sword",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "creativeTab": {
       "value": "No creative tab entry"

@@ -35,7 +35,7 @@
     ],
     "name": "Moon Block",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "hardness": 0.5,
     "resistance": 10.0,

@@ -10,7 +10,7 @@
     "blockingModelName": "blocking_power_shield:sculk",
     "name": "Sculk Shield",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "creativeTab": {
       "value": "No creative tab entry"

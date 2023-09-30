@@ -10,7 +10,7 @@
     "blockingModelName": "Normal blocking",
     "name": "Lava Hammer",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "creativeTab": {
       "value": "No creative tab entry"

@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Magic Fireball",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "creativeTab": {
       "value": "No creative tab entry"

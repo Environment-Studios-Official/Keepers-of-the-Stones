@@ -27,7 +27,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": "Earth"
+      "fixedValue": []
     },
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
