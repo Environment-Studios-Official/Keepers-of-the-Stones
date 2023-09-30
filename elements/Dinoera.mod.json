@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
@@ -52,6 +52,9 @@
     },
     "enableIgniter": true,
     "igniterName": "Dinoera Portal Igniter",
+    "specialInformation": {
+      "fixedValue": []
+    },
     "igniterTab": {
       "value": "CUSTOM:Artifacts"
     },

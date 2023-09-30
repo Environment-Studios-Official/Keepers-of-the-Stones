@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
@@ -21,7 +21,6 @@
     "actionSound": {
       "value": "item.trident.throw"
     },
-    "hasGlow": false,
     "animation": "spear",
     "enableMeleeDamage": true,
     "damageVsEntity": 16.0,

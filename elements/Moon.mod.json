@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
@@ -33,6 +33,9 @@
     },
     "enableIgniter": false,
     "igniterName": "Moon Portal Igniter",
+    "specialInformation": {
+      "fixedValue": []
+    },
     "igniterTab": {
       "value": "TOOLS"
     },

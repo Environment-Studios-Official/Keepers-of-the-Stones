@@ -1,5 +1,5 @@
 {
-  "type": "power:energium_ore",
+  "type": "minecraft:ore",
   "config": {
     "size": 4,
     "discard_chance_on_air_exposure": 0,

@@ -35,7 +35,6 @@ public class WildMercuryBatteryItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("Mercury"));
 	}
 
 	@Override
