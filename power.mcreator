@@ -28606,20 +28606,6 @@
       "path": "~/Stones/Time"
     },
     {
-      "name": "SetupAnimations",
-      "type": "procedure",
-      "sortid": 1428,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "setup_animations",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/procedures/SetupAnimationsProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
       "name": "TurnOffTheGoldDustStone",
       "type": "gamerule",
       "sortid": 1443,
@@ -34359,7 +34345,6 @@
       "power_dimensions"
     ],
     "mcreatorDependencies": [
-      "playeranimator",
       "allmods"
     ],
     "currentGenerator": "forge-1.20.1",
