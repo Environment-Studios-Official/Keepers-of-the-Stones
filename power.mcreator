@@ -34337,8 +34337,7 @@
     "serverSideOnly": false,
     "modPicture": "logo",
     "requiredMods": [
-      "pehkui",
-      "playeranimator"
+      "pehkui"
     ],
     "dependencies": [],
     "dependants": [

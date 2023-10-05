@@ -26,12 +26,6 @@ description="This mod will add new sources of energy to the world with which you
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.power]]
-    modId="playeranimator"
-    mandatory=true
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 
 [[dependencies.power]]
     modId="allmods"
