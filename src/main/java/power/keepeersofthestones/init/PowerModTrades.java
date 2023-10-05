@@ -19,8 +19,5 @@ public class PowerModTrades {
 		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 24),
 
 				new ItemStack(PowerModItems.ELEMENTAL_MUSIC_DISC.get()), 1, 5, 0.05f));
-		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 48),
-
-				new ItemStack(PowerModItems.WILD_SHARD.get()), 1, 10, 0.05f));
 	}
 }

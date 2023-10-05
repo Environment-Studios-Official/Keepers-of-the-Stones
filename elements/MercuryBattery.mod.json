@@ -27,7 +27,11 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [],
+      "name": "MercuryBT"
+    },
+    "glowCondition": {
+      "fixedValue": false
     },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
