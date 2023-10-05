@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "block",
   "definition": {
     "texture": "sharp_claster_block",
@@ -35,7 +35,7 @@
     ],
     "name": "Cluster Block",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,
@@ -128,7 +128,7 @@
     "onEntityWalksOn": {
       "name": "EntityOnClusterBlock"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {

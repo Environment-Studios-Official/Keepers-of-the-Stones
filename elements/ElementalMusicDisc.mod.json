@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "musicdisc",
   "definition": {
     "name": "Music Disc",
@@ -9,9 +9,8 @@
       "value": "CUSTOM:Artifacts"
     },
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
-    "hasGlow": false,
     "music": {
       "value": "CUSTOM:powerful_stone"
     },

@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -78,6 +78,7 @@
         "data": {
           "name": "button_empty",
           "text": "<",
+          "isUndecorated": false,
           "onClick": {
             "name": "OpenBook"
           },
@@ -119,6 +120,7 @@
         "data": {
           "name": "button_empty1",
           "text": ">",
+          "isUndecorated": false,
           "width": 30,
           "height": 20,
           "x": 366,
@@ -130,6 +132,7 @@
         "data": {
           "name": "button_buy",
           "text": "Buy",
+          "isUndecorated": false,
           "onClick": {
             "name": "OpenBuyLevel2"
           },
@@ -147,6 +150,7 @@
         "data": {
           "name": "button_buy1",
           "text": "Buy",
+          "isUndecorated": false,
           "onClick": {
             "name": "OpenBuyLevel3"
           },
@@ -221,6 +225,7 @@
         "data": {
           "name": "button_buy2",
           "text": "Buy",
+          "isUndecorated": false,
           "onClick": {
             "name": "OpenBuyReactiveFlying"
           },

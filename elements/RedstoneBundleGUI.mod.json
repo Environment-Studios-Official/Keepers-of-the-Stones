@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -30,6 +30,7 @@
         "data": {
           "name": "button_piston",
           "text": "Piston",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetPiston"
           },
@@ -44,6 +45,7 @@
         "data": {
           "name": "button_piston_extension",
           "text": "Piston extension",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetStickyPiston"
           },
@@ -58,6 +60,7 @@
         "data": {
           "name": "button_observer",
           "text": "Observer ",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetObserver"
           },
@@ -72,6 +75,7 @@
         "data": {
           "name": "button_redstone_block",
           "text": "Redstone Block",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetRedstoneBlock"
           },
@@ -86,6 +90,7 @@
         "data": {
           "name": "button_comparator",
           "text": "Comparator",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetComparator"
           },
@@ -100,6 +105,7 @@
         "data": {
           "name": "button_redstone_lamp",
           "text": "Redstone Lamp",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetRedstoneLamp"
           },
@@ -114,6 +120,7 @@
         "data": {
           "name": "button_repeater",
           "text": "Repeater ",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetRepeater"
           },
@@ -128,6 +135,7 @@
         "data": {
           "name": "button_lever",
           "text": "Lever",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetLever"
           },
@@ -142,6 +150,7 @@
         "data": {
           "name": "button_redstone_torch",
           "text": "Redstone Torch",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetRedstoneTorch"
           },
@@ -156,6 +165,7 @@
         "data": {
           "name": "button_hopper",
           "text": "Hopper",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetHopper"
           },
@@ -170,6 +180,7 @@
         "data": {
           "name": "button_dropper",
           "text": "Dropper",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetDropper"
           },
@@ -184,6 +195,7 @@
         "data": {
           "name": "button_dispenser",
           "text": "Dispenser",
+          "isUndecorated": false,
           "onClick": {
             "name": "GetDispenser"
           },

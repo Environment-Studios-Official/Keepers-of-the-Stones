@@ -211,68 +211,6 @@ public class PowerModTabs {
 			})
 
 					.build());
-	public static final RegistryObject<CreativeModeTab> SHARDS = REGISTRY.register("shards",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.power.shards")).icon(() -> new ItemStack(PowerModItems.WILD_SHARD.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(PowerModItems.WILD_SHARD.get());
-				tabData.accept(PowerModItems.BOGGY_SHARD.get());
-				tabData.accept(PowerModItems.BURN_SHARD.get());
-				tabData.accept(PowerModItems.THUNDERSTORM_SHARD.get());
-				tabData.accept(PowerModItems.VOLCANIC_SHARD.get());
-				tabData.accept(PowerModItems.CRYSTALLIZED_SHARD.get());
-				tabData.accept(PowerModItems.DEPTH_SHARD.get());
-				tabData.accept(PowerModItems.FROZEN_SHARD.get());
-				tabData.accept(PowerModItems.TWILIGHT_SHARD.get());
-			})
-
-					.build());
-	public static final RegistryObject<CreativeModeTab> WILD_BATTERIES = REGISTRY.register("wild_batteries",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.power.wild_batteries")).icon(() -> new ItemStack(PowerModItems.EMPTY_WILD_BATTERIES.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(PowerModItems.EMPTY_WILD_BATTERIES.get());
-				tabData.accept(PowerModItems.WILD_FIRE_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_AIR_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_WATER_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_EARTH_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_ENERGY_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_ICE_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_LIGHTNING_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_SOUND_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_CRYSTAL_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_LAVA_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_RAIN_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_TORNADO_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_OCEAN_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_GREENERY_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_ANIMALS_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_METAL_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_LIGHT_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_SHADOW_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_VACUUM_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_SUN_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_MOON_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_SPACE_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_TIME_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_BLOOD_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_TECHNOLOGY_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_TELEPORTATION_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_EXPLOSION_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_MIST_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_SAND_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_SPEED_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_POISON_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_MAGNET_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_MUSHROOMS_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_MERCURY_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_MUSIC_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_PLAGUE_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_BLUE_FLAME_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_GRAVITY_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_SMOKE_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_SPIRIT_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_FORM_BATTERY.get());
-				tabData.accept(PowerModItems.WILD_MIND_BATTERY.get());
-			})
-
-					.build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {

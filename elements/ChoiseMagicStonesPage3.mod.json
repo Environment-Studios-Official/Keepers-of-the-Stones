@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -15,6 +15,7 @@
         "data": {
           "name": "button_spirit",
           "text": "Spirit",
+          "isUndecorated": false,
           "onClick": {
             "name": "SpiritGet"
           },
@@ -44,6 +45,7 @@
         "data": {
           "name": "button_form",
           "text": "Form",
+          "isUndecorated": false,
           "onClick": {
             "name": "FormGet"
           },
@@ -58,6 +60,7 @@
         "data": {
           "name": "button_aether",
           "text": "Aether",
+          "isUndecorated": false,
           "onClick": {
             "name": "AetherGet"
           },
@@ -72,6 +75,7 @@
         "data": {
           "name": "button_mind",
           "text": "Mind",
+          "isUndecorated": false,
           "onClick": {
             "name": "MindGet"
           },
@@ -86,6 +90,7 @@
         "data": {
           "name": "button_g_dust",
           "text": "G. Dust",
+          "isUndecorated": false,
           "onClick": {
             "name": "GoldenDustGet"
           },
@@ -100,6 +105,7 @@
         "data": {
           "name": "button_blue_flame",
           "text": "Blue Flame",
+          "isUndecorated": false,
           "onClick": {
             "name": "BlueFlameGet"
           },
@@ -114,6 +120,7 @@
         "data": {
           "name": "button_empty",
           "text": "Darkness",
+          "isUndecorated": false,
           "onClick": {
             "name": "DarknessGet"
           },
@@ -128,6 +135,7 @@
         "data": {
           "name": "button_smoke",
           "text": "Smoke",
+          "isUndecorated": false,
           "onClick": {
             "name": "SmokeGet"
           },
@@ -142,6 +150,7 @@
         "data": {
           "name": "button_previous_page",
           "text": "Previous page",
+          "isUndecorated": false,
           "onClick": {
             "name": "PreviousPage2"
           },

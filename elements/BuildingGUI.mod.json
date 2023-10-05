@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -30,6 +30,7 @@
         "data": {
           "name": "button_library",
           "text": "Library",
+          "isUndecorated": false,
           "onClick": {
             "name": "LibraryBuild"
           },
@@ -44,6 +45,7 @@
         "data": {
           "name": "button_blacksmith",
           "text": "Blacksmith",
+          "isUndecorated": false,
           "onClick": {
             "name": "BlacksmithBuild"
           },
@@ -58,6 +60,7 @@
         "data": {
           "name": "button_butcher_shop",
           "text": "Butcher Shop",
+          "isUndecorated": false,
           "onClick": {
             "name": "ButcherShopBuild"
           },
@@ -72,6 +75,7 @@
         "data": {
           "name": "button_streetlight",
           "text": "Streetlight",
+          "isUndecorated": false,
           "onClick": {
             "name": "StreetlightBuild"
           },
@@ -86,6 +90,7 @@
         "data": {
           "name": "button_maia_pyramid",
           "text": "Maia Pyramid",
+          "isUndecorated": false,
           "onClick": {
             "name": "MaiaPyramidBuild"
           },

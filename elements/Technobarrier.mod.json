@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "tool",
   "definition": {
     "toolType": "Shield",
@@ -10,7 +10,7 @@
     "blockingModelName": "blocking_power_shield:techno",
     "name": "Technobarrier",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "creativeTab": {
       "value": "No creative tab entry"
@@ -22,7 +22,6 @@
     "damageVsEntity": 4.0,
     "usageCount": 5000,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,

@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -24,6 +24,7 @@
         "data": {
           "name": "button_fire",
           "text": "Fire",
+          "isUndecorated": false,
           "onClick": {
             "name": "FireUse"
           },
@@ -62,6 +63,7 @@
         "data": {
           "name": "button_air",
           "text": "Air",
+          "isUndecorated": false,
           "onClick": {
             "name": "AirUse"
           },
@@ -85,6 +87,7 @@
         "data": {
           "name": "button_water",
           "text": "Water",
+          "isUndecorated": false,
           "onClick": {
             "name": "WaterUse"
           },
@@ -99,6 +102,7 @@
         "data": {
           "name": "button_earth",
           "text": "Earth",
+          "isUndecorated": false,
           "onClick": {
             "name": "EarthUse"
           },
@@ -122,6 +126,7 @@
         "data": {
           "name": "button_energy",
           "text": "Energy",
+          "isUndecorated": false,
           "onClick": {
             "name": "EnergyUse"
           },
@@ -145,6 +150,7 @@
         "data": {
           "name": "button_ice",
           "text": "Ice",
+          "isUndecorated": false,
           "onClick": {
             "name": "IceUse"
           },
@@ -168,6 +174,7 @@
         "data": {
           "name": "button_lightning",
           "text": "Lightning",
+          "isUndecorated": false,
           "onClick": {
             "name": "LightningUse"
           },
@@ -191,6 +198,7 @@
         "data": {
           "name": "button_sound",
           "text": "Sound",
+          "isUndecorated": false,
           "onClick": {
             "name": "SoundUse"
           },
@@ -214,6 +222,7 @@
         "data": {
           "name": "button_crystal",
           "text": "Crystal",
+          "isUndecorated": false,
           "onClick": {
             "name": "CrystalUse"
           },
@@ -237,6 +246,7 @@
         "data": {
           "name": "button_lava",
           "text": "Lava",
+          "isUndecorated": false,
           "onClick": {
             "name": "LavaUse"
           },
@@ -260,6 +270,7 @@
         "data": {
           "name": "button_rain",
           "text": "Rain",
+          "isUndecorated": false,
           "onClick": {
             "name": "RainUse"
           },
@@ -283,6 +294,7 @@
         "data": {
           "name": "button_ocean",
           "text": "Ocean",
+          "isUndecorated": false,
           "onClick": {
             "name": "OceanUse"
           },
@@ -306,6 +318,7 @@
         "data": {
           "name": "button_greenery",
           "text": "Greenery",
+          "isUndecorated": false,
           "onClick": {
             "name": "GreeneryUse"
           },
@@ -338,6 +351,7 @@
         "data": {
           "name": "button_tornado",
           "text": "Tornado",
+          "isUndecorated": false,
           "onClick": {
             "name": "TornadoUse"
           },
@@ -352,6 +366,7 @@
         "data": {
           "name": "button_next_page",
           "text": "Next page",
+          "isUndecorated": false,
           "onClick": {
             "name": "CM2"
           },
@@ -366,6 +381,7 @@
         "data": {
           "name": "button_animals",
           "text": "Animals",
+          "isUndecorated": false,
           "onClick": {
             "name": "AnimalsUse"
           },
@@ -380,6 +396,7 @@
         "data": {
           "name": "button_metal",
           "text": "Metal",
+          "isUndecorated": false,
           "onClick": {
             "name": "MetalUse"
           },
@@ -421,6 +438,7 @@
         "data": {
           "name": "button_light",
           "text": "Light",
+          "isUndecorated": false,
           "onClick": {
             "name": "LightUse"
           },
@@ -435,6 +453,7 @@
         "data": {
           "name": "button_shadow",
           "text": "Shadow",
+          "isUndecorated": false,
           "onClick": {
             "name": "ShadowUse"
           },
@@ -449,6 +468,7 @@
         "data": {
           "name": "button_vacuum",
           "text": "Vacuum",
+          "isUndecorated": false,
           "onClick": {
             "name": "VacuumUse"
           },
@@ -463,6 +483,7 @@
         "data": {
           "name": "button_sun",
           "text": "Sun",
+          "isUndecorated": false,
           "onClick": {
             "name": "SunUse"
           },

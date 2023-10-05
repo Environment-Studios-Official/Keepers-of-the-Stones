@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -30,6 +30,7 @@
         "data": {
           "name": "button_stop",
           "text": "Stop",
+          "isUndecorated": false,
           "onClick": {
             "name": "StopSound"
           },
@@ -44,6 +45,7 @@
         "data": {
           "name": "button_1",
           "text": "1",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusic1"
           },
@@ -58,6 +60,7 @@
         "data": {
           "name": "button_2",
           "text": "2",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusic2"
           },
@@ -72,6 +75,7 @@
         "data": {
           "name": "button_3",
           "text": "3",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusic3"
           },
@@ -86,6 +90,7 @@
         "data": {
           "name": "button_4",
           "text": "4",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusic4"
           },
@@ -100,6 +105,7 @@
         "data": {
           "name": "button_5",
           "text": "5",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusic5"
           },
@@ -114,6 +120,7 @@
         "data": {
           "name": "button_6",
           "text": "6",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusic6"
           },
@@ -128,6 +135,7 @@
         "data": {
           "name": "button_7",
           "text": "7",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusic7"
           },
@@ -142,6 +150,7 @@
         "data": {
           "name": "button_8",
           "text": "8",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusic8"
           },
@@ -156,6 +165,7 @@
         "data": {
           "name": "button_9",
           "text": "9",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusic9"
           },
@@ -170,6 +180,7 @@
         "data": {
           "name": "button_10",
           "text": "10",
+          "isUndecorated": false,
           "onClick": {
             "name": "PlayMusic10"
           },

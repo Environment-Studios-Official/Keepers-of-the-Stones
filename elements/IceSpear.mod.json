@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Ice Spear",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "creativeTab": {
       "value": "No creative tab entry"
@@ -21,15 +21,14 @@
     "actionSound": {
       "value": "item.trident.throw"
     },
-    "hasGlow": false,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "animation": "spear",
     "enableMeleeDamage": true,
     "damageVsEntity": 16.0,
     "onRangedItemUsed": {
       "name": "RechargeMagicFireball"
-    },
-    "onEntitySwing": {
-      "name": "SpearAttack"
     },
     "bulletPower": 1.0,
     "bulletDamage": 5.0,

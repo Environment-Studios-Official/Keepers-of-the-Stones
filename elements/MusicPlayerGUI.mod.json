@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -30,6 +30,7 @@
         "data": {
           "name": "button_stop",
           "text": "Stop",
+          "isUndecorated": false,
           "onClick": {
             "name": "StopSound"
           },
@@ -44,6 +45,7 @@
         "data": {
           "name": "button_buildin",
           "text": "Build-In",
+          "isUndecorated": false,
           "onClick": {
             "name": "OpenBuitinMusic"
           },
@@ -58,6 +60,7 @@
         "data": {
           "name": "button_custom",
           "text": "Custom",
+          "isUndecorated": false,
           "onClick": {
             "name": "OpenCastomMusic"
           },

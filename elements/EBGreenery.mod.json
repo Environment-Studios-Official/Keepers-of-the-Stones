@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -96,6 +96,7 @@
         "data": {
           "name": "button_empty",
           "text": ">",
+          "isUndecorated": false,
           "onClick": {
             "name": "OpenLevelsAndSkillsPage"
           },

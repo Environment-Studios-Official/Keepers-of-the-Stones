@@ -1,7 +1,6 @@
 
 package power.keepeersofthestones.item;
 
-import power.keepeersofthestones.procedures.OneHandedBladesAttackProcedure;
 import power.keepeersofthestones.init.PowerModBlocks;
 
 import net.minecraft.world.level.block.state.BlockState;
@@ -64,12 +63,5 @@ public class BlueKnifeItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-	}
-
-	@Override
-	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
-		boolean retval = super.onEntitySwing(itemstack, entity);
-		OneHandedBladesAttackProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
-		return retval;
 	}
 }

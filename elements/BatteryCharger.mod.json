@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "block",
   "definition": {
     "texture": "battery_charger",
@@ -35,7 +35,7 @@
     ],
     "name": "Battery Charger",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,
@@ -128,7 +128,7 @@
     "onTickUpdate": {
       "name": "BatteryCreateTick"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {

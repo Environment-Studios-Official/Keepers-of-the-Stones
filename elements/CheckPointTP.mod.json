@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -45,6 +45,7 @@
         "data": {
           "name": "button_1",
           "text": "1",
+          "isUndecorated": false,
           "onClick": {
             "name": "FirstPointTP"
           },
@@ -59,6 +60,7 @@
         "data": {
           "name": "button_2",
           "text": "2",
+          "isUndecorated": false,
           "onClick": {
             "name": "SecondPointTP"
           },
@@ -73,6 +75,7 @@
         "data": {
           "name": "button_3",
           "text": "3",
+          "isUndecorated": false,
           "onClick": {
             "name": "ThirdPointTP"
           },
@@ -102,6 +105,7 @@
         "data": {
           "name": "button_11",
           "text": "1",
+          "isUndecorated": false,
           "onClick": {
             "name": "FirstPointSet"
           },
@@ -116,6 +120,7 @@
         "data": {
           "name": "button_21",
           "text": "2",
+          "isUndecorated": false,
           "onClick": {
             "name": "SecondPointSet"
           },
@@ -130,6 +135,7 @@
         "data": {
           "name": "button_31",
           "text": "3",
+          "isUndecorated": false,
           "onClick": {
             "name": "ThirdPointSet"
           },

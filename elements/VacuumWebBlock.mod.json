@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "block",
   "definition": {
     "texture": "vacuum_web_block",
@@ -35,7 +35,7 @@
     ],
     "name": "Vacuum Web Block",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "hardness": 8.0,
     "resistance": 50.0,
@@ -125,7 +125,7 @@
     "onEntityWalksOn": {
       "name": "VacuumTP"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [],
     "generationShape": "UNIFORM",

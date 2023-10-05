@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "block",
   "definition": {
     "texture": "detonator_tnt_top",
@@ -35,7 +35,7 @@
     ],
     "name": "Detonator TNT",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,
@@ -122,7 +122,7 @@
     "onBlockAdded": {
       "name": "DetonatorTNTExplode"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {

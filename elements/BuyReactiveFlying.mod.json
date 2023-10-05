@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -61,6 +61,7 @@
         "data": {
           "name": "button_buy",
           "text": "Buy",
+          "isUndecorated": false,
           "onClick": {
             "name": "UpdateToReactiveFlying"
           },

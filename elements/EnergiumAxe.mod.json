@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "tool",
   "definition": {
     "toolType": "Axe",
@@ -10,7 +10,7 @@
     "blockingModelName": "Normal blocking",
     "name": "Energium Axe",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "creativeTab": {
       "value": "CUSTOM:Energium"
@@ -22,7 +22,6 @@
     "damageVsEntity": 12.0,
     "usageCount": 650,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [
       {
         "value": "CUSTOM:EnergiumIngot"

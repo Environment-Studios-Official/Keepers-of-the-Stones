@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -15,6 +15,7 @@
         "data": {
           "name": "button_spirit",
           "text": "Spirit",
+          "isUndecorated": false,
           "onClick": {
             "name": "SpiritUse"
           },
@@ -44,6 +45,7 @@
         "data": {
           "name": "button_form",
           "text": "Form",
+          "isUndecorated": false,
           "onClick": {
             "name": "FormUse"
           },
@@ -58,6 +60,7 @@
         "data": {
           "name": "button_aether",
           "text": "Aether",
+          "isUndecorated": false,
           "onClick": {
             "name": "AetherUse"
           },
@@ -72,6 +75,7 @@
         "data": {
           "name": "button_mind",
           "text": "Mind",
+          "isUndecorated": false,
           "onClick": {
             "name": "MindUse"
           },
@@ -86,6 +90,7 @@
         "data": {
           "name": "button_blue_flame",
           "text": "Blue Flame",
+          "isUndecorated": false,
           "onClick": {
             "name": "BlueFlameUse"
           },
@@ -100,6 +105,7 @@
         "data": {
           "name": "button_smoke",
           "text": "Smoke",
+          "isUndecorated": false,
           "onClick": {
             "name": "SmokeUse"
           },
@@ -114,6 +120,7 @@
         "data": {
           "name": "button_previous_page",
           "text": "Previous page",
+          "isUndecorated": false,
           "onClick": {
             "name": "CM2"
           },

@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -10,7 +10,7 @@
     "blockingModelName": "Normal blocking",
     "name": "Sand Dagger",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "creativeTab": {
       "value": "No creative tab entry"
@@ -22,13 +22,12 @@
     "damageVsEntity": 11.0,
     "usageCount": 5000,
     "blocksAffected": [],
-    "hasGlow": false,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onEntitySwing": {
-      "name": "OneHandedBladesTwoAttack"
-    }
+    "damageOnCrafting": false
   }
 }

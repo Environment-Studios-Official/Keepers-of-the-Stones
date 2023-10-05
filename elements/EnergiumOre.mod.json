@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "block",
   "definition": {
     "texture": "energium_ore",
@@ -35,7 +35,7 @@
     ],
     "name": "Energium Ore",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,
@@ -125,10 +125,12 @@
     "onStartToDestroy": {
       "name": "EnergiumBlockUse"
     },
-    "spawnWorldTypes": [
-      "Surface"
+    "generateFeature": true,
+    "restrictionBiomes": [
+      {
+        "value": "#is_overworld"
+      }
     ],
-    "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE#0"

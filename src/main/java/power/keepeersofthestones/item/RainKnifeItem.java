@@ -2,7 +2,6 @@
 package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.RainKnifeAttackProcedure;
-import power.keepeersofthestones.procedures.OneHandedBladesAttackProcedure;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -55,12 +54,5 @@ public class RainKnifeItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-	}
-
-	@Override
-	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
-		boolean retval = super.onEntitySwing(itemstack, entity);
-		OneHandedBladesAttackProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
-		return retval;
 	}
 }

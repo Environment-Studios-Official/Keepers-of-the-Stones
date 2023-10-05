@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -30,6 +30,7 @@
         "data": {
           "name": "button_wolf",
           "text": "Wolf",
+          "isUndecorated": false,
           "onClick": {
             "name": "SummonWolf"
           },
@@ -44,6 +45,7 @@
         "data": {
           "name": "button_chicken",
           "text": "Chicken",
+          "isUndecorated": false,
           "onClick": {
             "name": "SummonChicken"
           },
@@ -58,6 +60,7 @@
         "data": {
           "name": "button_cow",
           "text": "Cow",
+          "isUndecorated": false,
           "onClick": {
             "name": "SummonCow"
           },
@@ -72,6 +75,7 @@
         "data": {
           "name": "button_cat",
           "text": "Cat",
+          "isUndecorated": false,
           "onClick": {
             "name": "SummonCat"
           },
@@ -86,6 +90,7 @@
         "data": {
           "name": "button_horse",
           "text": "Horse",
+          "isUndecorated": false,
           "onClick": {
             "name": "SummonHorse"
           },
@@ -100,6 +105,7 @@
         "data": {
           "name": "button_sheep",
           "text": "Sheep",
+          "isUndecorated": false,
           "onClick": {
             "name": "SummonSheep"
           },

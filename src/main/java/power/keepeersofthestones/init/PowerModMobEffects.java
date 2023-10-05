@@ -4,7 +4,6 @@
  */
 package power.keepeersofthestones.init;
 
-import power.keepeersofthestones.potion.WildCallMobEffect;
 import power.keepeersofthestones.potion.WhirlwindMobEffect;
 import power.keepeersofthestones.potion.WaterMasterMobEffect;
 import power.keepeersofthestones.potion.VacuumMasterMobEffect;
@@ -223,7 +222,6 @@ public class PowerModMobEffects {
 	public static final RegistryObject<MobEffect> FREEZING = REGISTRY.register("freezing", () -> new FreezingMobEffect());
 	public static final RegistryObject<MobEffect> RECHARGE_DARKNESS_STONE = REGISTRY.register("recharge_darkness_stone", () -> new RechargeDarknessStoneMobEffect());
 	public static final RegistryObject<MobEffect> DARKNESS_MASTER = REGISTRY.register("darkness_master", () -> new DarknessMasterMobEffect());
-	public static final RegistryObject<MobEffect> WILD_CALL = REGISTRY.register("wild_call", () -> new WildCallMobEffect());
 	public static final RegistryObject<MobEffect> WHIRLWIND = REGISTRY.register("whirlwind", () -> new WhirlwindMobEffect());
 	public static final RegistryObject<MobEffect> TIME_DILATION_EFFECT = REGISTRY.register("time_dilation_effect", () -> new TimeDilationEffectMobEffect());
 }

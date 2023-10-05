@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "tool",
   "definition": {
     "toolType": "Special",
@@ -10,7 +10,7 @@
     "blockingModelName": "Normal blocking",
     "name": "Moon Axe",
     "specialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "creativeTab": {
       "value": "No creative tab entry"
@@ -26,13 +26,12 @@
         "value": "CUSTOM:MoonBlock"
       }
     ],
-    "hasGlow": false,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [],
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onEntitySwing": {
-      "name": "DoubleAxeAttack"
-    }
+    "damageOnCrafting": false
   }
 }

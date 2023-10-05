@@ -1,7 +1,6 @@
 
 package power.keepeersofthestones.item;
 
-import power.keepeersofthestones.procedures.OtherWeaponAttackProcedure;
 import power.keepeersofthestones.procedures.BloodReaperUseProcedure;
 
 import net.minecraft.world.level.Level;
@@ -55,12 +54,5 @@ public class BloodReaperItem extends AxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-	}
-
-	@Override
-	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
-		boolean retval = super.onEntitySwing(itemstack, entity);
-		OtherWeaponAttackProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
-		return retval;
 	}
 }

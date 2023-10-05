@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -30,6 +30,7 @@
         "data": {
           "name": "button_moon",
           "text": "Moon",
+          "isUndecorated": false,
           "onClick": {
             "name": "FlyOnMoon"
           },
@@ -44,6 +45,7 @@
         "data": {
           "name": "button_mars",
           "text": "Mars",
+          "isUndecorated": false,
           "onClick": {
             "name": "FlyOnMars"
           },
@@ -58,6 +60,7 @@
         "data": {
           "name": "button_venus",
           "text": "Venus",
+          "isUndecorated": false,
           "onClick": {
             "name": "FlyOnVenus"
           },
@@ -72,6 +75,7 @@
         "data": {
           "name": "button_enceladus",
           "text": "Enceladus",
+          "isUndecorated": false,
           "onClick": {
             "name": "FlyOnEnceladus"
           },
@@ -86,6 +90,7 @@
         "data": {
           "name": "button_back_to_earth",
           "text": "Back to Earth",
+          "isUndecorated": false,
           "onClick": {
             "name": "FlyOnEarth"
           },

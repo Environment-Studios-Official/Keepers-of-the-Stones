@@ -1,5 +1,5 @@
 {
-  "_fv": 48,
+  "_fv": 51,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -19,16 +19,16 @@
     "leggingsName": "Creation Leggings",
     "bootsName": "Creation Boots",
     "helmetSpecialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "bodySpecialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "leggingsSpecialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "bootsSpecialInformation": {
-      "fixedValue": ""
+      "fixedValue": []
     },
     "helmetModelName": "Default",
     "helmetModelPart": "Helmet",

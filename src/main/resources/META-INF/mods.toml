@@ -4,11 +4,11 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="power"
-version="3.1.4"
+version="3.1.5"
 displayName="Keepers of the Stones"
-credits="Created by Environment Stuidos"
 displayURL="https://power-umc.ru/minecraft-java-edition/mods/6-keepers-of-the-stones.html"
 logoFile="logo.png"
+credits="Created by Environment Stuidos"
 authors="UMC"
 description="This mod will add new sources of energy to the world with which you can transform into masters of the elements."
 
@@ -26,19 +26,7 @@ description="This mod will add new sources of energy to the world with which you
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.power]]
-    modId="playeranimator"
-    mandatory=true
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 
-[[dependencies.power]]
-    modId="playeranimator"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 [[dependencies.power]]
     modId="allmods"
     mandatory=false

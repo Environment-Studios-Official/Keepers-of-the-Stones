@@ -1192,26 +1192,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_FIRE_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -1294,26 +1274,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_AIR_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -1375,26 +1335,6 @@ public class BatteryCreateTickProcedure {
 							if (_ent != null) {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(PowerModItems.EARTH_REINFORCED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_EARTH_BATTERY.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -1470,26 +1410,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_WATER_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -1551,26 +1471,6 @@ public class BatteryCreateTickProcedure {
 							if (_ent != null) {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(PowerModItems.ENERGY_REINFORCED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_ENERGY_BATTERY.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -1646,26 +1546,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_ICE_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -1727,26 +1607,6 @@ public class BatteryCreateTickProcedure {
 							if (_ent != null) {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(PowerModItems.LIGHTNING_REINFORCED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_LIGHTNING_BATTERY.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -1822,26 +1682,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_SOUND_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -1903,26 +1743,6 @@ public class BatteryCreateTickProcedure {
 							if (_ent != null) {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(PowerModItems.CRYSTAL_REINFORCED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_CRYSTAL_BATTERY.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -1998,26 +1818,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_LAVA_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -2079,26 +1879,6 @@ public class BatteryCreateTickProcedure {
 							if (_ent != null) {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(PowerModItems.RAIN_REINFORCED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_RAIN_BATTERY.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -2174,26 +1954,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_TORNADO_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -2255,26 +2015,6 @@ public class BatteryCreateTickProcedure {
 							if (_ent != null) {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(PowerModItems.OCEAN_REINFORCED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_OCEAN_BATTERY.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -2350,26 +2090,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_GREENERY_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -2431,26 +2151,6 @@ public class BatteryCreateTickProcedure {
 							if (_ent != null) {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(PowerModItems.ANIMALS_REINFORCED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_ANIMALS_BATTERY.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -2526,26 +2226,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_METAL_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -2607,26 +2287,6 @@ public class BatteryCreateTickProcedure {
 							if (_ent != null) {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(PowerModItems.LIGHT_REINFORCED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_LIGHT_BATTERY.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -2702,26 +2362,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_SHADOW_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -2783,26 +2423,6 @@ public class BatteryCreateTickProcedure {
 							if (_ent != null) {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(PowerModItems.VACUUM_REINFORCED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_VACUUM_BATTERY.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -2878,26 +2498,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_SUN_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -2959,26 +2559,6 @@ public class BatteryCreateTickProcedure {
 							if (_ent != null) {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(PowerModItems.MOON_REINFORCED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_MOON_BATTERY.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -3066,26 +2646,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_SPACE_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -3135,26 +2695,6 @@ public class BatteryCreateTickProcedure {
 							if (_ent != null) {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(PowerModItems.BLOOD_REINFORCED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_BLOOD_BATTERY.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -3230,26 +2770,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_TIME_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -3311,26 +2831,6 @@ public class BatteryCreateTickProcedure {
 							if (_ent != null) {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(PowerModItems.TECHNOLOGY_REINFORCED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_TECHNOLOGY_BATTERY.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -3406,26 +2906,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_TELEPORTATION_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -3487,26 +2967,6 @@ public class BatteryCreateTickProcedure {
 							if (_ent != null) {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(PowerModItems.EXPLOSION_REINFORCED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_EXPLOSION_BATTERY.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -3582,26 +3042,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_MIST_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -3661,26 +3101,6 @@ public class BatteryCreateTickProcedure {
 							if (_ent != null) {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(PowerModItems.SAND_REINFORCED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_SAND_BATTERY.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -3756,26 +3176,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_SPEED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -3837,26 +3237,6 @@ public class BatteryCreateTickProcedure {
 							if (_ent != null) {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(PowerModItems.POISON_REINFORCED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_POISON_BATTERY.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -3932,26 +3312,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_MAGNET_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -4013,26 +3373,6 @@ public class BatteryCreateTickProcedure {
 							if (_ent != null) {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(PowerModItems.MUSHROOMS_REINFORCED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_MUSHROOMS_BATTERY.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -4108,26 +3448,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_MERCURY_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -4189,26 +3509,6 @@ public class BatteryCreateTickProcedure {
 							if (_ent != null) {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(PowerModItems.MUSIC_REINFORCED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_MUSIC_BATTERY.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -4284,26 +3584,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_PLAGUE_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -4365,26 +3645,6 @@ public class BatteryCreateTickProcedure {
 							if (_ent != null) {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(PowerModItems.GRAVITY_REINFORCED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_GRAVITY_BATTERY.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -4460,26 +3720,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_BLUE_FLAME_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -4541,26 +3781,6 @@ public class BatteryCreateTickProcedure {
 							if (_ent != null) {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(PowerModItems.SPIRIT_REINFORCED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_SPIRIT_BATTERY.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -4636,26 +3856,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_SMOKE_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -4724,26 +3924,6 @@ public class BatteryCreateTickProcedure {
 								});
 							}
 						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_FORM_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
 					} else {
 						{
 							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -4805,26 +3985,6 @@ public class BatteryCreateTickProcedure {
 							if (_ent != null) {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(PowerModItems.MIND_REINFORCED_BATTERY.get());
-								_setstack.setCount(1);
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable)
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-								});
-							}
-						}
-					} else if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "wild") == 1) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 2;
-								final ItemStack _setstack = new ItemStack(PowerModItems.WILD_MIND_BATTERY.get());
 								_setstack.setCount(1);
 								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
@@ -4984,56 +4144,6 @@ public class BatteryCreateTickProcedure {
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
 								_blockEntity.getPersistentData().putDouble("reinforced", 1);
-							if (world instanceof Level _level)
-								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-						}
-					} else if ((new Object() {
-						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							BlockEntity _ent = world.getBlockEntity(pos);
-							if (_ent != null)
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-							return _retval.get();
-						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == PowerModItems.EMPTY_WILD_BATTERIES.get()) {
-						{
-							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-							if (_ent != null) {
-								final int _slotid = 1;
-								final int _amount = 1;
-								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									if (capability instanceof IItemHandlerModifiable) {
-										ItemStack _stk = capability.getStackInSlot(_slotid).copy();
-										_stk.shrink(_amount);
-										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
-									}
-								});
-							}
-						}
-						if (!world.isClientSide()) {
-							BlockPos _bp = BlockPos.containing(x, y, z);
-							BlockEntity _blockEntity = world.getBlockEntity(_bp);
-							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putDouble("fuel", 150);
-							if (world instanceof Level _level)
-								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-						}
-						if (!world.isClientSide()) {
-							BlockPos _bp = BlockPos.containing(x, y, z);
-							BlockEntity _blockEntity = world.getBlockEntity(_bp);
-							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putDouble("maxFuel", 150);
-							if (world instanceof Level _level)
-								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-						}
-						if (!world.isClientSide()) {
-							BlockPos _bp = BlockPos.containing(x, y, z);
-							BlockEntity _blockEntity = world.getBlockEntity(_bp);
-							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putDouble("wild", 1);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
