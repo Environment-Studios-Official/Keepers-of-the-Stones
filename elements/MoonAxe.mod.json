@@ -26,12 +26,12 @@
         "value": "CUSTOM:MoonBlock"
       }
     ],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [],
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onEntitySwing": {
-      "name": "DoubleAxeAttack"
-    }
+    "damageOnCrafting": false
   }
 }

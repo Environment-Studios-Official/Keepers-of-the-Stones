@@ -22,12 +22,12 @@
     "damageVsEntity": 11.0,
     "usageCount": 100,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [],
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onEntitySwing": {
-      "name": "SwordsAttack"
-    }
+    "damageOnCrafting": false
   }
 }

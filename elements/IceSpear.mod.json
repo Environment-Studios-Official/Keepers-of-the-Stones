@@ -21,14 +21,14 @@
     "actionSound": {
       "value": "item.trident.throw"
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "animation": "spear",
     "enableMeleeDamage": true,
     "damageVsEntity": 16.0,
     "onRangedItemUsed": {
       "name": "RechargeMagicFireball"
-    },
-    "onEntitySwing": {
-      "name": "SpearAttack"
     },
     "bulletPower": 1.0,
     "bulletDamage": 5.0,

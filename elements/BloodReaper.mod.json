@@ -22,15 +22,15 @@
     "damageVsEntity": 11.0,
     "usageCount": 5000,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [],
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onEntityHitWith": {
       "name": "BloodReaperUse"
-    },
-    "onEntitySwing": {
-      "name": "OtherWeaponAttack"
     }
   }
 }

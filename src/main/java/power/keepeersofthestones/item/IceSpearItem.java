@@ -1,7 +1,6 @@
 
 package power.keepeersofthestones.item;
 
-import power.keepeersofthestones.procedures.SpearAttackProcedure;
 import power.keepeersofthestones.procedures.RechargeMagicFireballProcedure;
 import power.keepeersofthestones.entity.IceSpearEntity;
 
@@ -37,13 +36,6 @@ public class IceSpearItem extends Item {
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		entity.startUsingItem(hand);
 		return new InteractionResultHolder(InteractionResult.SUCCESS, entity.getItemInHand(hand));
-	}
-
-	@Override
-	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
-		boolean retval = super.onEntitySwing(itemstack, entity);
-		SpearAttackProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
-		return retval;
 	}
 
 	@Override

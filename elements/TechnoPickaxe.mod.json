@@ -22,12 +22,12 @@
     "damageVsEntity": 11.0,
     "usageCount": 5000,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [],
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onEntitySwing": {
-      "name": "OtherWeaponAttack"
-    }
+    "damageOnCrafting": false
   }
 }
