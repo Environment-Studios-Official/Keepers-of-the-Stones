@@ -163,22 +163,6 @@
       "path": "~/Stones/Fire"
     },
     {
-      "name": "MagicFireball",
-      "type": "rangeditem",
-      "sortid": 183,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magic_fireball",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/power/models/item/magic_fireball.json",
-          "src/main/java/power/keepeersofthestones/item/MagicFireballItem.java",
-          "src/main/java/power/keepeersofthestones/entity/MagicFireballEntity.java"
-        ]
-      },
-      "path": "~/Stones/Fire"
-    },
-    {
       "name": "FireMasterEffectEnd",
       "type": "procedure",
       "sortid": 184,
@@ -386,22 +370,6 @@
       "path": "~/Stones/Earth"
     },
     {
-      "name": "AirFlow",
-      "type": "rangeditem",
-      "sortid": 191,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "air_flow",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/power/models/item/air_flow.json",
-          "src/main/java/power/keepeersofthestones/entity/AirFlowEntity.java",
-          "src/main/java/power/keepeersofthestones/item/AirFlowItem.java"
-        ]
-      },
-      "path": "~/Stones/Air"
-    },
-    {
       "name": "AirMasterEffectStart",
       "type": "procedure",
       "sortid": 192,
@@ -560,22 +528,6 @@
         ]
       },
       "path": "~/Stones/Earth"
-    },
-    {
-      "name": "WaterFlow",
-      "type": "rangeditem",
-      "sortid": 199,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "water_flow",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/item/WaterFlowItem.java",
-          "src/main/resources/assets/power/models/item/water_flow.json",
-          "src/main/java/power/keepeersofthestones/entity/WaterFlowEntity.java"
-        ]
-      },
-      "path": "~/Stones/Water"
     },
     {
       "name": "WaterCreateOnBlock",
@@ -1021,22 +973,6 @@
       "path": "~/Stones/Air"
     },
     {
-      "name": "PieceOfEarth",
-      "type": "rangeditem",
-      "sortid": 217,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "piece_of_earth",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/item/PieceOfEarthItem.java",
-          "src/main/resources/assets/power/models/item/piece_of_earth.json",
-          "src/main/java/power/keepeersofthestones/entity/PieceOfEarthEntity.java"
-        ]
-      },
-      "path": "~/Stones/Earth"
-    },
-    {
       "name": "Earth",
       "type": "armor",
       "sortid": 218,
@@ -1253,22 +1189,6 @@
       "path": "~/Stones/Energy"
     },
     {
-      "name": "EnergySphere",
-      "type": "rangeditem",
-      "sortid": 227,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "energy_sphere",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/power/models/item/energy_sphere.json",
-          "src/main/java/power/keepeersofthestones/item/EnergySphereItem.java",
-          "src/main/java/power/keepeersofthestones/entity/EnergySphereEntity.java"
-        ]
-      },
-      "path": "~/Stones/Energy"
-    },
-    {
       "name": "EnergyShieldProcedure",
       "type": "procedure",
       "sortid": 230,
@@ -1467,22 +1387,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      },
-      "path": "~/Stones/Ice"
-    },
-    {
-      "name": "IceBall",
-      "type": "rangeditem",
-      "sortid": 237,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ice_ball",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/power/models/item/ice_ball.json",
-          "src/main/java/power/keepeersofthestones/item/IceBallItem.java",
-          "src/main/java/power/keepeersofthestones/entity/IceBallEntity.java"
         ]
       },
       "path": "~/Stones/Ice"
@@ -1846,22 +1750,6 @@
       "path": "~/Stones/Lightning"
     },
     {
-      "name": "PlasmaBall",
-      "type": "rangeditem",
-      "sortid": 251,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "plasma_ball",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/item/PlasmaBallItem.java",
-          "src/main/java/power/keepeersofthestones/entity/PlasmaBallEntity.java",
-          "src/main/resources/assets/power/models/item/plasma_ball.json"
-        ]
-      },
-      "path": "~/Stones/Lightning"
-    },
-    {
       "name": "StormUse",
       "type": "procedure",
       "sortid": 252,
@@ -2006,22 +1894,6 @@
         "files": [
           "src/main/resources/assets/power/models/item/sound_sword.json",
           "src/main/java/power/keepeersofthestones/item/SoundSwordItem.java"
-        ]
-      },
-      "path": "~/Stones/Sound"
-    },
-    {
-      "name": "AcusticalExplode",
-      "type": "rangeditem",
-      "sortid": 259,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "acustical_explode",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/entity/AcusticalExplodeEntity.java",
-          "src/main/java/power/keepeersofthestones/item/AcusticalExplodeItem.java",
-          "src/main/resources/assets/power/models/item/acustical_explode.json"
         ]
       },
       "path": "~/Stones/Sound"
@@ -2442,22 +2314,6 @@
       "path": "~/Stones/Crystal"
     },
     {
-      "name": "ClusterSharp",
-      "type": "rangeditem",
-      "sortid": 275,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cluster_sharp",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/item/ClusterSharpItem.java",
-          "src/main/resources/assets/power/models/item/cluster_sharp.json",
-          "src/main/java/power/keepeersofthestones/entity/ClusterSharpEntity.java"
-        ]
-      },
-      "path": "~/Stones/Crystal"
-    },
-    {
       "name": "CrystalSharpOnBlock",
       "type": "procedure",
       "sortid": 276,
@@ -2816,22 +2672,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      },
-      "path": "~/Stones/Lava"
-    },
-    {
-      "name": "LavaBall",
-      "type": "rangeditem",
-      "sortid": 291,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lava_ball",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/item/LavaBallItem.java",
-          "src/main/java/power/keepeersofthestones/entity/LavaBallEntity.java",
-          "src/main/resources/assets/power/models/item/lava_ball.json"
         ]
       },
       "path": "~/Stones/Lava"
@@ -3297,23 +3137,6 @@
       "path": "~/Stones/Tornado"
     },
     {
-      "name": "TornadoCreate",
-      "type": "rangeditem",
-      "sortid": 310,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tornado_create",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/entity/TornadoCreateEntity.java",
-          "src/main/resources/assets/power/models/item/tornado_create.json",
-          "src/main/java/power/keepeersofthestones/client/renderer/TornadoCreateRenderer.java",
-          "src/main/java/power/keepeersofthestones/item/TornadoCreateItem.java"
-        ]
-      },
-      "path": "~/Stones/Tornado"
-    },
-    {
       "name": "TornadoCreateOnBlock",
       "type": "procedure",
       "sortid": 311,
@@ -3564,22 +3387,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      },
-      "path": "~/Stones/Ocean"
-    },
-    {
-      "name": "Whirlpool",
-      "type": "rangeditem",
-      "sortid": 321,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "whirlpool",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/entity/WhirlpoolEntity.java",
-          "src/main/java/power/keepeersofthestones/item/WhirlpoolItem.java",
-          "src/main/resources/assets/power/models/item/whirlpool.json"
         ]
       },
       "path": "~/Stones/Ocean"
@@ -3901,23 +3708,6 @@
       "path": "~/Stones/Lava"
     },
     {
-      "name": "RainBow",
-      "type": "rangeditem",
-      "sortid": 339,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rain_bow",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/power/models/item/rain_bow.json",
-          "src/main/java/power/keepeersofthestones/entity/RainBowEntity.java",
-          "src/main/java/power/keepeersofthestones/item/RainBowItem.java",
-          "src/main/java/power/keepeersofthestones/client/renderer/RainBowRenderer.java"
-        ]
-      },
-      "path": "~/Stones/Rain"
-    },
-    {
       "name": "TornadoBattleAxe",
       "type": "tool",
       "sortid": 340,
@@ -4186,22 +3976,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      },
-      "path": "~/Stones/Greenery"
-    },
-    {
-      "name": "Spike",
-      "type": "rangeditem",
-      "sortid": 352,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spike",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/item/SpikeItem.java",
-          "src/main/java/power/keepeersofthestones/entity/SpikeEntity.java",
-          "src/main/resources/assets/power/models/item/spike.json"
         ]
       },
       "path": "~/Stones/Greenery"
@@ -4542,22 +4316,6 @@
         "files": [
           "src/main/java/power/keepeersofthestones/item/BeeStingItem.java",
           "src/main/resources/assets/power/models/item/bee_sting.json"
-        ]
-      },
-      "path": "~/Stones/Animals"
-    },
-    {
-      "name": "TigerClaw",
-      "type": "rangeditem",
-      "sortid": 367,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tiger_claw",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/item/TigerClawItem.java",
-          "src/main/resources/assets/power/models/item/tiger_claw.json",
-          "src/main/java/power/keepeersofthestones/entity/TigerClawEntity.java"
         ]
       },
       "path": "~/Stones/Animals"
@@ -5002,22 +4760,6 @@
       "path": "~/Stones/Metal"
     },
     {
-      "name": "Shuriken",
-      "type": "rangeditem",
-      "sortid": 385,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shuriken",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/power/models/item/shuriken.json",
-          "src/main/java/power/keepeersofthestones/item/ShurikenItem.java",
-          "src/main/java/power/keepeersofthestones/entity/ShurikenEntity.java"
-        ]
-      },
-      "path": "~/Stones/Metal"
-    },
-    {
       "name": "Sai",
       "type": "tool",
       "sortid": 386,
@@ -5412,22 +5154,6 @@
       "path": "~/Stones/Light"
     },
     {
-      "name": "FlashLight",
-      "type": "rangeditem",
-      "sortid": 403,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "flash_light",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/entity/FlashLightEntity.java",
-          "src/main/java/power/keepeersofthestones/item/FlashLightItem.java",
-          "src/main/resources/assets/power/models/item/flash_light.json"
-        ]
-      },
-      "path": "~/Stones/Light"
-    },
-    {
       "name": "FlashLightUse",
       "type": "procedure",
       "sortid": 404,
@@ -5763,22 +5489,6 @@
       "path": "~/Stones/Shadow"
     },
     {
-      "name": "ShadowBall",
-      "type": "rangeditem",
-      "sortid": 418,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shadow_ball",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/power/models/item/shadow_ball.json",
-          "src/main/java/power/keepeersofthestones/entity/ShadowBallEntity.java",
-          "src/main/java/power/keepeersofthestones/item/ShadowBallItem.java"
-        ]
-      },
-      "path": "~/Stones/Shadow"
-    },
-    {
       "name": "ShadowInvisible",
       "type": "item",
       "sortid": 419,
@@ -6099,22 +5809,6 @@
       "path": "~/Stones/Vacuum"
     },
     {
-      "name": "VacuumSpiral",
-      "type": "rangeditem",
-      "sortid": 432,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vacuum_spiral",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/item/VacuumSpiralItem.java",
-          "src/main/java/power/keepeersofthestones/entity/VacuumSpiralEntity.java",
-          "src/main/resources/assets/power/models/item/vacuum_spiral.json"
-        ]
-      },
-      "path": "~/Stones/Vacuum"
-    },
-    {
       "name": "VacuumWebBlock",
       "type": "block",
       "sortid": 433,
@@ -6159,22 +5853,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      },
-      "path": "~/Stones/Vacuum"
-    },
-    {
-      "name": "VacuumWeb",
-      "type": "rangeditem",
-      "sortid": 435,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vacuum_web",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/power/models/item/vacuum_web.json",
-          "src/main/java/power/keepeersofthestones/entity/VacuumWebEntity.java",
-          "src/main/java/power/keepeersofthestones/item/VacuumWebItem.java"
         ]
       },
       "path": "~/Stones/Vacuum"
@@ -6389,22 +6067,6 @@
         "files": [
           "src/main/java/power/keepeersofthestones/item/SunAxeItem.java",
           "src/main/resources/assets/power/models/item/sun_axe.json"
-        ]
-      },
-      "path": "~/Stones/Sun"
-    },
-    {
-      "name": "SunExplode",
-      "type": "rangeditem",
-      "sortid": 444,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sun_explode",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/entity/SunExplodeEntity.java",
-          "src/main/resources/assets/power/models/item/sun_explode.json",
-          "src/main/java/power/keepeersofthestones/item/SunExplodeItem.java"
         ]
       },
       "path": "~/Stones/Sun"
@@ -6737,22 +6399,6 @@
             "name": "entity",
             "type": "entity"
           }
-        ]
-      },
-      "path": "~/Stones/Moon"
-    },
-    {
-      "name": "MoonStones",
-      "type": "rangeditem",
-      "sortid": 458,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "moon_stones",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/item/MoonStonesItem.java",
-          "src/main/java/power/keepeersofthestones/entity/MoonStonesEntity.java",
-          "src/main/resources/assets/power/models/item/moon_stones.json"
         ]
       },
       "path": "~/Stones/Moon"
@@ -7684,22 +7330,6 @@
         "files": [
           "src/main/java/power/keepeersofthestones/item/GalacticSwordItem.java",
           "src/main/resources/assets/power/models/item/galactic_sword.json"
-        ]
-      },
-      "path": "~/Stones/Space"
-    },
-    {
-      "name": "BlackHole",
-      "type": "rangeditem",
-      "sortid": 494,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "black_hole",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/entity/BlackHoleEntity.java",
-          "src/main/java/power/keepeersofthestones/item/BlackHoleItem.java",
-          "src/main/resources/assets/power/models/item/black_hole.json"
         ]
       },
       "path": "~/Stones/Space"
@@ -9459,22 +9089,6 @@
       "path": "~/Stones/Blood"
     },
     {
-      "name": "BlackHeart",
-      "type": "rangeditem",
-      "sortid": 562,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "black_heart",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/entity/BlackHeartEntity.java",
-          "src/main/java/power/keepeersofthestones/item/BlackHeartItem.java",
-          "src/main/resources/assets/power/models/item/black_heart.json"
-        ]
-      },
-      "path": "~/Stones/Blood"
-    },
-    {
       "name": "VampirismUse",
       "type": "procedure",
       "sortid": 563,
@@ -10537,22 +10151,6 @@
         ]
       },
       "path": "~/Stones/Animals"
-    },
-    {
-      "name": "TimeDilation",
-      "type": "rangeditem",
-      "sortid": 605,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "time_dilation",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/entity/TimeDilationEntity.java",
-          "src/main/resources/assets/power/models/item/time_dilation.json",
-          "src/main/java/power/keepeersofthestones/item/TimeDilationItem.java"
-        ]
-      },
-      "path": "~/Stones/Time"
     },
     {
       "name": "BatteryCreateGUI",
@@ -12034,22 +11632,6 @@
       "path": "~/Stones/Technology"
     },
     {
-      "name": "Megawatt",
-      "type": "rangeditem",
-      "sortid": 648,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "megawatt",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/power/models/item/megawatt.json",
-          "src/main/java/power/keepeersofthestones/item/MegawattItem.java",
-          "src/main/java/power/keepeersofthestones/entity/MegawattEntity.java"
-        ]
-      },
-      "path": "~/Stones/Technology"
-    },
-    {
       "name": "MegawattInEntity",
       "type": "procedure",
       "sortid": 649,
@@ -12498,22 +12080,6 @@
         ]
       },
       "path": "~/Stones/Time"
-    },
-    {
-      "name": "PortalBlast",
-      "type": "rangeditem",
-      "sortid": 667,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "portal_blast",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/power/models/item/portal_blast.json",
-          "src/main/java/power/keepeersofthestones/item/PortalBlastItem.java",
-          "src/main/java/power/keepeersofthestones/entity/PortalBlastEntity.java"
-        ]
-      },
-      "path": "~/Stones/Teleportation"
     },
     {
       "name": "BluePortal",
@@ -12999,22 +12565,6 @@
       "path": "~/Stones/Explosion"
     },
     {
-      "name": "ExplosiveFlow",
-      "type": "rangeditem",
-      "sortid": 687,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "explosive_flow",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/item/ExplosiveFlowItem.java",
-          "src/main/java/power/keepeersofthestones/entity/ExplosiveFlowEntity.java",
-          "src/main/resources/assets/power/models/item/explosive_flow.json"
-        ]
-      },
-      "path": "~/Stones/Explosion"
-    },
-    {
       "name": "Mace",
       "type": "tool",
       "sortid": 688,
@@ -13028,55 +12578,6 @@
         ]
       },
       "path": "~/Stones/Explosion"
-    },
-    {
-      "name": "IceSpear",
-      "type": "rangeditem",
-      "sortid": 689,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ice_spear",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/power/models/item/ice_spear.json",
-          "src/main/java/power/keepeersofthestones/entity/IceSpearEntity.java",
-          "src/main/java/power/keepeersofthestones/item/IceSpearItem.java"
-        ]
-      },
-      "path": "~/Stones/Ice"
-    },
-    {
-      "name": "GoldenCrossbow",
-      "type": "rangeditem",
-      "sortid": 690,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "golden_crossbow",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/entity/GoldenCrossbowEntity.java",
-          "src/main/java/power/keepeersofthestones/client/renderer/GoldenCrossbowRenderer.java",
-          "src/main/java/power/keepeersofthestones/item/GoldenCrossbowItem.java",
-          "src/main/resources/assets/power/models/item/golden_crossbow.json"
-        ]
-      },
-      "path": "~/Stones/Creation"
-    },
-    {
-      "name": "DestructionSphere",
-      "type": "rangeditem",
-      "sortid": 691,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "destruction_sphere",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/item/DestructionSphereItem.java",
-          "src/main/java/power/keepeersofthestones/entity/DestructionSphereEntity.java",
-          "src/main/resources/assets/power/models/item/destruction_sphere.json"
-        ]
-      },
-      "path": "~/Stones/Destruction"
     },
     {
       "name": "AmberStone",
@@ -15426,22 +14927,6 @@
       "path": "~/Stones/Teleportation"
     },
     {
-      "name": "AmberStreaks",
-      "type": "rangeditem",
-      "sortid": 794,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "amber_streaks",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/item/AmberStreaksItem.java",
-          "src/main/resources/assets/power/models/item/amber_streaks.json",
-          "src/main/java/power/keepeersofthestones/entity/AmberStreaksEntity.java"
-        ]
-      },
-      "path": "~/Stones/Amber"
-    },
-    {
       "name": "AmberSlow",
       "type": "procedure",
       "sortid": 795,
@@ -16048,22 +15533,6 @@
       "path": "~/Stones/Mist"
     },
     {
-      "name": "Kunai",
-      "type": "rangeditem",
-      "sortid": 821,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "kunai",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/entity/KunaiEntity.java",
-          "src/main/resources/assets/power/models/item/kunai.json",
-          "src/main/java/power/keepeersofthestones/item/KunaiItem.java"
-        ]
-      },
-      "path": "~/Stones/Mist"
-    },
-    {
       "name": "MistyFan",
       "type": "tool",
       "sortid": 822,
@@ -16600,22 +16069,6 @@
       "path": "~/Stones/Sand"
     },
     {
-      "name": "SandFlurry",
-      "type": "rangeditem",
-      "sortid": 842,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sand_flurry",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/entity/SandFlurryEntity.java",
-          "src/main/java/power/keepeersofthestones/item/SandFlurryItem.java",
-          "src/main/resources/assets/power/models/item/sand_flurry.json"
-        ]
-      },
-      "path": "~/Stones/Sand"
-    },
-    {
       "name": "SandShieldUse",
       "type": "procedure",
       "sortid": 844,
@@ -16977,22 +16430,6 @@
         ]
       },
       "path": "~/Main Mod System/ReceivingStones"
-    },
-    {
-      "name": "Boomerang",
-      "type": "rangeditem",
-      "sortid": 858,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "boomerang",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/power/models/item/boomerang.json",
-          "src/main/java/power/keepeersofthestones/item/BoomerangItem.java",
-          "src/main/java/power/keepeersofthestones/entity/BoomerangEntity.java"
-        ]
-      },
-      "path": "~/Stones/Speed"
     },
     {
       "name": "TurboSpeed",
@@ -17643,22 +17080,6 @@
       "path": "~/Stones/Poison"
     },
     {
-      "name": "ToxicCloud",
-      "type": "rangeditem",
-      "sortid": 886,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toxic_cloud",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/item/ToxicCloudItem.java",
-          "src/main/java/power/keepeersofthestones/entity/ToxicCloudEntity.java",
-          "src/main/resources/assets/power/models/item/toxic_cloud.json"
-        ]
-      },
-      "path": "~/Stones/Poison"
-    },
-    {
       "name": "ToxicCloudUse",
       "type": "procedure",
       "sortid": 887,
@@ -17870,22 +17291,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      },
-      "path": "~/Stones/Magnet"
-    },
-    {
-      "name": "ElectromagneticPulse",
-      "type": "rangeditem",
-      "sortid": 895,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "electromagnetic_pulse",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/power/models/item/electromagnetic_pulse.json",
-          "src/main/java/power/keepeersofthestones/entity/ElectromagneticPulseEntity.java",
-          "src/main/java/power/keepeersofthestones/item/ElectromagneticPulseItem.java"
         ]
       },
       "path": "~/Stones/Magnet"
@@ -18154,22 +17559,6 @@
         "files": [
           "src/main/java/power/keepeersofthestones/item/BatonItem.java",
           "src/main/resources/assets/power/models/item/baton.json"
-        ]
-      },
-      "path": "~/Stones/Mushrooms"
-    },
-    {
-      "name": "Spores",
-      "type": "rangeditem",
-      "sortid": 907,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spores",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/item/SporesItem.java",
-          "src/main/java/power/keepeersofthestones/entity/SporesEntity.java",
-          "src/main/resources/assets/power/models/item/spores.json"
         ]
       },
       "path": "~/Stones/Mushrooms"
@@ -18565,22 +17954,6 @@
             "name": "entity",
             "type": "entity"
           }
-        ]
-      },
-      "path": "~/Stones/Mercury"
-    },
-    {
-      "name": "MercuryBall",
-      "type": "rangeditem",
-      "sortid": 925,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mercury_ball",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/power/models/item/mercury_ball.json",
-          "src/main/java/power/keepeersofthestones/entity/MercuryBallEntity.java",
-          "src/main/java/power/keepeersofthestones/item/MercuryBallItem.java"
         ]
       },
       "path": "~/Stones/Mercury"
@@ -18984,22 +18357,6 @@
         "files": [
           "src/main/java/power/keepeersofthestones/item/MusicalAxeItem.java",
           "src/main/resources/assets/power/models/item/musical_axe.json"
-        ]
-      },
-      "path": "~/Stones/Music"
-    },
-    {
-      "name": "DiscoBall",
-      "type": "rangeditem",
-      "sortid": 941,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "disco_ball",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/entity/DiscoBallEntity.java",
-          "src/main/java/power/keepeersofthestones/item/DiscoBallItem.java",
-          "src/main/resources/assets/power/models/item/disco_ball.json"
         ]
       },
       "path": "~/Stones/Music"
@@ -19441,23 +18798,6 @@
       "path": "~/Stones/Plague"
     },
     {
-      "name": "Musket",
-      "type": "rangeditem",
-      "sortid": 959,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "musket",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/entity/MusketEntity.java",
-          "src/main/resources/assets/power/models/item/musket.json",
-          "src/main/java/power/keepeersofthestones/client/renderer/MusketRenderer.java",
-          "src/main/java/power/keepeersofthestones/item/MusketItem.java"
-        ]
-      },
-      "path": "~/Stones/Plague"
-    },
-    {
       "name": "MassInfectionRecharge",
       "type": "procedure",
       "sortid": 960,
@@ -19480,22 +18820,6 @@
         ]
       },
       "path": "~/Stones/Plague"
-    },
-    {
-      "name": "MassInfection",
-      "type": "rangeditem",
-      "sortid": 961,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mass_infection",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/power/models/item/mass_infection.json",
-          "src/main/java/power/keepeersofthestones/item/MassInfectionItem.java",
-          "src/main/java/power/keepeersofthestones/entity/MassInfectionEntity.java"
-        ]
-      },
-      "path": "~/Stones/Light"
     },
     {
       "name": "MassInfectionOneEntity",
@@ -20566,22 +19890,6 @@
       "path": "~/Stones/Gravity"
     },
     {
-      "name": "ThrowingHammer",
-      "type": "rangeditem",
-      "sortid": 997,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "throwing_hammer",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/entity/ThrowingHammerEntity.java",
-          "src/main/java/power/keepeersofthestones/item/ThrowingHammerItem.java",
-          "src/main/resources/assets/power/models/item/throwing_hammer.json"
-        ]
-      },
-      "path": "~/Stones/Gravity"
-    },
-    {
       "name": "ResetNonSelect",
       "type": "procedure",
       "sortid": 998,
@@ -20600,22 +19908,6 @@
         ]
       },
       "path": "~/Commands"
-    },
-    {
-      "name": "BlueFireball",
-      "type": "rangeditem",
-      "sortid": 999,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_fireball",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/entity/BlueFireballEntity.java",
-          "src/main/resources/assets/power/models/item/blue_fireball.json",
-          "src/main/java/power/keepeersofthestones/item/BlueFireballItem.java"
-        ]
-      },
-      "path": "~/Stones/BlueFlame"
     },
     {
       "name": "BlueFireSword",
@@ -21203,22 +20495,6 @@
       "path": "~/Stones/Spirit"
     },
     {
-      "name": "EctoplasmAttack",
-      "type": "rangeditem",
-      "sortid": 1025,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ectoplasm_attack",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/item/EctoplasmAttackItem.java",
-          "src/main/java/power/keepeersofthestones/entity/EctoplasmAttackEntity.java",
-          "src/main/resources/assets/power/models/item/ectoplasm_attack.json"
-        ]
-      },
-      "path": "~/Stones/Spirit"
-    },
-    {
       "name": "GhostForm",
       "type": "item",
       "sortid": 1026,
@@ -21544,22 +20820,6 @@
       "path": "~/Stones/Aether"
     },
     {
-      "name": "FirebirdFeather",
-      "type": "rangeditem",
-      "sortid": 1040,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "firebird_feather",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/entity/FirebirdFeatherEntity.java",
-          "src/main/java/power/keepeersofthestones/item/FirebirdFeatherItem.java",
-          "src/main/resources/assets/power/models/item/firebird_feather.json"
-        ]
-      },
-      "path": "~/Stones/Aether"
-    },
-    {
       "name": "GnomePickaxe",
       "type": "tool",
       "sortid": 1041,
@@ -21867,22 +21127,6 @@
       "path": "~/Stones/Smoke"
     },
     {
-      "name": "SmokeScreen",
-      "type": "rangeditem",
-      "sortid": 1054,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "smoke_screen",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/item/SmokeScreenItem.java",
-          "src/main/resources/assets/power/models/item/smoke_screen.json",
-          "src/main/java/power/keepeersofthestones/entity/SmokeScreenEntity.java"
-        ]
-      },
-      "path": "~/Stones/Smoke"
-    },
-    {
       "name": "Dispersion",
       "type": "item",
       "sortid": 1055,
@@ -22161,22 +21405,6 @@
         "files": [
           "src/main/java/power/keepeersofthestones/item/JadeSwordItem.java",
           "src/main/resources/assets/power/models/item/jade_sword.json"
-        ]
-      },
-      "path": "~/Stones/Form"
-    },
-    {
-      "name": "TransformSphere",
-      "type": "rangeditem",
-      "sortid": 1066,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "transform_sphere",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/entity/TransformSphereEntity.java",
-          "src/main/java/power/keepeersofthestones/item/TransformSphereItem.java",
-          "src/main/resources/assets/power/models/item/transform_sphere.json"
         ]
       },
       "path": "~/Stones/Form"
@@ -23955,22 +23183,6 @@
       "path": "~/Stones/Mind"
     },
     {
-      "name": "MentalAttack",
-      "type": "rangeditem",
-      "sortid": 1136,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mental_attack",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/power/models/item/mental_attack.json",
-          "src/main/java/power/keepeersofthestones/entity/MentalAttackEntity.java",
-          "src/main/java/power/keepeersofthestones/item/MentalAttackItem.java"
-        ]
-      },
-      "path": "~/Stones/Mind"
-    },
-    {
       "name": "Companions",
       "type": "item",
       "sortid": 1137,
@@ -24127,22 +23339,6 @@
         "files": [
           "src/main/resources/assets/power/models/item/golden_staff.json",
           "src/main/java/power/keepeersofthestones/item/GoldenStaffItem.java"
-        ]
-      },
-      "path": "~/Stones/GoldenDust"
-    },
-    {
-      "name": "GoldenSphere",
-      "type": "rangeditem",
-      "sortid": 1144,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "golden_sphere",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/entity/GoldenSphereEntity.java",
-          "src/main/resources/assets/power/models/item/golden_sphere.json",
-          "src/main/java/power/keepeersofthestones/item/GoldenSphereItem.java"
         ]
       },
       "path": "~/Stones/GoldenDust"
@@ -28368,22 +27564,6 @@
       "path": "~/Stones/Darkness"
     },
     {
-      "name": "DarknessBall",
-      "type": "rangeditem",
-      "sortid": 1413,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "darkness_ball",
-      "metadata": {
-        "files": [
-          "src/main/java/power/keepeersofthestones/entity/DarknessBallEntity.java",
-          "src/main/resources/assets/power/models/item/darkness_ball.json",
-          "src/main/java/power/keepeersofthestones/item/DarknessBallItem.java"
-        ]
-      },
-      "path": "~/Stones/Darkness"
-    },
-    {
       "name": "DarkShield",
       "type": "tool",
       "sortid": 1414,
@@ -29305,6 +28485,1489 @@
         "dependencies": []
       },
       "path": "~/Items/BatteriesSystem/BatteryTranslate"
+    },
+    {
+      "name": "MagicFireballProjectile",
+      "type": "projectile",
+      "sortid": 1539,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_fireball_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/MagicFireballProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Fire"
+    },
+    {
+      "name": "MagicFireball",
+      "type": "item",
+      "sortid": 1487,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_fireball",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/magic_fireball.json",
+          "src/main/java/power/keepeersofthestones/item/MagicFireballItem.java"
+        ]
+      },
+      "path": "~/Stones/Fire"
+    },
+    {
+      "name": "AirFlowProjectile",
+      "type": "projectile",
+      "sortid": 1538,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_flow_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/AirFlowProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Air"
+    },
+    {
+      "name": "AirFlow",
+      "type": "item",
+      "sortid": 1488,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_flow",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/air_flow.json",
+          "src/main/java/power/keepeersofthestones/item/AirFlowItem.java"
+        ]
+      },
+      "path": "~/Stones/Air"
+    },
+    {
+      "name": "WaterFlowProjectile",
+      "type": "projectile",
+      "sortid": 1540,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_flow_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/WaterFlowProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Water"
+    },
+    {
+      "name": "WaterFlow",
+      "type": "item",
+      "sortid": 1489,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_flow",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/WaterFlowItem.java",
+          "src/main/resources/assets/power/models/item/water_flow.json"
+        ]
+      },
+      "path": "~/Stones/Water"
+    },
+    {
+      "name": "PieceOfEarthProjectile",
+      "type": "projectile",
+      "sortid": 1541,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piece_of_earth_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/PieceOfEarthProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Earth"
+    },
+    {
+      "name": "PieceOfEarth",
+      "type": "item",
+      "sortid": 1490,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piece_of_earth",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/PieceOfEarthItem.java",
+          "src/main/resources/assets/power/models/item/piece_of_earth.json"
+        ]
+      },
+      "path": "~/Stones/Earth"
+    },
+    {
+      "name": "EnergySphereProjectile",
+      "type": "projectile",
+      "sortid": 1542,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_sphere_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/EnergySphereProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Energy"
+    },
+    {
+      "name": "EnergySphere",
+      "type": "item",
+      "sortid": 1491,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_sphere",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/energy_sphere.json",
+          "src/main/java/power/keepeersofthestones/item/EnergySphereItem.java"
+        ]
+      },
+      "path": "~/Stones/Energy"
+    },
+    {
+      "name": "IceBallProjectile",
+      "type": "projectile",
+      "sortid": 1543,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_ball_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/IceBallProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Ice"
+    },
+    {
+      "name": "IceBall",
+      "type": "item",
+      "sortid": 1492,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_ball",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/ice_ball.json",
+          "src/main/java/power/keepeersofthestones/item/IceBallItem.java"
+        ]
+      },
+      "path": "~/Stones/Ice"
+    },
+    {
+      "name": "PlasmaBallProjectile",
+      "type": "projectile",
+      "sortid": 1544,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plasma_ball_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/PlasmaBallProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Lightning"
+    },
+    {
+      "name": "PlasmaBall",
+      "type": "item",
+      "sortid": 1493,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plasma_ball",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/PlasmaBallItem.java",
+          "src/main/resources/assets/power/models/item/plasma_ball.json"
+        ]
+      },
+      "path": "~/Stones/Lightning"
+    },
+    {
+      "name": "AcusticalExplodeProjectile",
+      "type": "projectile",
+      "sortid": 1545,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acustical_explode_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/AcusticalExplodeProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Sound"
+    },
+    {
+      "name": "AcusticalExplode",
+      "type": "item",
+      "sortid": 1494,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acustical_explode",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/AcusticalExplodeItem.java",
+          "src/main/resources/assets/power/models/item/acustical_explode.json"
+        ]
+      },
+      "path": "~/Stones/Sound"
+    },
+    {
+      "name": "ClusterSharpProjectile",
+      "type": "projectile",
+      "sortid": 1546,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cluster_sharp_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/ClusterSharpProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Crystal"
+    },
+    {
+      "name": "ClusterSharp",
+      "type": "item",
+      "sortid": 1495,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cluster_sharp",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/ClusterSharpItem.java",
+          "src/main/resources/assets/power/models/item/cluster_sharp.json"
+        ]
+      },
+      "path": "~/Stones/Crystal"
+    },
+    {
+      "name": "LavaBallProjectile",
+      "type": "projectile",
+      "sortid": 1547,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lava_ball_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/LavaBallProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Lava"
+    },
+    {
+      "name": "LavaBall",
+      "type": "item",
+      "sortid": 1496,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lava_ball",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/LavaBallItem.java",
+          "src/main/resources/assets/power/models/item/lava_ball.json"
+        ]
+      },
+      "path": "~/Stones/Lava"
+    },
+    {
+      "name": "TornadoCreateProjectile",
+      "type": "projectile",
+      "sortid": 1548,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tornado_create_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/client/renderer/TornadoCreateProjectileRenderer.java",
+          "src/main/java/power/keepeersofthestones/entity/TornadoCreateProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Tornado"
+    },
+    {
+      "name": "TornadoCreate",
+      "type": "item",
+      "sortid": 1497,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tornado_create",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/tornado_create.json",
+          "src/main/java/power/keepeersofthestones/item/TornadoCreateItem.java"
+        ]
+      },
+      "path": "~/Stones/Tornado"
+    },
+    {
+      "name": "WhirlpoolProjectile",
+      "type": "projectile",
+      "sortid": 1549,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whirlpool_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/WhirlpoolProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Ocean"
+    },
+    {
+      "name": "Whirlpool",
+      "type": "item",
+      "sortid": 1498,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whirlpool",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/WhirlpoolItem.java",
+          "src/main/resources/assets/power/models/item/whirlpool.json"
+        ]
+      },
+      "path": "~/Stones/Ocean"
+    },
+    {
+      "name": "RainBowProjectile",
+      "type": "projectile",
+      "sortid": 1550,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rain_bow_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/RainBowProjectileEntity.java",
+          "src/main/java/power/keepeersofthestones/client/renderer/RainBowProjectileRenderer.java"
+        ]
+      },
+      "path": "~/Stones/Rain"
+    },
+    {
+      "name": "RainBow",
+      "type": "item",
+      "sortid": 1499,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rain_bow",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/rain_bow.json",
+          "src/main/java/power/keepeersofthestones/item/RainBowItem.java"
+        ]
+      },
+      "path": "~/Stones/Rain"
+    },
+    {
+      "name": "SpikeProjectile",
+      "type": "projectile",
+      "sortid": 1551,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spike_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/SpikeProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Greenery"
+    },
+    {
+      "name": "Spike",
+      "type": "item",
+      "sortid": 1500,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spike",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/SpikeItem.java",
+          "src/main/resources/assets/power/models/item/spike.json"
+        ]
+      },
+      "path": "~/Stones/Greenery"
+    },
+    {
+      "name": "TigerClawProjectile",
+      "type": "projectile",
+      "sortid": 1552,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tiger_claw_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/TigerClawProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Animals"
+    },
+    {
+      "name": "TigerClaw",
+      "type": "item",
+      "sortid": 1501,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tiger_claw",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/TigerClawItem.java",
+          "src/main/resources/assets/power/models/item/tiger_claw.json"
+        ]
+      },
+      "path": "~/Stones/Animals"
+    },
+    {
+      "name": "ShurikenProjectile",
+      "type": "projectile",
+      "sortid": 1553,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shuriken_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/ShurikenProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Metal"
+    },
+    {
+      "name": "Shuriken",
+      "type": "item",
+      "sortid": 1502,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shuriken",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/shuriken.json",
+          "src/main/java/power/keepeersofthestones/item/ShurikenItem.java"
+        ]
+      },
+      "path": "~/Stones/Metal"
+    },
+    {
+      "name": "FlashLightProjectile",
+      "type": "projectile",
+      "sortid": 1554,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flash_light_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/FlashLightProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Light"
+    },
+    {
+      "name": "FlashLight",
+      "type": "item",
+      "sortid": 1503,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flash_light",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/FlashLightItem.java",
+          "src/main/resources/assets/power/models/item/flash_light.json"
+        ]
+      },
+      "path": "~/Stones/Light"
+    },
+    {
+      "name": "ShadowBallProjectile",
+      "type": "projectile",
+      "sortid": 1555,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadow_ball_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/ShadowBallProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Shadow"
+    },
+    {
+      "name": "ShadowBall",
+      "type": "item",
+      "sortid": 1504,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadow_ball",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/shadow_ball.json",
+          "src/main/java/power/keepeersofthestones/item/ShadowBallItem.java"
+        ]
+      },
+      "path": "~/Stones/Shadow"
+    },
+    {
+      "name": "VacuumSpiralProjectile",
+      "type": "projectile",
+      "sortid": 1556,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vacuum_spiral_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/VacuumSpiralProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Vacuum"
+    },
+    {
+      "name": "VacuumSpiral",
+      "type": "item",
+      "sortid": 1505,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vacuum_spiral",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/VacuumSpiralItem.java",
+          "src/main/resources/assets/power/models/item/vacuum_spiral.json"
+        ]
+      },
+      "path": "~/Stones/Vacuum"
+    },
+    {
+      "name": "VacuumWebProjectile",
+      "type": "projectile",
+      "sortid": 1557,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vacuum_web_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/VacuumWebProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Vacuum"
+    },
+    {
+      "name": "VacuumWeb",
+      "type": "item",
+      "sortid": 1506,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vacuum_web",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/vacuum_web.json",
+          "src/main/java/power/keepeersofthestones/item/VacuumWebItem.java"
+        ]
+      },
+      "path": "~/Stones/Vacuum"
+    },
+    {
+      "name": "SunExplodeProjectile",
+      "type": "projectile",
+      "sortid": 1558,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sun_explode_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/SunExplodeProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Sun"
+    },
+    {
+      "name": "SunExplode",
+      "type": "item",
+      "sortid": 1507,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sun_explode",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/sun_explode.json",
+          "src/main/java/power/keepeersofthestones/item/SunExplodeItem.java"
+        ]
+      },
+      "path": "~/Stones/Sun"
+    },
+    {
+      "name": "MoonStonesProjectile",
+      "type": "projectile",
+      "sortid": 1559,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_stones_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/MoonStonesProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Moon"
+    },
+    {
+      "name": "MoonStones",
+      "type": "item",
+      "sortid": 1508,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_stones",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/MoonStonesItem.java",
+          "src/main/resources/assets/power/models/item/moon_stones.json"
+        ]
+      },
+      "path": "~/Stones/Moon"
+    },
+    {
+      "name": "BlackHoleProjectile",
+      "type": "projectile",
+      "sortid": 1560,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_hole_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/BlackHoleProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Space"
+    },
+    {
+      "name": "BlackHole",
+      "type": "item",
+      "sortid": 1509,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_hole",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/BlackHoleItem.java",
+          "src/main/resources/assets/power/models/item/black_hole.json"
+        ]
+      },
+      "path": "~/Stones/Space"
+    },
+    {
+      "name": "BlackHeartProjectile",
+      "type": "projectile",
+      "sortid": 1561,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_heart_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/BlackHeartProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Blood"
+    },
+    {
+      "name": "BlackHeart",
+      "type": "item",
+      "sortid": 1510,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_heart",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/BlackHeartItem.java",
+          "src/main/resources/assets/power/models/item/black_heart.json"
+        ]
+      },
+      "path": "~/Stones/Blood"
+    },
+    {
+      "name": "TimeDilationProjectile",
+      "type": "projectile",
+      "sortid": 1562,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_dilation_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/TimeDilationProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Time"
+    },
+    {
+      "name": "TimeDilation",
+      "type": "item",
+      "sortid": 1511,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_dilation",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/time_dilation.json",
+          "src/main/java/power/keepeersofthestones/item/TimeDilationItem.java"
+        ]
+      },
+      "path": "~/Stones/Time"
+    },
+    {
+      "name": "MegawattProjectile",
+      "type": "projectile",
+      "sortid": 1563,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "megawatt_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/MegawattProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Technology"
+    },
+    {
+      "name": "Megawatt",
+      "type": "item",
+      "sortid": 1512,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "megawatt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/megawatt.json",
+          "src/main/java/power/keepeersofthestones/item/MegawattItem.java"
+        ]
+      },
+      "path": "~/Stones/Technology"
+    },
+    {
+      "name": "PortalBlastProjectile",
+      "type": "projectile",
+      "sortid": 1565,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_blast_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/PortalBlastProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Teleportation"
+    },
+    {
+      "name": "PortalBlast",
+      "type": "item",
+      "sortid": 1513,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_blast",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/portal_blast.json",
+          "src/main/java/power/keepeersofthestones/item/PortalBlastItem.java"
+        ]
+      },
+      "path": "~/Stones/Teleportation"
+    },
+    {
+      "name": "ExplosiveFlowProjectile",
+      "type": "projectile",
+      "sortid": 1564,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosive_flow_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/ExplosiveFlowProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Explosion"
+    },
+    {
+      "name": "ExplosiveFlow",
+      "type": "item",
+      "sortid": 1514,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosive_flow",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/ExplosiveFlowItem.java",
+          "src/main/resources/assets/power/models/item/explosive_flow.json"
+        ]
+      },
+      "path": "~/Stones/Explosion"
+    },
+    {
+      "name": "IceSpearProjectile",
+      "type": "projectile",
+      "sortid": 1566,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_spear_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/IceSpearProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Ice"
+    },
+    {
+      "name": "IceSpear",
+      "type": "item",
+      "sortid": 1515,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_spear",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/ice_spear.json",
+          "src/main/java/power/keepeersofthestones/item/IceSpearItem.java"
+        ]
+      },
+      "path": "~/Stones/Ice"
+    },
+    {
+      "name": "GoldenCrossbowProjectile",
+      "type": "projectile",
+      "sortid": 1567,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_crossbow_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/GoldenCrossbowProjectileEntity.java",
+          "src/main/java/power/keepeersofthestones/client/renderer/GoldenCrossbowProjectileRenderer.java"
+        ]
+      },
+      "path": "~/Stones/Creation"
+    },
+    {
+      "name": "GoldenCrossbow",
+      "type": "item",
+      "sortid": 1516,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_crossbow",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/GoldenCrossbowItem.java",
+          "src/main/resources/assets/power/models/item/golden_crossbow.json"
+        ]
+      },
+      "path": "~/Stones/Creation"
+    },
+    {
+      "name": "DestructionSphereProjectile",
+      "type": "projectile",
+      "sortid": 1568,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "destruction_sphere_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/DestructionSphereProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Destruction"
+    },
+    {
+      "name": "DestructionSphere",
+      "type": "item",
+      "sortid": 1517,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "destruction_sphere",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/DestructionSphereItem.java",
+          "src/main/resources/assets/power/models/item/destruction_sphere.json"
+        ]
+      },
+      "path": "~/Stones/Destruction"
+    },
+    {
+      "name": "AmberStreaksProjectile",
+      "type": "projectile",
+      "sortid": 1569,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amber_streaks_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/AmberStreaksProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Amber"
+    },
+    {
+      "name": "AmberStreaks",
+      "type": "item",
+      "sortid": 1518,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amber_streaks",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/AmberStreaksItem.java",
+          "src/main/resources/assets/power/models/item/amber_streaks.json"
+        ]
+      },
+      "path": "~/Stones/Amber"
+    },
+    {
+      "name": "KunaiProjectile",
+      "type": "projectile",
+      "sortid": 1570,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kunai_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/KunaiProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Mist"
+    },
+    {
+      "name": "Kunai",
+      "type": "item",
+      "sortid": 1519,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kunai",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/kunai.json",
+          "src/main/java/power/keepeersofthestones/item/KunaiItem.java"
+        ]
+      },
+      "path": "~/Stones/Mist"
+    },
+    {
+      "name": "SandFlurryProjectile",
+      "type": "projectile",
+      "sortid": 1571,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_flurry_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/SandFlurryProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Sand"
+    },
+    {
+      "name": "SandFlurry",
+      "type": "item",
+      "sortid": 1520,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_flurry",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/SandFlurryItem.java",
+          "src/main/resources/assets/power/models/item/sand_flurry.json"
+        ]
+      },
+      "path": "~/Stones/Sand"
+    },
+    {
+      "name": "BoomerangProjectile",
+      "type": "projectile",
+      "sortid": 1572,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boomerang_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/BoomerangProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Speed"
+    },
+    {
+      "name": "Boomerang",
+      "type": "item",
+      "sortid": 1521,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boomerang",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/boomerang.json",
+          "src/main/java/power/keepeersofthestones/item/BoomerangItem.java"
+        ]
+      },
+      "path": "~/Stones/Speed"
+    },
+    {
+      "name": "ToxicCloudProjectile",
+      "type": "projectile",
+      "sortid": 1573,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_cloud_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/ToxicCloudProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Poison"
+    },
+    {
+      "name": "ToxicCloud",
+      "type": "item",
+      "sortid": 1522,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_cloud",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/ToxicCloudItem.java",
+          "src/main/resources/assets/power/models/item/toxic_cloud.json"
+        ]
+      },
+      "path": "~/Stones/Poison"
+    },
+    {
+      "name": "ElectromagneticPulseProjectile",
+      "type": "projectile",
+      "sortid": 1574,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electromagnetic_pulse_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/ElectromagneticPulseProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Magnet"
+    },
+    {
+      "name": "ElectromagneticPulse",
+      "type": "item",
+      "sortid": 1523,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electromagnetic_pulse",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/electromagnetic_pulse.json",
+          "src/main/java/power/keepeersofthestones/item/ElectromagneticPulseItem.java"
+        ]
+      },
+      "path": "~/Stones/Magnet"
+    },
+    {
+      "name": "SporesProjectile",
+      "type": "projectile",
+      "sortid": 1575,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spores_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/SporesProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Mushrooms"
+    },
+    {
+      "name": "Spores",
+      "type": "item",
+      "sortid": 1524,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spores",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/SporesItem.java",
+          "src/main/resources/assets/power/models/item/spores.json"
+        ]
+      },
+      "path": "~/Stones/Mushrooms"
+    },
+    {
+      "name": "MercuryBallProjectile",
+      "type": "projectile",
+      "sortid": 1576,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mercury_ball_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/MercuryBallProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Mercury"
+    },
+    {
+      "name": "MercuryBall",
+      "type": "item",
+      "sortid": 1525,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mercury_ball",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/mercury_ball.json",
+          "src/main/java/power/keepeersofthestones/item/MercuryBallItem.java"
+        ]
+      },
+      "path": "~/Stones/Mercury"
+    },
+    {
+      "name": "DiscoBallProjectile",
+      "type": "projectile",
+      "sortid": 1577,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disco_ball_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/DiscoBallProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Music"
+    },
+    {
+      "name": "DiscoBall",
+      "type": "item",
+      "sortid": 1526,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disco_ball",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/DiscoBallItem.java",
+          "src/main/resources/assets/power/models/item/disco_ball.json"
+        ]
+      },
+      "path": "~/Stones/Music"
+    },
+    {
+      "name": "MusketProjectile",
+      "type": "projectile",
+      "sortid": 1578,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musket_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/MusketProjectileEntity.java",
+          "src/main/java/power/keepeersofthestones/client/renderer/MusketProjectileRenderer.java"
+        ]
+      },
+      "path": "~/Stones/Plague"
+    },
+    {
+      "name": "Musket",
+      "type": "item",
+      "sortid": 1527,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musket",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/musket.json",
+          "src/main/java/power/keepeersofthestones/item/MusketItem.java"
+        ]
+      },
+      "path": "~/Stones/Plague"
+    },
+    {
+      "name": "MassInfectionProjectile",
+      "type": "projectile",
+      "sortid": 1579,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mass_infection_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/MassInfectionProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Light"
+    },
+    {
+      "name": "MassInfection",
+      "type": "item",
+      "sortid": 1528,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mass_infection",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/mass_infection.json",
+          "src/main/java/power/keepeersofthestones/item/MassInfectionItem.java"
+        ]
+      },
+      "path": "~/Stones/Light"
+    },
+    {
+      "name": "ThrowingHammerProjectile",
+      "type": "projectile",
+      "sortid": 1580,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "throwing_hammer_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/ThrowingHammerProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Gravity"
+    },
+    {
+      "name": "ThrowingHammer",
+      "type": "item",
+      "sortid": 1529,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "throwing_hammer",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/ThrowingHammerItem.java",
+          "src/main/resources/assets/power/models/item/throwing_hammer.json"
+        ]
+      },
+      "path": "~/Stones/Gravity"
+    },
+    {
+      "name": "BlueFireballProjectile",
+      "type": "projectile",
+      "sortid": 1581,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_fireball_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/BlueFireballProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/BlueFlame"
+    },
+    {
+      "name": "BlueFireball",
+      "type": "item",
+      "sortid": 1530,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_fireball",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/blue_fireball.json",
+          "src/main/java/power/keepeersofthestones/item/BlueFireballItem.java"
+        ]
+      },
+      "path": "~/Stones/BlueFlame"
+    },
+    {
+      "name": "EctoplasmAttackProjectile",
+      "type": "projectile",
+      "sortid": 1582,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ectoplasm_attack_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/EctoplasmAttackProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Spirit"
+    },
+    {
+      "name": "EctoplasmAttack",
+      "type": "item",
+      "sortid": 1531,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ectoplasm_attack",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/EctoplasmAttackItem.java",
+          "src/main/resources/assets/power/models/item/ectoplasm_attack.json"
+        ]
+      },
+      "path": "~/Stones/Spirit"
+    },
+    {
+      "name": "FirebirdFeatherProjectile",
+      "type": "projectile",
+      "sortid": 1583,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firebird_feather_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/FirebirdFeatherProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Aether"
+    },
+    {
+      "name": "FirebirdFeather",
+      "type": "item",
+      "sortid": 1532,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firebird_feather",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/FirebirdFeatherItem.java",
+          "src/main/resources/assets/power/models/item/firebird_feather.json"
+        ]
+      },
+      "path": "~/Stones/Aether"
+    },
+    {
+      "name": "SmokeScreenProjectile",
+      "type": "projectile",
+      "sortid": 1584,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smoke_screen_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/SmokeScreenProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Smoke"
+    },
+    {
+      "name": "SmokeScreen",
+      "type": "item",
+      "sortid": 1533,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smoke_screen",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/SmokeScreenItem.java",
+          "src/main/resources/assets/power/models/item/smoke_screen.json"
+        ]
+      },
+      "path": "~/Stones/Smoke"
+    },
+    {
+      "name": "TransformSphereProjectile",
+      "type": "projectile",
+      "sortid": 1585,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transform_sphere_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/TransformSphereProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Form"
+    },
+    {
+      "name": "TransformSphere",
+      "type": "item",
+      "sortid": 1534,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transform_sphere",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/item/TransformSphereItem.java",
+          "src/main/resources/assets/power/models/item/transform_sphere.json"
+        ]
+      },
+      "path": "~/Stones/Form"
+    },
+    {
+      "name": "MentalAttackProjectile",
+      "type": "projectile",
+      "sortid": 1586,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mental_attack_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/MentalAttackProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Mind"
+    },
+    {
+      "name": "MentalAttack",
+      "type": "item",
+      "sortid": 1535,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mental_attack",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/mental_attack.json",
+          "src/main/java/power/keepeersofthestones/item/MentalAttackItem.java"
+        ]
+      },
+      "path": "~/Stones/Mind"
+    },
+    {
+      "name": "GoldenSphereProjectile",
+      "type": "projectile",
+      "sortid": 1587,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_sphere_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/GoldenSphereProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/GoldenDust"
+    },
+    {
+      "name": "GoldenSphere",
+      "type": "item",
+      "sortid": 1536,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_sphere",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/golden_sphere.json",
+          "src/main/java/power/keepeersofthestones/item/GoldenSphereItem.java"
+        ]
+      },
+      "path": "~/Stones/GoldenDust"
+    },
+    {
+      "name": "DarknessBallProjectile",
+      "type": "projectile",
+      "sortid": 1588,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkness_ball_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/entity/DarknessBallProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stones/Darkness"
+    },
+    {
+      "name": "DarknessBall",
+      "type": "item",
+      "sortid": 1537,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkness_ball",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power/models/item/darkness_ball.json",
+          "src/main/java/power/keepeersofthestones/item/DarknessBallItem.java"
+        ]
+      },
+      "path": "~/Stones/Darkness"
     }
   ],
   "variable_elements": [
@@ -30435,8 +31098,8 @@
       "item.power.moon_battery": "Батарея",
       "item.power.energy_leggings": "Энергетические Поножи",
       "item.power.explode_leggings": "Нагрудник взрыва",
-      "effect.power.recharge_ice_stone": "Перезарядка",
       "gui.power.sound_imitate_choice.button_creeper": "Крипер",
+      "effect.power.recharge_ice_stone": "Перезарядка",
       "item.power.pearl_of_aquatica": "Жемчужина Акватики",
       "effect.power.recharge_golden_dust_stone": "Перезарядка",
       "item.power.disco_ball": "Диско-шар",
@@ -30444,32 +31107,32 @@
       "item.power.explosive_flow": "Взрывной Поток",
       "gui.power.choise_magic_power_2.button_teleport": "Телепорт.",
       "effect.recharge_tornado_stone": "Перезарядка",
-      "gui.power.eb_mist.label_element_mist": "Стихия: Туман",
       "biome.power.triassic_plains": "Триассовые Равнины",
+      "gui.power.eb_mist.label_element_mist": "Стихия: Туман",
       "effect.power.recharge_moon_stone": "Перезарядка",
       "gui.power.eb_technology.button_empty": "\u003e",
       "item.power.energium_shovel": "Энерджиумная лопата",
       "gui.power.choise_magic_stones_page_2.button_creation": "Творение",
-      "item.power.lightning_helmet": "Повязка Молнии",
       "gui.power.check_point_tp.label_checkpoints": "Контрольные точки:",
+      "item.power.lightning_helmet": "Повязка Молнии",
       "item.power.blood_boots": "Blood Boots",
       "item.power.crestcent_leggings": "Crestcent Leggings",
       "item.power.fire_chestplate": "Огненная Мантия",
       "gui.power.eb_plague.button_empty": "\u003e",
       "item.power.glow_create": "Создать Светляка",
-      "item.power.technology_chestplate": "Technology Chestplate",
       "gui.power.choise_magic_stones_page_3.button_g_dust": "З. пыль",
+      "item.power.technology_chestplate": "Technology Chestplate",
       "gui.power.eb_lightning.button_empty": "\u003e",
-      "item.power.boomerang": "Бумеранг",
       "item.power.puddle": "Лужа",
+      "item.power.boomerang": "Бумеранг",
       "item.power.lava_hammer": "Лавовый Молот",
       "item.power.darkness_helmet": "Darkness Helmet",
       "item.power.black_hole": "Черная Дыра",
       "item.power.air_blade": "Воздушная Рапира",
       "item.power.lighting": "Освещение",
       "gui.power.eb_crystal.button_empty": "\u003e",
-      "gui.power.choise_magic_stone_gui.button_crystal": "Кристалл",
       "gui.power.eb_smoke.label_force_dispersion": "Сила: Рассеивание",
+      "gui.power.choise_magic_stone_gui.button_crystal": "Кристалл",
       "gui.power.choise_magic_power_2.button_speed": "Скорость",
       "gui.power.choise_magic_power_2.button_previous_page": "Назад",
       "effect.power.recharge_vacuum_stone": "Перезарядка",
@@ -30490,9 +31153,9 @@
       "item.power.shadow_invisible": "Теневая Невидимость",
       "item.power.speed_chestplate": "Speed Chestplate",
       "item.power.blue_flame_reinforced_battery": "Усиленная батарея",
-      "item.power.light_helmet": "Шлем солнца",
-      "gui.power.eb_space.label_element_space": "Стихия: Космос",
       "gui.power.music_player_gui.button_stop": "Стоп",
+      "gui.power.eb_space.label_element_space": "Стихия: Космос",
+      "item.power.light_helmet": "Шлем солнца",
       "item.power.time_leggings": "Штаны времени",
       "gui.power.eb_speed.button_empty": "\u003e",
       "gui.power.choise_magic_stone_gui.button_vacuum": "Пустота",
@@ -30505,13 +31168,13 @@
       "gui.power.choise_magic_power_2.button_sand": "Песок",
       "gui.power.check_point_tp.button_1": "1",
       "gui.power.check_point_tp.button_2": "2",
-      "item.power.rocket_item": "Ракета",
-      "gui.power.eb_energy.button_empty": "\u003e",
       "gui.power.check_point_tp.button_3": "3",
+      "gui.power.eb_energy.button_empty": "\u003e",
+      "item.power.rocket_item": "Ракета",
       "gui.power.choise_magic_stones_page_3.button_previous_page": "Назад",
       "gamerule.turnOffTheGoldDustStone": "Выключить камень золотой пыли",
-      "gui.power.choise_magic_power_2.button_space": "Космос",
       "item.power.explosion_stone": "Камень Взрыва",
+      "gui.power.choise_magic_power_2.button_space": "Космос",
       "gui.power.choise_magic_stone_gui.button_lightning": "Молния",
       "gui.power.eb_mind.label_class_additional": "Класс: Дополнительные",
       "item.power.ethereal_staff": "Эфирный Посох",
@@ -30521,8 +31184,8 @@
       "item.power.redstone_bundle": "Мешок с редстоуном",
       "gui.power.eb_vacuum.button_empty": "\u003e",
       "gui.power.choise_magic_power_1.button_sun": "Солнце",
-      "item.power.light_battery": "Батарея",
       "item.power.iron_shield": "Железный Щит",
+      "item.power.light_battery": "Батарея",
       "item.power.plague_helmet": "Plague Helmet",
       "effect.power.tornado_master": "Мастер Торнадо",
       "biome.power.enceladus_ice_desert": "Ледянная Пустыня Энцелада",
@@ -30539,8 +31202,8 @@
       "item.power.crystal_leggings": "Кристаллические Штаны",
       "item.power.crystal_dagger": "Кристаллический Кинжал",
       "item.power.spirit_battery": "Батарея",
-      "item.power.energium_axe": "Энерджиумный топор",
       "gui.power.eb_tornado.label_force_spinning": "Сила: Вращение",
+      "item.power.energium_axe": "Энерджиумный топор",
       "item.power.mercury_leggings": "Mercury Leggings",
       "item.power.fertilizer": "Удобрение",
       "item.power.sand_battery": "Батарея",
@@ -30554,8 +31217,8 @@
       "gui.power.choise_magic_power_3.button_smoke": "Дым",
       "gui.power.redstone_bundle_gui.button_hopper": "Воронка",
       "effect.power.recharge_teleportation_stone": "Перезарядка",
-      "item.power.throwing_hammer": "Метательный Молот",
       "subtitles.stone_activation": "Камень был активирован",
+      "item.power.throwing_hammer": "Метательный Молот",
       "biome.power.triassic_desert": "Триассовая Пустыня",
       "block.power.vacuum_web_block": "Блок вакуумной сети",
       "gui.power.eb_mushrooms.label_class_middle": "Класс: Средние",
@@ -30566,8 +31229,8 @@
       "item.power.mist_battery": "Батарея",
       "gui.power.build_in_music_player.button_otherside": "Otherside",
       "item.power.wind_chestplate": "Воздушный Жилет",
-      "gui.power.choise_magic_power_2.button_magnet": "Магнит",
       "item.power.speed_helmet": "Speed Helmet",
+      "gui.power.choise_magic_power_2.button_magnet": "Магнит",
       "gui.power.eb_lightning.label_element_lightning": "Стихия: Молния",
       "gui.power.choise_magic_stones_page_2.button_space": "Космос",
       "gui.power.eb_explosion.label_force_gap": "Сила: Разрыв",
@@ -30576,8 +31239,8 @@
       "effect.power.power_lock": "Блокировка силы",
       "effect.power.aether_master": "Мастер Эфира",
       "gui.power.eb_mushrooms.label_force_distribution": "Сила: Распределение",
-      "block.power.deepslate_amplifer_ore": "Амплифероносный глубинный сланец",
       "item.power.crystal_boots": "Кристаллические Сапоги",
+      "block.power.deepslate_amplifer_ore": "Амплифероносный глубинный сланец",
       "gui.power.eb_form.label_class_additional": "Класс: Дополнительные",
       "item.power.tornado_chestplate": "Нагрудник Торнадо",
       "gui.power.eb_destruction.label_class_great_unique": "Класс: Великие, Уникальные",
@@ -30585,8 +31248,8 @@
       "subtitles.music4": "",
       "subtitles.music5": "",
       "subtitles.music2": "",
-      "item.power.rain_reinforced_battery": "Усиленная батарея",
       "subtitles.music3": "",
+      "item.power.rain_reinforced_battery": "Усиленная батарея",
       "subtitles.music8": "",
       "item.power.space_stone": "Камень Космоса",
       "item.power.teleportation_stone": "Камень Телепортации",
@@ -30595,8 +31258,8 @@
       "subtitles.music7": "",
       "item.power.lava_boots": "Лавовые Ботинки",
       "gamerule.gettingStonesWhenEnteringTheGame": "Получение камней при входе в игру",
-      "gui.power.choise_magic_stone_gui.button_ice": "Лед",
       "gui.power.music_player_gui.button_buildin": "Встроенная",
+      "gui.power.choise_magic_stone_gui.button_ice": "Лед",
       "subtitles.music1": "",
       "item.power.metal_leggings": "Металлические Поножи",
       "item.power.destruction_boots": "Ботинки разрушения",
@@ -31639,8 +32302,8 @@
       "item.power.energy_leggings": "Energy Leggings",
       "item.power.moon_battery": "Battery",
       "item.power.explode_leggings": "Explode Leggings",
-      "gui.power.sound_imitate_choice.button_creeper": "Creeper",
       "effect.power.recharge_ice_stone": "Recharge",
+      "gui.power.sound_imitate_choice.button_creeper": "Creeper",
       "effect.power.recharge_golden_dust_stone": "Recharge",
       "item.power.disco_ball": "Disco Ball",
       "item.power.pearl_of_aquatica": "Pearl Of Aquatica",
@@ -31648,32 +32311,32 @@
       "item.power.explosive_flow": "Explosive Flow",
       "gui.power.choise_magic_power_2.button_teleport": "Teleport.",
       "effect.recharge_tornado_stone": "Recharge",
-      "gui.power.eb_mist.label_element_mist": "Element: Mist",
       "biome.power.triassic_plains": "Triassic Plains",
+      "gui.power.eb_mist.label_element_mist": "Element: Mist",
       "effect.power.recharge_moon_stone": "Recharge",
       "gui.power.eb_technology.button_empty": "\u003e",
       "item.power.energium_shovel": "Energium Shovel",
       "gui.power.choise_magic_stones_page_2.button_creation": "Creation",
-      "gui.power.check_point_tp.label_checkpoints": "Checkpoints:",
       "item.power.lightning_helmet": "Lightning Helmet",
+      "gui.power.check_point_tp.label_checkpoints": "Checkpoints:",
       "item.power.blood_boots": "Blood Boots",
       "item.power.crestcent_leggings": "Crestcent Leggings",
       "item.power.fire_chestplate": "Fire Chestplate",
       "gui.power.eb_plague.button_empty": "\u003e",
       "item.power.glow_create": "Glow Create",
-      "gui.power.choise_magic_stones_page_3.button_g_dust": "G. Dust",
       "item.power.technology_chestplate": "Technology Chestplate",
+      "gui.power.choise_magic_stones_page_3.button_g_dust": "G. Dust",
       "gui.power.eb_lightning.button_empty": "\u003e",
-      "item.power.puddle": "Puddle",
       "item.power.boomerang": "Boomerang",
+      "item.power.puddle": "Puddle",
       "item.power.lava_hammer": "Lava Hammer",
       "item.power.darkness_helmet": "Darkness Helmet",
       "item.power.black_hole": "Black Hole",
       "item.power.air_blade": "Air Rapier",
       "item.power.lighting": "Lighting",
       "gui.power.eb_crystal.button_empty": "\u003e",
-      "gui.power.eb_smoke.label_force_dispersion": "Force: Dispersion",
       "gui.power.choise_magic_stone_gui.button_crystal": "Crystal",
+      "gui.power.eb_smoke.label_force_dispersion": "Force: Dispersion",
       "gui.power.choise_magic_power_2.button_speed": "Speed",
       "gui.power.choise_magic_power_2.button_previous_page": "Previous page",
       "effect.power.recharge_vacuum_stone": "Recharge",
@@ -31694,9 +32357,9 @@
       "item.power.speed_chestplate": "Speed Chestplate",
       "item.power.shadow_invisible": "Shadow Invisible",
       "item.power.blue_flame_reinforced_battery": "Reinforced Battery",
-      "gui.power.music_player_gui.button_stop": "Stop",
-      "gui.power.eb_space.label_element_space": "Element: Space",
       "item.power.light_helmet": "Light Helmet",
+      "gui.power.eb_space.label_element_space": "Element: Space",
+      "gui.power.music_player_gui.button_stop": "Stop",
       "item.power.time_leggings": "Time Leggings",
       "gui.power.eb_speed.button_empty": "\u003e",
       "gui.power.choise_magic_stone_gui.button_vacuum": "Vacuum",
@@ -31709,13 +32372,13 @@
       "gui.power.choise_magic_power_2.button_sand": "Sand",
       "gui.power.check_point_tp.button_1": "1",
       "gui.power.check_point_tp.button_2": "2",
-      "gui.power.check_point_tp.button_3": "3",
-      "gui.power.eb_energy.button_empty": "\u003e",
       "item.power.rocket_item": "Rocket",
+      "gui.power.eb_energy.button_empty": "\u003e",
+      "gui.power.check_point_tp.button_3": "3",
       "gui.power.choise_magic_stones_page_3.button_previous_page": "Previous page",
       "gamerule.turnOffTheGoldDustStone": "Turn off the Gold Dust Stone",
-      "item.power.explosion_stone": "Explosion Stone",
       "gui.power.choise_magic_power_2.button_space": "Space",
+      "item.power.explosion_stone": "Explosion Stone",
       "gui.power.choise_magic_stone_gui.button_lightning": "Lightning",
       "gui.power.eb_mind.label_class_additional": "Class: Additional",
       "item.power.ethereal_staff": "Ethereal Staff",
@@ -31725,8 +32388,8 @@
       "item.power.redstone_bundle": "Redstone Bundle",
       "gui.power.eb_vacuum.button_empty": "\u003e",
       "gui.power.choise_magic_power_1.button_sun": "Sun",
-      "item.power.light_battery": "Battery",
       "item.power.iron_shield": "Iron Shield",
+      "item.power.light_battery": "Battery",
       "item.power.plague_helmet": "Plague Helmet",
       "effect.power.tornado_master": "Master of Tornado",
       "biome.power.enceladus_ice_desert": "Enceladus Ice Desert",
@@ -31743,8 +32406,8 @@
       "item.power.crystal_leggings": "Crystal Leggings",
       "item.power.crystal_dagger": "Crystal Dagger",
       "item.power.spirit_battery": "Battery",
-      "gui.power.eb_tornado.label_force_spinning": "Force: Spinning",
       "item.power.energium_axe": "Energium Axe",
+      "gui.power.eb_tornado.label_force_spinning": "Force: Spinning",
       "item.power.mercury_leggings": "Mercury Leggings",
       "item.power.fertilizer": "Fertilizer",
       "item.power.sand_battery": "Battery",
@@ -31758,8 +32421,8 @@
       "gui.power.choise_magic_power_3.button_smoke": "Smoke",
       "gui.power.redstone_bundle_gui.button_hopper": "Hopper",
       "effect.power.recharge_teleportation_stone": "Recharge",
-      "subtitles.stone_activation": "Stone been activation",
       "item.power.throwing_hammer": "Throwing Hammer",
+      "subtitles.stone_activation": "Stone been activation",
       "biome.power.triassic_desert": "Triassic Desert",
       "block.power.vacuum_web_block": "Vacuum Web Block",
       "gui.power.eb_mushrooms.label_class_middle": "Class: Middle",
@@ -31770,8 +32433,8 @@
       "item.power.mist_battery": "Battery",
       "gui.power.build_in_music_player.button_otherside": "Otherside",
       "item.power.wind_chestplate": "Air Chestplate",
-      "gui.power.choise_magic_power_2.button_magnet": "Magnet",
       "item.power.speed_helmet": "Speed Helmet",
+      "gui.power.choise_magic_power_2.button_magnet": "Magnet",
       "gui.power.eb_lightning.label_element_lightning": "Element: Lightning",
       "gui.power.choise_magic_stones_page_2.button_space": "Space",
       "gui.power.eb_explosion.label_force_gap": "Force: Gap",
@@ -31780,8 +32443,8 @@
       "effect.power.power_lock": "Power Lock",
       "effect.power.aether_master": "Master of the Aether",
       "gui.power.eb_mushrooms.label_force_distribution": "Force: Distribution",
-      "block.power.deepslate_amplifer_ore": "Deepslate Amplifer Ore",
       "item.power.crystal_boots": "Crystal Boots",
+      "block.power.deepslate_amplifer_ore": "Deepslate Amplifer Ore",
       "gui.power.eb_form.label_class_additional": "Class: Additional",
       "item.power.tornado_chestplate": "Tornado Chestplate",
       "gui.power.eb_destruction.label_class_great_unique": "Class: Great, Unique",
@@ -31789,8 +32452,8 @@
       "subtitles.music4": "",
       "subtitles.music5": "",
       "subtitles.music2": "",
-      "subtitles.music3": "",
       "item.power.rain_reinforced_battery": "Reinforced Battery",
+      "subtitles.music3": "",
       "subtitles.music8": "",
       "item.power.space_stone": "Space Stone",
       "item.power.teleportation_stone": "Teleportation Stone",
@@ -31799,8 +32462,8 @@
       "subtitles.music7": "",
       "item.power.lava_boots": "Lava Boots",
       "gamerule.gettingStonesWhenEnteringTheGame": "Getting stones when entering the game",
-      "gui.power.choise_magic_stone_gui.button_ice": "Ice",
       "gui.power.music_player_gui.button_buildin": "Build-In",
+      "gui.power.choise_magic_stone_gui.button_ice": "Ice",
       "subtitles.music1": "",
       "item.power.metal_leggings": "Metal Leggings",
       "item.power.destruction_boots": "Destruction Boots",
@@ -32845,8 +33508,8 @@
       "item.power.energy_leggings": "能源护腿",
       "item.power.moon_battery": "电池",
       "item.power.explode_leggings": "爆炸护腿",
-      "gui.power.sound_imitate_choice.button_creeper": "苦力怕",
       "effect.power.recharge_ice_stone": "充能",
+      "gui.power.sound_imitate_choice.button_creeper": "苦力怕",
       "effect.power.recharge_golden_dust_stone": "充能",
       "item.power.disco_ball": "迪斯科球",
       "item.power.pearl_of_aquatica": "萤珍珠",
@@ -32860,26 +33523,26 @@
       "gui.power.eb_technology.button_empty": "\u003e",
       "item.power.energium_shovel": "能量锹",
       "gui.power.choise_magic_stones_page_2.button_creation": "创造",
-      "item.power.lightning_helmet": "闪电头盔",
       "gui.power.check_point_tp.label_checkpoints": "记录点：",
+      "item.power.lightning_helmet": "闪电头盔",
       "item.power.blood_boots": "血液靴子",
       "item.power.crestcent_leggings": "新月护腿",
       "item.power.fire_chestplate": "火焰胸甲",
       "gui.power.eb_plague.button_empty": "\u003e",
       "item.power.glow_create": "创造辉光",
-      "item.power.technology_chestplate": "科技胸甲",
       "gui.power.choise_magic_stones_page_3.button_g_dust": "金尘",
+      "item.power.technology_chestplate": "科技胸甲",
       "gui.power.eb_lightning.button_empty": "\u003e",
-      "item.power.boomerang": "回旋镖",
       "item.power.puddle": "水潭",
+      "item.power.boomerang": "回旋镖",
       "item.power.lava_hammer": "熔岩锤",
       "item.power.darkness_helmet": "黑暗头盔",
       "item.power.black_hole": "黑洞",
       "item.power.air_blade": "空气长剑",
       "item.power.lighting": "灯火辉煌",
       "gui.power.eb_crystal.button_empty": "\u003e",
-      "gui.power.choise_magic_stone_gui.button_crystal": "晶体",
       "gui.power.eb_smoke.label_force_dispersion": "力量：分散",
+      "gui.power.choise_magic_stone_gui.button_crystal": "晶体",
       "gui.power.choise_magic_power_2.button_speed": "速度",
       "gui.power.choise_magic_power_2.button_previous_page": "上一页",
       "effect.power.recharge_vacuum_stone": "充能",
@@ -32888,8 +33551,8 @@
       "item.power.mist_chestplate": "迷雾胸甲",
       "effect.power.recharge_earth_stone": "充能",
       "item.power.time_reversed": "翻转时间",
-      "gui.power.eb_blood.label_element_blood": "元素：血液",
       "gui.power.eb_golden_dust.label_force_goodness": "力量：善良",
+      "gui.power.eb_blood.label_element_blood": "元素：血液",
       "item.power.piece_of_earth": "土地碎块",
       "item.power.explode_chestplate": "爆炸胸甲",
       "item.power.ocean_sword": "海洋剑",
@@ -32900,28 +33563,28 @@
       "item.power.shadow_invisible": "化作阴影",
       "item.power.speed_chestplate": "速度胸甲",
       "item.power.blue_flame_reinforced_battery": "强化电池",
-      "item.power.light_helmet": "光明头盔",
-      "gui.power.eb_space.label_element_space": "元素：太空",
       "gui.power.music_player_gui.button_stop": "停止",
-      "gui.power.eb_speed.button_empty": "\u003e",
+      "gui.power.eb_space.label_element_space": "元素：太空",
+      "item.power.light_helmet": "光明头盔",
       "item.power.time_leggings": "时间护腿",
+      "gui.power.eb_speed.button_empty": "\u003e",
       "gui.power.choise_magic_stone_gui.button_vacuum": "真空",
       "gui.power.eb_ocean.button_empty": "\u003e",
       "item.power.music_battery": "电池",
       "gui.power.redstone_bundle_gui.button_dropper": "投掷器",
-      "item.power.darkness_chestplate": "黑暗胸甲",
       "effect.power.recharge_mercury_stone": "充能",
+      "item.power.darkness_chestplate": "黑暗胸甲",
       "item.power.golden_dust_stone": "金尘之石",
-      "gui.power.check_point_tp.button_1": "1",
       "gui.power.choise_magic_power_2.button_sand": "沙子",
+      "gui.power.check_point_tp.button_1": "1",
       "gui.power.check_point_tp.button_2": "2",
-      "item.power.rocket_item": "火箭",
-      "gui.power.eb_energy.button_empty": "\u003e",
       "gui.power.check_point_tp.button_3": "3",
+      "gui.power.eb_energy.button_empty": "\u003e",
+      "item.power.rocket_item": "火箭",
       "gui.power.choise_magic_stones_page_3.button_previous_page": "上一页",
       "gamerule.turnOffTheGoldDustStone": "Turn off the Gold Dust Stone",
-      "gui.power.choise_magic_power_2.button_space": "太空",
       "item.power.explosion_stone": "爆炸之石",
+      "gui.power.choise_magic_power_2.button_space": "太空",
       "gui.power.choise_magic_stone_gui.button_lightning": "闪电",
       "gui.power.eb_mind.label_class_additional": "类别：附加",
       "item.power.ethereal_staff": "飘渺法杖",
@@ -32931,8 +33594,8 @@
       "item.power.redstone_bundle": "红石百宝袋",
       "gui.power.eb_vacuum.button_empty": "\u003e",
       "gui.power.choise_magic_power_1.button_sun": "太阳",
-      "item.power.iron_shield": "铁盾",
       "item.power.light_battery": "电池",
+      "item.power.iron_shield": "铁盾",
       "item.power.plague_helmet": "瘟疫头盔",
       "effect.power.tornado_master": "风暴大师",
       "biome.power.enceladus_ice_desert": "土卫二冰沙漠",
@@ -32949,8 +33612,8 @@
       "item.power.crystal_leggings": "晶体护腿",
       "item.power.crystal_dagger": "晶体匕首",
       "item.power.spirit_battery": "电池",
-      "item.power.energium_axe": "能量斧",
       "gui.power.eb_tornado.label_force_spinning": "力量：动感",
+      "item.power.energium_axe": "能量斧",
       "item.power.mercury_leggings": "水银护腿",
       "item.power.fertilizer": "肥料",
       "item.power.sand_battery": "电池",
@@ -32964,8 +33627,8 @@
       "gui.power.choise_magic_power_3.button_smoke": "烟雾",
       "gui.power.redstone_bundle_gui.button_hopper": "漏斗",
       "effect.power.recharge_teleportation_stone": "充能",
-      "subtitles.stone_activation": "魔法石：激活",
       "item.power.throwing_hammer": "飞锤",
+      "subtitles.stone_activation": "魔法石：激活",
       "biome.power.triassic_desert": "三叠纪沙漠",
       "block.power.vacuum_web_block": "真空网块",
       "gui.power.eb_mushrooms.label_class_middle": "类别：中等",
@@ -32976,8 +33639,8 @@
       "item.power.mist_battery": "电池",
       "gui.power.build_in_music_player.button_otherside": "Otherside",
       "item.power.wind_chestplate": "空气胸甲",
-      "gui.power.choise_magic_power_2.button_magnet": "磁铁",
       "item.power.speed_helmet": "速度头盔",
+      "gui.power.choise_magic_power_2.button_magnet": "磁铁",
       "gui.power.eb_lightning.label_element_lightning": "元素：闪电",
       "gui.power.choise_magic_stones_page_2.button_space": "太空",
       "gui.power.eb_explosion.label_force_gap": "力量：差异",
@@ -32986,8 +33649,8 @@
       "effect.power.power_lock": "魔法锁",
       "effect.power.aether_master": "以太大师",
       "gui.power.eb_mushrooms.label_force_distribution": "力量：分散",
-      "block.power.deepslate_amplifer_ore": "深层增扩矿石",
       "item.power.crystal_boots": "晶体靴子",
+      "block.power.deepslate_amplifer_ore": "深层增扩矿石",
       "gui.power.eb_form.label_class_additional": "类别：附加",
       "item.power.tornado_chestplate": "风暴胸甲",
       "gui.power.eb_destruction.label_class_great_unique": "类别：独特",
@@ -32997,12 +33660,12 @@
       "item.power.teleportation_stone": "传送之石",
       "item.power.lava_boots": "熔岩靴子",
       "gamerule.gettingStonesWhenEnteringTheGame": "进入世界获得魔法石",
-      "gui.power.choise_magic_stone_gui.button_ice": "冰冻",
       "gui.power.music_player_gui.button_buildin": "内置音乐",
+      "gui.power.choise_magic_stone_gui.button_ice": "冰冻",
       "item.power.metal_leggings": "金属护腿",
       "item.power.destruction_boots": "毁灭靴子",
-      "item.power.sound_helmet": "声音头盔",
       "item.power.balance_helmet": "平衡头盔",
+      "item.power.sound_helmet": "声音头盔",
       "item.power.music_chestplate": "音乐胸甲",
       "gui.power.check_point_tp.button_31": "3",
       "gui.power.choise_magic_stone_gui.label_choose_a_stone_to_get_it": "选择一颗魔法石",
@@ -34351,5 +35014,5 @@
     "modElementsPackage": "power.keepeersofthestones",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300440415
+  "mcreatorVersion": 202300441100
 }

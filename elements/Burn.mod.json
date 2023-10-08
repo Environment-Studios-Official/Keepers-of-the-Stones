@@ -1,5 +1,5 @@
 {
-  "_fv": 51,
+  "_fv": 52,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -38,6 +38,8 @@
     "onEntityHitWith": {
       "name": "BurnProcedure"
     },
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,

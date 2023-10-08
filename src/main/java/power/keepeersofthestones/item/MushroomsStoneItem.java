@@ -40,11 +40,7 @@ public class MushroomsStoneItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		ItemStack itemstack = ar.getObject();
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		MushroomsStoneUseProcedure.execute(world, entity, itemstack);
+		MushroomsStoneUseProcedure.execute(world, entity, ar.getObject());
 		return ar;
 	}
 }

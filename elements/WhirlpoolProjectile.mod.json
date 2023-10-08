@@ -1,0 +1,25 @@
+{
+  "_fv": 52,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Whirlpool"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "block.bubble_column.bubble_pop"
+    },
+    "igniteFire": false,
+    "power": 10.0,
+    "damage": 1.0,
+    "knockback": 2,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "WaterCreateOnBlock"
+    },
+    "onHitsEntity": {
+      "name": "Whirlpoolpower"
+    }
+  }
+}

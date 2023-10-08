@@ -45,21 +45,19 @@ public class JoinPlayerInTheWorldProcedure {
 		if (world.getLevelData().getGameRules().getBoolean(PowerModGameRules.GETTINGSTONESWHENENTERINGTHEGAME) == true) {
 			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).selected) {
 				if (!world.getLevelData().getGameRules().getBoolean(PowerModGameRules.GETRANDOMSTONE)) {
-					{
-						if (entity instanceof ServerPlayer _ent) {
-							BlockPos _bpos = BlockPos.containing(x, y, z);
-							NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
-								@Override
-								public Component getDisplayName() {
-									return Component.literal("ChoiseMagicStoneGUI");
-								}
+					if (entity instanceof ServerPlayer _ent) {
+						BlockPos _bpos = BlockPos.containing(x, y, z);
+						NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+							@Override
+							public Component getDisplayName() {
+								return Component.literal("ChoiseMagicStoneGUI");
+							}
 
-								@Override
-								public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-									return new ChoiseMagicStoneGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
-								}
-							}, _bpos);
-						}
+							@Override
+							public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+								return new ChoiseMagicStoneGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+							}
+						}, _bpos);
 					}
 				} else {
 					RandomChoiceStoneProcedure.execute(world, entity);

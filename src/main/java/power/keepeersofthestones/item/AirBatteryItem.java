@@ -47,11 +47,7 @@ public class AirBatteryItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		ItemStack itemstack = ar.getObject();
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		AirBatteryUseProcedure.execute(world, entity, itemstack);
+		AirBatteryUseProcedure.execute(world, entity, ar.getObject());
 		return ar;
 	}
 }

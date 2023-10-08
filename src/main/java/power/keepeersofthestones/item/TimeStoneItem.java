@@ -40,11 +40,7 @@ public class TimeStoneItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		ItemStack itemstack = ar.getObject();
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		TimeStoneUseProcedure.execute(world, entity, itemstack);
+		TimeStoneUseProcedure.execute(world, entity, ar.getObject());
 		return ar;
 	}
 }
