@@ -1,4 +1,3 @@
-What's new in Keepers of the Stones version 3.1.6?<br />
-<br />- Added the elemental_stones tag in the Forge namespace
-<br />- The message was deleted when entering the world because the link is outdated
+What's new in Keepers of the Stones version 3.2.0?<br />
+<br />- 
 <br />- [Bugfix] 
