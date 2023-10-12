@@ -1,0 +1,22 @@
+{
+  "_fv": 52,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Items.DYE#12"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "block.end_portal.spawn"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 12.0,
+    "knockback": 5,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "PortalSet"
+    }
+  }
+}

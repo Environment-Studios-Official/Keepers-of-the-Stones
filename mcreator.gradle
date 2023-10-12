@@ -19,7 +19,6 @@ dependencies
   def version = basename.substring(versionSep + 1)
   runtimeOnly fg.deobf("extra-mods:$artifactId:$version")}
 }
-
 minecraft {
  mappings channel: 'official', version: '1.20.1'
   accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
@@ -49,6 +48,6 @@ minecraft {
       }
         }
       }
-          }
+         }
 
 

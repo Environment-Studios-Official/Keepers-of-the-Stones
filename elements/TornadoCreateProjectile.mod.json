@@ -1,0 +1,25 @@
+{
+  "_fv": 52,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:TornadoCreate"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": ""
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 1.0,
+    "knockback": 10,
+    "entityModel": "Modeltornadocc",
+    "customModelTexture": "tornado.png",
+    "onHitsBlock": {
+      "name": "TornadoCreateOnBlock"
+    },
+    "onHitsEntity": {
+      "name": "WhirlwindAttack"
+    }
+  }
+}

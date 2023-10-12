@@ -1,0 +1,19 @@
+{
+  "_fv": 52,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:ThrowingHammer"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 0.7000000000000001,
+    "damage": 12.0,
+    "knockback": 6,
+    "entityModel": "Default",
+    "customModelTexture": ""
+  }
+}

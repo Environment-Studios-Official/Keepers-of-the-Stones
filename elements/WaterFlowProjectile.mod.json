@@ -1,0 +1,22 @@
+{
+  "_fv": 52,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:WaterFlow"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "item.bucket.fill"
+    },
+    "igniteFire": false,
+    "power": 1.2000000000000002,
+    "damage": 8.0,
+    "knockback": 3,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "WaterCreateOnBlock"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_fv": 52,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.DIRT#0"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "block.gravel.break"
+    },
+    "igniteFire": false,
+    "power": 0.8,
+    "damage": 14.0,
+    "knockback": 4,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "EarthBlockCreate"
+    }
+  }
+}

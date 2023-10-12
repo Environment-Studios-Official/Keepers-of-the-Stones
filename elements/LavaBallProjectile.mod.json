@@ -1,0 +1,25 @@
+{
+  "_fv": 52,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:LavaBall"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "block.lava.pop"
+    },
+    "igniteFire": false,
+    "power": 1.1,
+    "damage": 8.0,
+    "knockback": 2,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "LavaBurnBlock"
+    },
+    "onHitsEntity": {
+      "name": "BurnProcedure"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_fv": 52,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:RainBow"
+    },
+    "showParticles": true,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 8.0,
+    "knockback": 2,
+    "entityModel": "Modelmagic_arrow",
+    "customModelTexture": "magic_arrow.png"
+  }
+}

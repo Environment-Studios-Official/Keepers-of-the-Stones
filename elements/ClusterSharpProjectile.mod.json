@@ -1,0 +1,22 @@
+{
+  "_fv": 52,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:ClusterSharp"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "block.amethyst_block.break"
+    },
+    "igniteFire": false,
+    "power": 1.1,
+    "damage": 11.0,
+    "knockback": 1,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "CrystalSharpOnBlock"
+    }
+  }
+}

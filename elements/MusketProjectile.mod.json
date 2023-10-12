@@ -1,0 +1,19 @@
+{
+  "_fv": 52,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Musket"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.blaze.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 8.7,
+    "knockback": 1,
+    "entityModel": "Modelmagic_arrow",
+    "customModelTexture": "magic_arrow.png"
+  }
+}

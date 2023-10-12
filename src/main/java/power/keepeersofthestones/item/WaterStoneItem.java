@@ -40,11 +40,7 @@ public class WaterStoneItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		ItemStack itemstack = ar.getObject();
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		WaterStoneUseProcedure.execute(world, entity, itemstack);
+		WaterStoneUseProcedure.execute(world, entity, ar.getObject());
 		return ar;
 	}
 }

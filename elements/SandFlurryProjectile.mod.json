@@ -1,0 +1,19 @@
+{
+  "_fv": 52,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:SandFlurry"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.1,
+    "damage": 10.0,
+    "knockback": 2,
+    "entityModel": "Default",
+    "customModelTexture": ""
+  }
+}
