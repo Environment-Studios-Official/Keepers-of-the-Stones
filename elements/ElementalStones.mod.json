@@ -11,13 +11,10 @@
         "value": "CUSTOM:AirStone"
       },
       {
-        "value": "CUSTOM:WaterStone"
-      },
-      {
         "value": "CUSTOM:EarthStone"
       },
       {
-        "value": "CUSTOM:EnergyStone"
+        "value": "CUSTOM:WaterStone"
       },
       {
         "value": "CUSTOM:IceStone"
@@ -32,9 +29,6 @@
         "value": "CUSTOM:CrystalStone"
       },
       {
-        "value": "CUSTOM:LavaStone"
-      },
-      {
         "value": "CUSTOM:RainStone"
       },
       {
@@ -42,9 +36,6 @@
       },
       {
         "value": "CUSTOM:OceanStone"
-      },
-      {
-        "value": "CUSTOM:GreeneryStone"
       },
       {
         "value": "CUSTOM:AnimalsStone"
@@ -68,22 +59,16 @@
         "value": "CUSTOM:MoonStone"
       },
       {
-        "value": "CUSTOM:CreationStone"
-      },
-      {
-        "value": "CUSTOM:DestructionStone"
-      },
-      {
         "value": "CUSTOM:SpaceStone"
+      },
+      {
+        "value": "CUSTOM:TimeStone"
       },
       {
         "value": "CUSTOM:BloodStone"
       },
       {
         "value": "CUSTOM:TechnologyStone"
-      },
-      {
-        "value": "CUSTOM:TimeStone"
       },
       {
         "value": "CUSTOM:TeleportationStone"
@@ -95,43 +80,46 @@
         "value": "CUSTOM:AmberStone"
       },
       {
+        "value": "CUSTOM:CreationStone"
+      },
+      {
+        "value": "CUSTOM:DestructionStone"
+      },
+      {
         "value": "CUSTOM:MistStone"
-      },
-      {
-        "value": "CUSTOM:SmokeStone"
-      },
-      {
-        "value": "CUSTOM:PoisonStone"
-      },
-      {
-        "value": "CUSTOM:PlagueStone"
-      },
-      {
-        "value": "CUSTOM:GravityStone"
-      },
-      {
-        "value": "CUSTOM:SpeedStone"
       },
       {
         "value": "CUSTOM:SandStone"
       },
       {
-        "value": "CUSTOM:SpiritStone"
+        "value": "CUSTOM:SpeedStone"
       },
       {
-        "value": "CUSTOM:MushroomsStone"
+        "value": "CUSTOM:PoisonStone"
       },
       {
         "value": "CUSTOM:MagnetStone"
       },
       {
+        "value": "CUSTOM:MushroomsStone"
+      },
+      {
         "value": "CUSTOM:MercuryStone"
       },
       {
-        "value": "CUSTOM:GoldenDustStone"
+        "value": "CUSTOM:MusicStone"
       },
       {
-        "value": "CUSTOM:MusicStone"
+        "value": "CUSTOM:PlagueStone"
+      },
+      {
+        "value": "CUSTOM:BlueFlameStone"
+      },
+      {
+        "value": "CUSTOM:GravityStone"
+      },
+      {
+        "value": "CUSTOM:SmokeStone"
       },
       {
         "value": "CUSTOM:FormStone"
@@ -140,14 +128,29 @@
         "value": "CUSTOM:MindStone"
       },
       {
+        "value": "CUSTOM:GoldenDustStone"
+      },
+      {
         "value": "CUSTOM:DarknessStone"
+      },
+      {
+        "value": "CUSTOM:EnergyStone"
+      },
+      {
+        "value": "CUSTOM:SpiritStone"
+      },
+      {
+        "value": "CUSTOM:AetherStone"
+      },
+      {
+        "value": "CUSTOM:GreeneryStone"
       }
     ],
     "blocks": [],
     "functions": [],
     "entities": [],
     "biomes": [],
-    "name": "elements",
-    "namespace": "mod"
+    "name": "elemental_stones",
+    "namespace": "forge"
   }
 }

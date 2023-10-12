@@ -15339,20 +15339,6 @@
       "path": "~/Stones/Space"
     },
     {
-      "name": "Elements",
-      "type": "tag",
-      "sortid": 813,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "elements",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/power/tags/items/elements.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
       "name": "MercuryStone",
       "type": "item",
       "sortid": 40,
@@ -29968,6 +29954,20 @@
         ]
       },
       "path": "~/Stones/Darkness"
+    },
+    {
+      "name": "ElementalStones",
+      "type": "tag",
+      "sortid": 1589,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elemental_stones",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/items/elemental_stones.json"
+        ]
+      },
+      "path": "~/Tags"
     }
   ],
   "variable_elements": [
@@ -35014,5 +35014,5 @@
     "modElementsPackage": "power.keepeersofthestones",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300441100
+  "mcreatorVersion": 202300441101
 }
