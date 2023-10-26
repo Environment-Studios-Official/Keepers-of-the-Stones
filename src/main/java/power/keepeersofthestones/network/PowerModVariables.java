@@ -156,8 +156,6 @@ public class PowerModVariables {
 				clone.little = original.little;
 				clone.big = original.big;
 				clone.recharge_spell_ice = original.recharge_spell_ice;
-				clone.rotate = original.rotate;
-				clone.battle = original.battle;
 			}
 		}
 
@@ -577,8 +575,6 @@ public class PowerModVariables {
 		public boolean reactive_flying = false;
 		public boolean recharge_spell_ice = false;
 		public boolean darkness = false;
-		public double rotate = 0;
-		public double battle = 0.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -670,8 +666,6 @@ public class PowerModVariables {
 			nbt.putBoolean("reactive_flying", reactive_flying);
 			nbt.putBoolean("recharge_spell_ice", recharge_spell_ice);
 			nbt.putBoolean("darkness", darkness);
-			nbt.putDouble("rotate", rotate);
-			nbt.putDouble("battle", battle);
 			return nbt;
 		}
 
@@ -760,8 +754,6 @@ public class PowerModVariables {
 			reactive_flying = nbt.getBoolean("reactive_flying");
 			recharge_spell_ice = nbt.getBoolean("recharge_spell_ice");
 			darkness = nbt.getBoolean("darkness");
-			rotate = nbt.getDouble("rotate");
-			battle = nbt.getDouble("battle");
 		}
 	}
 
@@ -869,8 +861,6 @@ public class PowerModVariables {
 					variables.reactive_flying = message.data.reactive_flying;
 					variables.recharge_spell_ice = message.data.recharge_spell_ice;
 					variables.darkness = message.data.darkness;
-					variables.rotate = message.data.rotate;
-					variables.battle = message.data.battle;
 				}
 			});
 			context.setPacketHandled(true);

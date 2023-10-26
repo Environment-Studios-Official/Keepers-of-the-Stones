@@ -59,16 +59,16 @@ public class LevelsAndSkillsPageScreen extends AbstractContainerScreen<LevelsAnd
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 
-		guiGraphics.blit(new ResourceLocation("power:textures/screens/book_of_elements_book.png"), this.leftPos + -244, this.topPos + -127, 0, 0, 512, 256, 512, 256);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/book_of_elements_book.png"), this.leftPos + -245, this.topPos + -127, 0, 0, 512, 256, 512, 256);
 
 		if (GetLevel2Procedure.execute(entity)) {
-			guiGraphics.blit(new ResourceLocation("power:textures/screens/level_checked.png"), this.leftPos + -71, this.topPos + -56, 0, 0, 19, 18, 19, 18);
+			guiGraphics.blit(new ResourceLocation("power:textures/screens/level_checked.png"), this.leftPos + -72, this.topPos + -56, 0, 0, 19, 18, 19, 18);
 		}
 		if (ReturnLevel3Procedure.execute(entity)) {
-			guiGraphics.blit(new ResourceLocation("power:textures/screens/level_checked.png"), this.leftPos + -69, this.topPos + -24, 0, 0, 19, 18, 19, 18);
+			guiGraphics.blit(new ResourceLocation("power:textures/screens/level_checked.png"), this.leftPos + -70, this.topPos + -24, 0, 0, 19, 18, 19, 18);
 		}
 		if (GetLevel1Procedure.execute(entity)) {
-			guiGraphics.blit(new ResourceLocation("power:textures/screens/level_checked.png"), this.leftPos + -72, this.topPos + -87, 0, 0, 19, 18, 19, 18);
+			guiGraphics.blit(new ResourceLocation("power:textures/screens/level_checked.png"), this.leftPos + -73, this.topPos + -87, 0, 0, 19, 18, 19, 18);
 		}
 
 		guiGraphics.blit(new ResourceLocation("power:textures/screens/fire_master.png"), this.leftPos + 46, this.topPos + -71, 0, 0, 16, 16, 16, 16);
@@ -102,9 +102,9 @@ public class LevelsAndSkillsPageScreen extends AbstractContainerScreen<LevelsAnd
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.power.levels_and_skills_page.label_level_2"), -163, -48, -13421773, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.power.levels_and_skills_page.label_level_3"), -163, -18, -13421773, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.power.levels_and_skills_page.label_level_1"), -163, -81, -13421773, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.power.levels_and_skills_page.label_level_2"), -164, -48, -13421773, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.power.levels_and_skills_page.label_level_3"), -164, -18, -13421773, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.power.levels_and_skills_page.label_level_1"), -164, -81, -13421773, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.power.levels_and_skills_page.label_reactive_flying"), 25, -81, -13421773, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.power.levels_and_skills_page.label_for"), 25, -65, -13421773, false);
 	}
@@ -122,7 +122,7 @@ public class LevelsAndSkillsPageScreen extends AbstractContainerScreen<LevelsAnd
 				PowerMod.PACKET_HANDLER.sendToServer(new LevelsAndSkillsPageButtonMessage(0, x, y, z));
 				LevelsAndSkillsPageButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + -180, this.topPos + 86, 30, 20).build();
+		}).bounds(this.leftPos + -181, this.topPos + 86, 30, 20).build();
 		guistate.put("button:button_empty", button_empty);
 		this.addRenderableWidget(button_empty);
 		button_empty1 = Button.builder(Component.translatable("gui.power.levels_and_skills_page.button_empty1"), e -> {
@@ -134,7 +134,7 @@ public class LevelsAndSkillsPageScreen extends AbstractContainerScreen<LevelsAnd
 				PowerMod.PACKET_HANDLER.sendToServer(new LevelsAndSkillsPageButtonMessage(2, x, y, z));
 				LevelsAndSkillsPageButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		}).bounds(this.leftPos + -82, this.topPos + -61, 40, 20).build(builder -> new Button(builder) {
+		}).bounds(this.leftPos + -83, this.topPos + -61, 40, 20).build(builder -> new Button(builder) {
 			@Override
 			public void render(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
 				if (ReturnLevel1Procedure.execute(entity))
@@ -148,7 +148,7 @@ public class LevelsAndSkillsPageScreen extends AbstractContainerScreen<LevelsAnd
 				PowerMod.PACKET_HANDLER.sendToServer(new LevelsAndSkillsPageButtonMessage(3, x, y, z));
 				LevelsAndSkillsPageButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
-		}).bounds(this.leftPos + -82, this.topPos + -29, 40, 20).build(builder -> new Button(builder) {
+		}).bounds(this.leftPos + -83, this.topPos + -29, 40, 20).build(builder -> new Button(builder) {
 			@Override
 			public void render(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
 				if (ReturnLevel2Procedure.execute(entity))
