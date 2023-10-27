@@ -1,5 +1,5 @@
 {
-  "_fv": 53,
+  "_fv": 55,
   "_type": "livingentity",
   "definition": {
     "mobName": "Tornado",
@@ -60,6 +60,9 @@
     "health": 1000,
     "xpAmount": 0,
     "waterMob": false,
+    "pushedByFluids": {
+      "fixedValue": true
+    },
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
