@@ -43,7 +43,6 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.nbt.Tag;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.Direction;
 
@@ -157,8 +156,7 @@ public class RocketEntity extends Monster {
 	@Override
 	public void readAdditionalSaveData(CompoundTag compound) {
 		super.readAdditionalSaveData(compound);
-		Tag inventoryCustom = compound.get("InventoryCustom");
-		if (inventoryCustom instanceof CompoundTag inventoryTag)
+		if (compound.get("InventoryCustom") instanceof CompoundTag inventoryTag)
 			inventory.deserializeNBT(inventoryTag);
 	}
 

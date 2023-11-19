@@ -96,6 +96,7 @@
     "stepSound": {
       "value": "entity.zombie.step"
     },
+    "entityDataEntries": [],
     "onRightClickedOn": {
       "name": "TameMindZombie"
     },

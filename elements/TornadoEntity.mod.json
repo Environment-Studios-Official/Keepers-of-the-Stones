@@ -99,6 +99,7 @@
     "stepSound": {
       "value": ""
     },
+    "entityDataEntries": [],
     "onRightClickedOn": {
       "name": "TameTornado"
     },

@@ -96,6 +96,7 @@
     "stepSound": {
       "value": ""
     },
+    "entityDataEntries": [],
     "whenMobDies": {
       "name": "ReturnRocketItem"
     },
