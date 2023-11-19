@@ -1,5 +1,5 @@
 {
-  "_fv": 52,
+  "_fv": 55,
   "_type": "livingentity",
   "definition": {
     "mobName": "Rocket",
@@ -57,6 +57,9 @@
     "health": 1,
     "xpAmount": 0,
     "waterMob": false,
+    "pushedByFluids": {
+      "fixedValue": true
+    },
     "flyingMob": false,
     "guiBoundTo": "RocketPathGUI",
     "inventorySize": 9,
@@ -93,6 +96,7 @@
     "stepSound": {
       "value": ""
     },
+    "entityDataEntries": [],
     "whenMobDies": {
       "name": "ReturnRocketItem"
     },

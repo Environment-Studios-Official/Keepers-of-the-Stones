@@ -3,6 +3,7 @@ package power.keepeersofthestones.procedures;
 import power.keepeersofthestones.init.PowerModMobEffects;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
@@ -11,11 +12,13 @@ public class RemoveRechargeByRingProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		{
-			ItemStack _ist = itemstack;
-			if (_ist.hurt(1, RandomSource.create(), null)) {
-				_ist.shrink(1);
-				_ist.setDamageValue(0);
+		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+			{
+				ItemStack _ist = itemstack;
+				if (_ist.hurt(1, RandomSource.create(), null)) {
+					_ist.shrink(1);
+					_ist.setDamageValue(0);
+				}
 			}
 		}
 		if (entity instanceof LivingEntity _entity)

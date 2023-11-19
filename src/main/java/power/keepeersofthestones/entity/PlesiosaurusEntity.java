@@ -33,6 +33,7 @@ import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
@@ -150,18 +151,18 @@ public class PlesiosaurusEntity extends Monster {
 	}
 
 	@Override
-	public boolean canBreatheUnderwater() {
-		return true;
-	}
-
-	@Override
 	public boolean checkSpawnObstruction(LevelReader world) {
 		return world.isUnobstructed(this);
 	}
 
 	@Override
-	public boolean isPushedByFluid() {
-		return false;
+	public boolean canBreatheUnderwater() {
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Level world = this.level();
+		Entity entity = this;
+		return true;
 	}
 
 	public static void init() {

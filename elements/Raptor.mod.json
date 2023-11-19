@@ -1,5 +1,5 @@
 {
-  "_fv": 52,
+  "_fv": 55,
   "_type": "livingentity",
   "definition": {
     "mobName": "Raptor",
@@ -57,6 +57,9 @@
     "health": 70,
     "xpAmount": 0,
     "waterMob": false,
+    "pushedByFluids": {
+      "fixedValue": true
+    },
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
@@ -93,6 +96,7 @@
     "stepSound": {
       "value": "entity.cow.step"
     },
+    "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"leap_at_target\"><field name=\"speed\">0.5</field><field name=\"condition\">null,null</field><next><block type=\"avoid_entity\"><field name=\"entity\">CUSTOM:TyrannosaurusRex</field><field name=\"radius\">24</field><field name=\"farspeed\">1</field><field name=\"nearspeed\">1.2</field><field name=\"condition\">null,null</field><next><block type=\"watch_closest_entity\"><field name=\"entity\">EntityPlayer</field><field name=\"radius\">16</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.5</field><field name=\"condition\">null,null</field><next><block type=\"wander_avoid_water\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"doors_break\"><field name=\"condition\">null,null</field><next><block type=\"follow_parent\"><field name=\"speed\">0.6</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",

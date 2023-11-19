@@ -9,6 +9,7 @@ import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -40,8 +41,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
-
-import java.util.List;
 
 public class GlowEntity extends TamableAnimal {
 	public GlowEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -159,7 +158,7 @@ public class GlowEntity extends TamableAnimal {
 
 	@Override
 	public boolean isFood(ItemStack stack) {
-		return List.of().contains(stack.getItem());
+		return Ingredient.of().test(stack);
 	}
 
 	public static void init() {

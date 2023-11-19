@@ -2,8 +2,8 @@
 package power.keepeersofthestones.command;
 
 import power.keepeersofthestones.procedures.VenusOnMeProcedure;
-import power.keepeersofthestones.procedures.ResetmychoiceProcedureProcedure;
 import power.keepeersofthestones.procedures.ResetNonSelectProcedure;
+import power.keepeersofthestones.procedures.ResetChoiceProcedureForCommandProcedure;
 import power.keepeersofthestones.procedures.MoonOnMeProcedure;
 import power.keepeersofthestones.procedures.MarsOnMeProcedure;
 import power.keepeersofthestones.procedures.LevelSetProcedure;
@@ -30,7 +30,7 @@ import com.mojang.brigadier.arguments.DoubleArgumentType;
 public class PWCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("pw").requires(s -> s.hasPermission(4)).then(Commands.literal("stone").then(Commands.literal("rechoice").executes(arguments -> {
+		event.getDispatcher().register(Commands.literal("pw").requires(s -> s.hasPermission(4)).then(Commands.literal("stone").then(Commands.literal("reset").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
 			Level world = arguments.getSource().getUnsidedLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();
@@ -42,9 +42,9 @@ public class PWCommand {
 			if (entity != null)
 				direction = entity.getDirection();
 
-			ResetmychoiceProcedureProcedure.execute(world, x, y, z, entity);
+			ResetChoiceProcedureForCommandProcedure.execute(world, x, y, z, arguments);
 			return 0;
-		})).then(Commands.literal("choose").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
+		}))).then(Commands.literal("choose").then(Commands.argument("name", EntityArgument.player()).executes(arguments -> {
 			Level world = arguments.getSource().getUnsidedLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();

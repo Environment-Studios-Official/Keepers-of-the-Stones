@@ -48,9 +48,9 @@ public class EBIceScreen extends AbstractContainerScreen<EBIceMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 
-		guiGraphics.blit(new ResourceLocation("power:textures/screens/book_of_elements_book.png"), this.leftPos + -244, this.topPos + -127, 0, 0, 512, 256, 512, 256);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/book_of_elements_book.png"), this.leftPos + -245, this.topPos + -127, 0, 0, 512, 256, 512, 256);
 
-		guiGraphics.blit(new ResourceLocation("power:textures/screens/ice_stone.png"), this.leftPos + -104, this.topPos + -109, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("power:textures/screens/ice_stone.png"), this.leftPos + -105, this.topPos + -109, 0, 0, 16, 16, 16, 16);
 
 		guiGraphics.blit(new ResourceLocation("power:textures/screens/ice_master.png"), this.leftPos + 93, this.topPos + -109, 0, 0, 16, 16, 16, 16);
 
@@ -75,9 +75,9 @@ public class EBIceScreen extends AbstractContainerScreen<EBIceMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.power.eb_ice.label_class_additional"), -162, -85, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.power.eb_ice.label_element_ice"), -162, -67, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.power.eb_ice.label_force_freezing"), -162, -49, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.power.eb_ice.label_class_additional"), -163, -85, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.power.eb_ice.label_element_ice"), -163, -67, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.power.eb_ice.label_force_freezing"), -163, -49, -12829636, false);
 	}
 
 	@Override

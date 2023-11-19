@@ -10,6 +10,7 @@ import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -45,8 +46,6 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
 import javax.annotation.Nullable;
-
-import java.util.List;
 
 public class TornadoEntityEntity extends TamableAnimal {
 	public TornadoEntityEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -183,7 +182,7 @@ public class TornadoEntityEntity extends TamableAnimal {
 
 	@Override
 	public boolean isFood(ItemStack stack) {
-		return List.of().contains(stack.getItem());
+		return Ingredient.of().test(stack);
 	}
 
 	@Override
