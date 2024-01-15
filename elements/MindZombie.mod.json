@@ -1,12 +1,12 @@
 {
-  "_fv": 55,
+  "_fv": 57,
   "_type": "livingentity",
   "definition": {
     "mobName": "Mind Zombie",
     "mobLabel": "",
     "mobModelName": "Biped",
     "mobModelTexture": "mind_zombie.png",
-    "mobModelGlowTexture": "",
+    "modelLayers": [],
     "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,

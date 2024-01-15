@@ -6,12 +6,12 @@
     "minecraft:andesite",
     "minecraft:red_sand",
     "minecraft:coarse_dirt",
-    "minecraft:sand",
     "minecraft:dripstone_block",
+    "minecraft:sand",
     "minecraft:grass_block",
-    "minecraft:dirt",
     "minecraft:rooted_dirt",
     "minecraft:sandstone",
+    "minecraft:dirt",
     "minecraft:snow_block",
     "minecraft:ice"
   ]

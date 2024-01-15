@@ -1,12 +1,12 @@
 {
-  "_fv": 55,
+  "_fv": 57,
   "_type": "livingentity",
   "definition": {
     "mobName": "Pterodactyl",
     "mobLabel": "",
     "mobModelName": "ModelPterodactyl",
     "mobModelTexture": "pterodactyl.png",
-    "mobModelGlowTexture": "",
+    "modelLayers": [],
     "modelWidth": 1.2,
     "modelHeight": 2.0,
     "modelShadowSize": 1.2,

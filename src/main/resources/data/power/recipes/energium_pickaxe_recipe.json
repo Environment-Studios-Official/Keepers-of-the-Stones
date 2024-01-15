@@ -2,24 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    " 4 ",
-    " 7 "
+    "aaa",
+    " b ",
+    " b "
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "power:energium_ingot"
     },
-    "1": {
-      "item": "power:energium_ingot"
-    },
-    "2": {
-      "item": "power:energium_ingot"
-    },
-    "4": {
-      "item": "minecraft:stick"
-    },
-    "7": {
+    "b": {
       "item": "minecraft:stick"
     }
   },

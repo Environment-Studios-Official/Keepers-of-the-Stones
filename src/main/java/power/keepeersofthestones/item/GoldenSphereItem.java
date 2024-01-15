@@ -86,7 +86,7 @@ public class GoldenSphereItem extends Item {
 							player.getInventory().removeItem(stack);
 					}
 				}
-				ReachargeGoldenSphereProcedure.execute(entity, itemstack);
+				ReachargeGoldenSphereProcedure.execute(entity, stack);
 			}
 		}
 	}
