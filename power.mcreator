@@ -29564,6 +29564,26 @@
         ]
       },
       "path": "~/Commands"
+    },
+    {
+      "name": "CancelUseMilkInActiveStone",
+      "type": "procedure",
+      "sortid": 1591,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cancel_use_milk_in_active_stone",
+      "metadata": {
+        "files": [
+          "src/main/java/power/keepeersofthestones/procedures/CancelUseMilkInActiveStoneProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Main Mod System"
     }
   ],
   "variable_elements": [
