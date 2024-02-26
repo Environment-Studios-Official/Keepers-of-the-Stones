@@ -55,6 +55,14 @@ jobs:
           loaders: forge
           game-versions: "${{env.MINECRAFT_VERSION}}"
           java: "${{env.JAVA_VERSION}}"
+          dependencies: |
+            required-dependency
+            optional-dependency@0.1.0(optional)
+            recommended-dependency@0.2.0(recommended)
+            embedded-dependency@0.3.0(embedded)
+            conflicting-dependency(conflicting)
+            incompatible-dependency(incompatible)
+            pehkui(required){modrinth:t5W7Jfwy}{curseforge:319596}#(ignore:github)
 
           modrinth-featured: false
           fail-mode: warn	
@@ -82,6 +90,6 @@ jobs:
               ],
               "footer": {
                 "text": "Created by the Environment Studios team!",
-                "icon_url": "https://sun9-78.userapi.com/impg/kD0AwY7Xis8STJ07eud_fyqAW2-XFMaMsbnmAw/Ew3PdOe0y7Q.jpg?size=2000x2000&quality=95&sign=f990104d07c8be4a20dfa2ed1e4739d2&type=album"
+                "icon_url": "https://sun9-2.userapi.com/impg/uV8n02lvJ-IPojMugzVzla-mS1XNSYxP7kK37w/dFRlvkG06Pg.jpg?size=2268x2268&quality=95&sign=d1bc84ea1e0be3a5ad198ce9f1227b11&type=album"
               }
             }]
