@@ -105,7 +105,7 @@ public class AirFlowItem extends Item {
 							player.getInventory().removeItem(stack);
 					}
 				}
-				RechargeMagicFireballProcedure.execute(entity, itemstack);
+				RechargeMagicFireballProcedure.execute(entity, stack);
 			}
 		}
 	}

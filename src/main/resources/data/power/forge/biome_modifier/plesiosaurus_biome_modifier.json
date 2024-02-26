@@ -1,8 +1,8 @@
 {
   "type": "forge:add_spawns",
   "biomes": [
-    "power:cretaceous_taiga",
-    "power:cretaceous_pine_forest"
+    "power:cretaceous_pine_forest",
+    "power:cretaceous_taiga"
   ],
   "spawners": {
     "type": "power:plesiosaurus",

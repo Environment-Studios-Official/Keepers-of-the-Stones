@@ -1,12 +1,12 @@
 {
-  "_fv": 55,
+  "_fv": 57,
   "_type": "livingentity",
   "definition": {
     "mobName": "Shadow",
     "mobLabel": "",
     "mobModelName": "Modelshadow",
     "mobModelTexture": "shadow.png",
-    "mobModelGlowTexture": "",
+    "modelLayers": [],
     "modelWidth": 1.0,
     "modelHeight": 1.0,
     "modelShadowSize": 1.0,

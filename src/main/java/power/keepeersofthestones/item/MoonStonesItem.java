@@ -86,7 +86,7 @@ public class MoonStonesItem extends Item {
 							player.getInventory().removeItem(stack);
 					}
 				}
-				RechargeMagicFireballProcedure.execute(entity, itemstack);
+				RechargeMagicFireballProcedure.execute(entity, stack);
 			}
 		}
 	}

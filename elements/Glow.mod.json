@@ -1,12 +1,18 @@
 {
-  "_fv": 55,
+  "_fv": 57,
   "_type": "livingentity",
   "definition": {
     "mobName": "Glow",
     "mobLabel": "",
     "mobModelName": "Modelglow",
     "mobModelTexture": "glow.png",
-    "mobModelGlowTexture": "glow.png",
+    "modelLayers": [
+      {
+        "model": "Default",
+        "texture": "glow.png",
+        "glow": true
+      }
+    ],
     "modelWidth": 1.0,
     "modelHeight": 1.0,
     "modelShadowSize": 0.5,

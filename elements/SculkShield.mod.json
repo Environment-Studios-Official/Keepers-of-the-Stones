@@ -1,5 +1,5 @@
 {
-  "_fv": 55,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "Shield",
@@ -22,6 +22,9 @@
     "damageVsEntity": 4.0,
     "usageCount": 5000,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [],
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,

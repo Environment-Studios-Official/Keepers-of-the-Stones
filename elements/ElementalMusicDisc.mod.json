@@ -1,8 +1,9 @@
 {
-  "_fv": 55,
+  "_fv": 57,
   "_type": "musicdisc",
   "definition": {
     "name": "Music Disc",
+    "rarity": "RARE",
     "texture": "elemental_music_disc",
     "description": "Elements",
     "creativeTab": {

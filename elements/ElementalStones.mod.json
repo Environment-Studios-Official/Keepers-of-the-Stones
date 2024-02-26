@@ -1,5 +1,5 @@
 {
-  "_fv": 55,
+  "_fv": 57,
   "_type": "tag",
   "definition": {
     "type": "Items",
@@ -150,6 +150,7 @@
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "elemental_stones",
     "namespace": "forge"
   }

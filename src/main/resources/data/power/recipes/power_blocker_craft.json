@@ -2,36 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aaa",
+    "aaa",
+    "aaa"
   ],
   "key": {
-    "0": {
-      "item": "power:energium_ingot"
-    },
-    "1": {
-      "item": "power:energium_ingot"
-    },
-    "2": {
-      "item": "power:energium_ingot"
-    },
-    "3": {
-      "item": "power:energium_ingot"
-    },
-    "4": {
-      "item": "power:energium_ingot"
-    },
-    "5": {
-      "item": "power:energium_ingot"
-    },
-    "6": {
-      "item": "power:energium_ingot"
-    },
-    "7": {
-      "item": "power:energium_ingot"
-    },
-    "8": {
+    "a": {
       "item": "power:energium_ingot"
     }
   },

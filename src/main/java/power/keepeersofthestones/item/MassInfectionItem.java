@@ -86,7 +86,7 @@ public class MassInfectionItem extends Item {
 							player.getInventory().removeItem(stack);
 					}
 				}
-				MassInfectionRechargeProcedure.execute(entity, itemstack);
+				MassInfectionRechargeProcedure.execute(entity, stack);
 			}
 		}
 	}
