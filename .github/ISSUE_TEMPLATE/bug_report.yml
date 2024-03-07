@@ -33,7 +33,7 @@ body:
      label: Mod Version
      description: Which version of the mod are you using?
      options:
-       - 3.2.1 (Release)
+       - 3.2.2 (Release)
    validations:
      required: true
  - type: textarea
